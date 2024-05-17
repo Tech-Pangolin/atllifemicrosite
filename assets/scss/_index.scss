@@ -7,7 +7,7 @@
 --------------------------------------------------------------*/
 .about {
   .content {
-    background-color: lighten($secondary, 76);
+    background-color: lighten($primary, 52);
     padding: 40px;
   }
 
@@ -308,32 +308,29 @@
     }
 
     &.blue {
-      border-bottom: 3px solid #2db6fa;
+      border-bottom: 3px solid $secondary;
       .icon {
-        color: #2db6fa;
-        background:lighten( #2db6fa, 35);
+        color: $white;
+        background: $secondary;
       }
-      .read-more {
-        color: #2db6fa;
-      }
-    
       &:hover  {
-        background: #2db6fa;
+        background: $secondary;
+
+        .icon {
+          color: $secondary;
+        }
       }
     }
 
-    &.orange {
-      border-bottom: 3px solid #f68c09;
+    &.gold {
+      border-bottom: 3px solid $primary;
       .icon {
-        color: #f68c09;
-        background:lighten( #f68c09, 38);
-      }
-      .read-more {
-        color: #f68c09;
+        color: $primary;
+        background:lighten( $primary, 38);
       }
     
       &:hover {
-        background: #f68c09;
+        background: $primary;
       }
     }
 
@@ -1101,7 +1098,7 @@
 
   .info-box {
     color: $default;
-    background: lighten($primary, 39);
+    background: lighten($primary, 52);
     padding: 30px;
 
     i {
@@ -1127,7 +1124,7 @@
   }
 
   .php-email-form {
-    background: lighten($primary, 39);
+    background: lighten($primary, 52);
     padding: 30px;
     height: 100%;
 
