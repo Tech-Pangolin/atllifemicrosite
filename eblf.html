@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Atlanta Life Insurance Company</title>
-    <meta content="" name="description">
+    <meta content="Atlanta Life Insurance Company" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
@@ -46,6 +46,47 @@
             height: 100%;
             border: 0;
         }
+
+        .gold-emp {
+            color: #D6A700;
+            font-weight: bold;
+        }
+
+        #strategic p {
+            color: #0C3144;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        #strategic h2 {
+            color: #0C3144;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #strategic .box {
+            background-color: lightgrey;
+            padding: 20px;
+            margin: 20px 20px 0 0;
+        }
+
+        #strategic .box p {
+            font-size: 16px;
+        }
+
+        .ml-15 {
+            margin-left: 15px;
+        }
+
+        .ml-15 p {
+            margin: 5px;
+        }
+
+        .blog .entry {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
     </style>
     <!-- =======================================================
   * Template Name: FlexStart
@@ -81,62 +122,45 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#features">Platform</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
-                    <li><a class="nav-link scrollto active" href="eblf.html">EBLF 2025</a></li>
-                    <li><a class="nav-link scrollto" href="childrensbooks.html">Essential Reads for Every Child</a></li>
-                    <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle scrollto" href="index.html#hero" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#about">About</a></li>
                         </ul>
-                    </li> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle scrollto" href="index.html#team" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#platform">Platform</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="eblf.html">EBLF 2025</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle scrollto" href="wellness.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            360 Wellness
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="health.html">H&P</a></li>
+                            <!-- <li><a class="dropdown-item" href="wellness.html">Wellness</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="childrensbooks.html">Essential Reads for Every Child</a></li>
 
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
 
+
         </div>
     </header><!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <!-- <section id="hero" class="hero d-flex align-items-center">
-   -->
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up" data-aos-delay="400">Your Trusted Partner for Comprehensive Risk Solutions and Diverse Reinsurance</h1>
-          <div data-aos="fade-up" data-aos-delay="600">
-            <div class="text-center text-lg-start">
-              <a href="mailto:BusinessDevelopment@atlantalife.com?subject=I%20want%20to%20learn%20more%20about%20Atlanta%20Life!" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Make a collective impact with us!</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-        
-          <div class="video-container">
-            <iframe 
-              src="https://drive.google.com/file/d/1IC7XdGHn1xbf6MC-GEl4mOCv4J56Lrpv/preview" 
-              allow="fullscreen; picture-in-picture" 
-              allowfullscreen 
-              style="width: 100%; height: 100%;"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
-    <!-- </section>  -->
 
     <main id="main">
         <main id="main">
@@ -177,22 +201,15 @@
                                         <a href="#">Enterprise Updates</a>
                                     </h2>
 
-                                    <!-- <div class="entry-meta">
-                        <ul>
-                          <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
-                          <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                          <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
-                        </ul>
-                      </div> -->
 
                                     <div class="entry-content">
                                         <p>
                                             In December 2024, AM Best assigned Atlanta Life Insurance Company (ALIC) a
                                             Financial Strength Rating of B++ (Good) and a Long-Term Issuer Credit Rating
-                                            of “bbb” (Good), both with a stable outlook. These ratings reflect ALIC’s
+                                            of “bbb” (Good), both with a stable outlook. These ratings reflect ALIC's
                                             very strong balance sheet, supported by the strongest level of risk-adjusted
-                                            capitalization as measured by Best’s Capital Adequacy Ratio (BCAR). The
-                                            company’s operating performance and enterprise risk management were assessed
+                                            capitalization as measured by Best's Capital Adequacy Ratio (BCAR). The
+                                            company's operating performance and enterprise risk management were assessed
                                             as marginal, and its business profile as limited, due to its recent re-entry
                                             into the group benefits and reinsurance market. In January 2023, Atlanta
                                             Life Holdings acquired ALIC and made a capital contribution to support its
@@ -208,83 +225,14 @@
 
                                 </article><!-- End blog entry -->
                             </section>
-                            <section id="strategic" style="padding-top:0">
-                                <article class="entry">
 
-                                    <div class="entry-img">
-                                        <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-                                    </div>
-
-                                    <h2 class="entry-title">
-                                        <a href="#">Strategic Focus</a>
-                                    </h2>
-
-                                    <!-- <div class="entry-meta">
-                        <ul>
-                          <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
-                          <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                          <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
-                        </ul>
-                      </div> -->
-
-                                    <div class="entry-content">
-                                        <h3>CE Courses</h3>
-                                        <p>
-                                            More information coming soon!
-                                        </p>
-                                        <h3>Product Roadmap</h3>
-                                        <p>
-                                            More information coming soon!
-                                        </p>
-                                        <div class="read-more">
-                                            <a href="blog-single.html">Read More</a>
-                                        </div>
-                                    </div>
-
-                                </article><!-- End blog entry -->
-                            </section>
-                            <section id="civic" style="padding-top:0">
-                                <article class="entry">
-
-                                    <div class="entry-img">
-                                        <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-                                    </div>
-
-                                    <h2 class="entry-title">
-                                        <a href="blog-single.html">Civic Engagement</a>
-                                    </h2>
-
-                                    <!-- <div class="entry-meta">
-                        <ul>
-                          <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
-                          <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                          <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
-                        </ul>
-                      </div> -->
-
-                                    <div class="entry-content">
-                                        <p>Detroit</p>
-                                        <p>Houston</p>
-                                        <p>
-                                            More information coming soon!
-                                        </p>
-                                        <!-- <div class="read-more">
-                          <a href="blog-single.html">Read More</a>
-                        </div> -->
-                                    </div>
-
-                                </article><!-- End blog entry -->
-                            </section>
 
 
                         </div><!-- End blog entries list -->
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 order-first order-sm-last">
 
                             <div class="sidebar">
-
-
-
                                 <h3 class="sidebar-title">Our Company</h3>
                                 <div class="sidebar-item categories">
                                     <ul>
@@ -293,53 +241,192 @@
                                         <li><a href="#civic">Civic Engagement </a></li>
                                     </ul>
                                 </div><!-- End sidebar categories-->
-                                <!--         
-                      <h3 class="sidebar-title">Recent Posts</h3>
-                      <div class="sidebar-item recent-posts">
-                        <div class="post-item clearfix">
-                          <img src="assets/img/blog/blog-recent-1.jpg" alt="">
-                          <h4><a href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
-                          <time datetime="2020-01-01">Jan 1, 2020</time>
-                        </div>
-        
-                        <div class="post-item clearfix">
-                          <img src="assets/img/blog/blog-recent-2.jpg" alt="">
-                          <h4><a href="blog-single.html">Quidem autem et impedit</a></h4>
-                          <time datetime="2020-01-01">Jan 1, 2020</time>
-                        </div>
-        
-                        <div class="post-item clearfix">
-                          <img src="assets/img/blog/blog-recent-3.jpg" alt="">
-                          <h4><a href="blog-single.html">Id quia et et ut maxime similique occaecati ut</a></h4>
-                          <time datetime="2020-01-01">Jan 1, 2020</time>
-                        </div>
-        
-                        <div class="post-item clearfix">
-                          <img src="assets/img/blog/blog-recent-4.jpg" alt="">
-                          <h4><a href="blog-single.html">Laborum corporis quo dara net para</a></h4>
-                          <time datetime="2020-01-01">Jan 1, 2020</time>
-                        </div>
-        
-                        <div class="post-item clearfix">
-                          <img src="assets/img/blog/blog-recent-5.jpg" alt="">
-                          <h4><a href="blog-single.html">Et dolores corrupti quae illo quod dolor</a></h4>
-                          <time datetime="2020-01-01">Jan 1, 2020</time>
-                        </div>
-        
-                      </div> -->
-
-
                             </div><!-- End sidebar -->
-
                         </div><!-- End blog sidebar -->
 
                     </div>
+                    <div class="row">
+                        <div class="col">
+                            <section id="strategic" style="padding-top:0">
+                                <!-- <img src="assets/img/eblf/strategicheader.png" alt="" class="img-fluid w-100"> -->
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <article class="entry" style="box-shadow: none;">
 
+
+                                            <h2 class="entry-title"
+                                                style="text-transform: none;font-family:'Nunito', sans-serif;">
+                                                <a href="#">Strategic Focus</a>
+                                            </h2>
+                                            <div class="entry-content">
+                                                <p style="font-size: 16px;">
+                                                    Today's employers are facing unprecedented health, productivity, and
+                                                    workforce challenges. Healthcare costs are
+                                                    projected to rise another <strong>8% in 2025</strong> (PwC, 2025),
+                                                    while only <strong>7% of employees feel productive at work</strong>
+                                                    (Electro IQ, 2025). At Atlanta Life, we help organizations confront
+                                                    these realities head-on through integrated Health & Productivity
+                                                    solutions that connect employee
+                                                    health, absense management, disability, and return-to-work
+                                                    strategies into a seamless support system.
+                                                </p>
+                                                <p style="font-size: 16px;">Our approach <strong>ensures employees feel
+                                                        supported</strong> at every stage- whether managing chronic
+                                                    conditions, returning after disability, or facing mental health
+                                                    challenges - while helping employers reduce absence, improve
+                                                    engagement, and strengthen organizational performance.</p>
+                                                <p style="font-size: 16px;"><a href="assets/img/eblf/ALICOverview.pdf"
+                                                        target="_blank">Click here for more information</a></p>
+                                                <!-- <div
+                                                    style="border-bottom:5px solid #CA8D15; width: 50%; margin-bottom:20px">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-4">
+                                                        <img src="assets/img/eblf/strategic-right-img.png" alt=""
+                                                            class="img-fluid w-100">
+                                                    </div>
+                                                    <div class="col-12 col-md-8">
+                                                        <h2>WHAT SETS US APART</h2>
+                                                        <div class="ml-15">
+                                                            <img src="assets/img/eblf/impactful.png" alt=""
+                                                                class="img-fluid">
+                                                            <p>
+                                                                We don't just help you mitigate risk; we help you
+                                                                build a better benefits program. Through tailored
+                                                                reinsurance partnerships, we unlock cost control,
+                                                                workforce stability, and long-term sustainability.
+                                                            </p>
+                                                        </div>
+                                                        <div class="ml-15">
+                                                            <img src="assets/img/eblf/community.png" alt=""
+                                                                class="img-fluid ">
+                                                            <p>
+                                                                Our legacy is rooted in service. We invest in
+                                                                financial literacy, educational initiatives, and
+                                                                community uplift, ensuring your partnership
+                                                                with us delivers far beyond the balance sheet.
+                                                            </p>
+                                                        </div>
+                                                        <div class="ml-15"><img src="assets/img/eblf/health.png" alt=""
+                                                                class="img-fluid ">
+                                                            <p>
+                                                                We offer a comprehensive approach that links
+                                                                employee health, engagement, and organizational
+                                                                performance. Our solutions include custom
+                                                                program design, data-driven consultation, and
+                                                                scalable support across leave, disability, and
+                                                                wellness. The result is improved workforce
+                                                                productivity, better mental health outcomes, and
+                                                                meaningful cost savings through reduced absence.
+                                                            </p>
+                                                        </div>
+                                                        <div class="ml-15">
+                                                            <img src="assets/img/eblf/strategic.png" alt=""
+                                                                class="img-fluid ">
+                                                            <p>
+                                                                We work together with carriers, brokers, and
+                                                                employers to offer flexible solutions
+                                                                designed around real business goalsbacked by
+                                                                transparency,
+                                                                trust,
+                                                                and results.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                <div class="row">
+                                                    <div class="col ml-5">
+                                                        <h3>CE Courses</h3>
+                                                        <p>
+                                                            More information coming soon!
+                                                        </p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h3>Product Roadmap</h3>
+                                                        <p>
+                                                            More information coming soon!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <!-- <div class="col">
+                                        <div class="box">
+                                            <h2 class="text-center">THOUGHT
+                                                LEADERSHIP &
+                                                EDUCATION
+                                            </h2>
+                                            <p>
+                                                We go beyond service by
+                                                <span class="gold-emp">equipping our partners</span> with
+                                                the
+                                                knowledge to lead. Through
+                                                <span class="gold-emp">continuing education, custom
+                                                    workshops, and insights on
+                                                    emerging trends</span> in workforce
+                                                health and benefit design, we help
+                                                brokers, carriers, and employers to
+                                                become smarter, more <span class="gold-emp">strategic
+                                                    consultants</span> for their clients.
+
+                                            </p>
+                                        </div>
+                                        <div class="box mt-5">
+                                            <h2 class="text-center">WHY IT MATTERS</h2>
+                                            <p>
+                                                In today's landscape, employers
+                                                and carriers need more than just
+                                                coverage-they <span class="gold-emp">need strategic
+                                                    partners</span> who understand people,
+                                                productivity, and purpose. Atlanta
+                                                Life <span class="gold-emp">delivers measurable
+                                                    impact</span>
+                                                through data, compassion, and
+                                                community investment—because
+                                                building a legacy means <span class="gold-emp">doing
+                                                    business that matters</span>.
+
+                                            </p>
+                                        </div>
+                                    </div> -->
+                                </div>
+
+
+
+                            </section>
+                        </div>
+                    </div>
+
+                    <section id="civic" style="padding-top:0">
+                        <div class="row">
+                            <div class="col-8">
+                                <article class="entry">
+
+                                    <div class="entry-img">
+                                        <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid w-100">
+                                    </div>
+
+                                    <h2 class="entry-title">
+                                        <a href="blog-single.html">Civic Engagement</a>
+                                    </h2>
+
+                                    <div class="entry-content pb-3">
+                                        <p>Detroit</p>
+                                        <p>Houston</p>
+                                        <p>
+                                            More information coming soon!
+                                        </p>
+
+                                    </div>
+
+                                </article><!-- End blog entry -->
+                            </div>
+                        </div>
+
+                    </section>
                 </div>
-            </section><!-- End Blog Section -->
-
-
-           
+            </section>
         </main><!-- End #main -->
 
         <!-- ======= Footer ======= -->
