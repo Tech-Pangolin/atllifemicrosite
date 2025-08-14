@@ -87,6 +87,238 @@
             padding-bottom: 0px;
             margin-bottom: 0px;
         }
+
+        /* LiveBalanced Page Styles */
+        
+        /* Hero Section */
+        #livebalanced-hero {
+            background: url('assets/img/livebalanced page imgs/LB_heroimage.webp') center/cover no-repeat;
+            min-height: 100vh;
+        }
+
+        .hero-title {
+            margin-bottom: 0;
+        }
+
+        .hero-title-main {
+            color: #0C3144;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+        }
+
+        .hero-title-accent {
+            color: #cc8f11;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+        }
+
+        .hero-subtitle {
+            color: #0C3144;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .hero-subtitle-accent {
+            color: #cc8f11;
+        }
+
+        .hero-description {
+            color: #666;
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 20px;
+            max-width: 600px;
+        }
+
+        .hero-description-accent {
+            color: #cc8f11;
+            font-weight: bold;
+        }
+
+        /* Four Pillars Section */
+        #four-pillars {
+            background-color: #0C3144;
+            color: white;
+        }
+
+        #four-pillars .section-title {
+            color: #cc8f11;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+
+        .pillars-diagram-container {
+            position: relative;
+            margin: 80px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pillars-diagram {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        /* Create donut shape with quadrants */
+        .pillars-diagram::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(
+                from 0deg,
+                #e8f4f8 0deg 85deg,
+                transparent 85deg 95deg,
+                #e8f4f8 95deg 175deg,
+                transparent 175deg 185deg,
+                #e8f4f8 185deg 265deg,
+                transparent 265deg 275deg,
+                #e8f4f8 275deg 355deg,
+                transparent 355deg 365deg,
+                #e8f4f8 365deg 360deg
+            );
+        }
+
+        .pillar-quadrant {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pillar-quadrant.top-left {
+            top: 0;
+            left: 0;
+            transform: translate(25%, 25%);
+        }
+
+        .pillar-quadrant.top-right {
+            top: 0;
+            right: 0;
+            transform: translate(-25%, 25%);
+        }
+
+        .pillar-quadrant.bottom-right {
+            bottom: 0;
+            right: 0;
+            transform: translate(-25%, -25%);
+        }
+
+        .pillar-quadrant.bottom-left {
+            bottom: 0;
+            left: 0;
+            transform: translate(25%, -25%);
+        }
+
+        .pillar-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pillar-icon i {
+            font-size: 2.5rem;
+            color: #0C3144;
+        }
+
+        /* Text Labels Outside the Diagram */
+        .pillar-labels {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pillar-label {
+            position: absolute;
+            text-align: center;
+            max-width: 150px;
+        }
+
+        .pillar-label.top-left-label {
+            top: 10%;
+            left: 10%;
+            transform: translate(-100%, -100%);
+        }
+
+        .pillar-label.top-right-label {
+            top: 10%;
+            right: 10%;
+            transform: translate(100%, -100%);
+        }
+
+        .pillar-label.bottom-right-label {
+            bottom: 10%;
+            right: 10%;
+            transform: translate(100%, 100%);
+        }
+
+        .pillar-label.bottom-left-label {
+            bottom: 10%;
+            left: 10%;
+            transform: translate(-100%, 100%);
+        }
+
+        .pillar-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 5px;
+            font-family: 'Georgia', serif;
+        }
+
+        .pillar-description {
+            font-size: 14px;
+            color: #ccc;
+            margin: 0;
+            line-height: 1.3;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .concluding-text {
+            color: #ccc;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .pillars-diagram {
+                width: 300px;
+                height: 300px;
+            }
+            
+            .pillar-labels {
+                width: 450px;
+                height: 450px;
+            }
+            
+            .pillar-label {
+                max-width: 120px;
+            }
+            
+            .pillar-title {
+                font-size: 14px;
+            }
+            
+            .pillar-description {
+                font-size: 12px;
+            }
+        }
     </style>
     <!-- =======================================================
   * Template Name: FlexStart
@@ -191,8 +423,105 @@
     <main id="main">
         <main id="main">
 
-            <!-- Content goes here -->
-             <section id="livebalanced" class="livebalanced"></section>
+            <!-- ======= LiveBalanced Hero Section ======= -->
+            <section id="livebalanced-hero" class="hero d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex flex-column justify-content-center">
+                            <div class="hero-content" data-aos="fade-up">
+                                <h1 class="hero-title">
+                                    <span class="hero-title-main">ATLANTA LIFE</span>
+                                    <span class="hero-title-accent"> | LiveBalanced</span>
+                                </h1>
+                                <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                                    Introducing <span class="hero-subtitle-accent">LiveBalanced</span>: A Holistic Approach to Wellbeing
+                                </h2>
+                                <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                                    At Atlanta Life, we believe wellness is multi-dimensional, embracing mind, body, finances, and purpose. That's why our <span class="hero-description-accent">Holistic Wellness</span> approach empowers individuals, families, and communities to thrive in every aspect of life.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Four Pillars Section ======= -->
+            <section id="four-pillars" class="py-5">
+                <div class="container" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 class="section-title text-start mb-5">
+                                The Four Pillars of LiveBalanced
+                            </h2>
+                            
+                            <!-- Four Pillars Diagram -->
+                            <div class="pillars-diagram-container text-center mb-5">
+                                <div class="pillars-diagram">
+                                    <!-- Financial Wellness -->
+                                    <div class="pillar-quadrant top-left">
+                                        <div class="pillar-icon">
+                                            <i class="bi bi-eye"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Physical Wellness -->
+                                    <div class="pillar-quadrant top-right">
+                                        <div class="pillar-icon">
+                                            <i class="bi bi-lightning"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Mental Wellness -->
+                                    <div class="pillar-quadrant bottom-right">
+                                        <div class="pillar-icon">
+                                            <i class="bi bi-lightbulb"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Social Wellness -->
+                                    <div class="pillar-quadrant bottom-left">
+                                        <div class="pillar-icon">
+                                            <i class="bi bi-chat-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Text Labels Outside the Diagram -->
+                                <div class="pillar-labels">
+                                    <div class="pillar-label top-left-label">
+                                        <h3 class="pillar-title">Financial Wellness</h3>
+                                        <p class="pillar-description">Stability That Builds Legacies</p>
+                                    </div>
+                                    
+                                    <div class="pillar-label top-right-label">
+                                        <h3 class="pillar-title">Physical Wellness</h3>
+                                        <p class="pillar-description">Strength from the Inside Out</p>
+                                    </div>
+                                    
+                                    <div class="pillar-label bottom-right-label">
+                                        <h3 class="pillar-title">Mental Wellness</h3>
+                                        <p class="pillar-description">Wellness That Fosters Growth</p>
+                                    </div>
+                                    
+                                    <div class="pillar-label bottom-left-label">
+                                        <h3 class="pillar-title">Social Wellness</h3>
+                                        <p class="pillar-description">The Core of Holistic Living</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Concluding Paragraph -->
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <p class="concluding-text">
+                                        Our Holistic Wellness approach addresses these four essential dimensions to create a comprehensive framework for wellbeing that supports individuals at work, at home, and in their communities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main><!-- End #main -->
 
