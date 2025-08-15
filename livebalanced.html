@@ -452,6 +452,182 @@
             font-weight: 500;
         }
 
+        /* Mental Wellness Section Styles */
+        .mental-wellness {
+            background-color: #0C3144;
+            color: white;
+        }
+
+        .mental-wellness .pillar-title {
+            color: #cc8f11;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .mental-wellness .pillar-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .mental-wellness .content-left img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .mental-wellness .initiatives-heading {
+            color: white;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .mental-wellness .initiatives-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mental-wellness .initiatives-list li {
+            color: white;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .mental-wellness .initiatives-list li::before {
+            content: '•';
+            color: #cc8f11;
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .statistic-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .statistic-number {
+            font-size: 4rem;
+            font-weight: bold;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .statistic-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .statistic-caption {
+            color: white;
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem;
+            line-height: 1.4;
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        /* Social Wellness Section Styles */
+        .social-wellness {
+            background-color: #f8f9fa; /* Light background to alternate with mental wellness */
+            color: #0C3144;
+        }
+
+        .social-wellness .pillar-title {
+            color: #cc8f11;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .social-wellness .section-intro {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: left;
+            margin-bottom: 50px;
+            color: #0C3144;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .grid-item {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .item-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .social-icon {
+            font-size: 2.5rem;
+            color: #cc8f11;
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #0C3144;
+            margin-bottom: 15px;
+        }
+
+        .item-description {
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #0C3144;
+            margin: 0;
+        }
+
+        .section-outro {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+            color: #0C3144;
+            margin-top: 40px;
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .chart-container {
@@ -510,6 +686,50 @@
             .initiative-description {
                 font-size: 0.95rem;
             }
+
+            .mental-wellness .pillar-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .mental-wellness .content-left img {
+                height: 300px;
+            }
+
+            .mental-wellness .pillar-title {
+                font-size: 2rem;
+            }
+
+            .mental-wellness .initiatives-heading {
+                font-size: 1.3rem;
+            }
+
+            .mental-wellness .initiatives-list li {
+                font-size: 1rem;
+            }
+
+            .statistic-number {
+                font-size: 3rem;
+            }
+
+            .statistic-title {
+                font-size: 1.3rem;
+            }
+
+            .social-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .social-wellness .pillar-title {
+                font-size: 2rem;
+            }
+            
+            .section-intro, .section-outro {
+                font-size: 1rem;
+            }
+
+
         }
     </style>
     <!-- =======================================================
@@ -777,6 +997,123 @@
                     <p class="statistic-text">Statistic: 76% need to manage their condition during work hours. 2</p>
                 </div>
             </section>
+
+            <!-- ======= Mental Wellness Section ======= -->
+            <section class="pillar-section mental-wellness py-5">
+                <div class="container">
+                    <h2 class="pillar-title">Mental Wellness: Resilience That Drives Results</h2>
+                    
+                    <div class="pillar-content">
+                        <div class="content-left">
+                            <img src="assets/img/livebalanced page imgs/LB image 2.png" alt="Mindfulness group session">
+                        </div>
+                        
+                        <div class="content-right">
+                            <h3 class="initiatives-heading">We tackle mental health head-on with:</h3>
+                            <ul class="initiatives-list">
+                                <li>Workplace training on stress, anxiety, and burnout</li>
+                                <li>Tools for emotional and behavioral wellbeing</li>
+                                <li>Benefits design inclusive of mental health services</li>
+                                <li>Collaboration with mental health experts and employers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="statistic-container">
+                        <div class="statistic-number">57%</div>
+                        <div class="statistic-title">Workers Report Burnout</div>
+                        <p class="statistic-caption">57% of workers reported symptoms associated with workplace burnout. 3</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Social Wellness Section ======= -->
+            <section class="pillar-section social-wellness py-5">
+                <div class="container">
+                    <!-- Full width header -->
+                    <h2 class="pillar-title">Social Wellness: The Core of Holistic Living</h2>
+                    
+                    <!-- Full width paragraph below header -->
+                    <p class="section-intro">
+                        We address purpose in all dimensions: intellectual, emotional, occupational, social, spiritual and environmental.
+                    </p>
+                    
+                    <!-- 2x3 Grid for content -->
+                    <div class="social-grid">
+                        <!-- Grid Item 1 -->
+                        <div class="grid-item">
+                            <div class="item-content">
+                                <i class="bi bi-lightbulb-fill social-icon"></i>
+                                <h3 class="item-title">Intellectual</h3>
+                                <p class="item-description">
+                                    Fostering growth, learning and creativity
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Grid Item 2 -->
+                        <div class="grid-item">
+                            <div class="item-content">
+                                <i class="bi bi-heart-fill social-icon"></i>
+                                <h3 class="item-title">Emotional</h3>
+                                <p class="item-description">
+                                    Promoting emotional intelligence and inner peace
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Grid Item 3 -->
+                        <div class="grid-item">
+                            <div class="item-content">
+                                <i class="bi bi-people-fill social-icon"></i>
+                                <h3 class="item-title">Social</h3>
+                                <p class="item-description">
+                                    Building social ties and workplace belonging
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Grid Item 4 -->
+                        <div class="grid-item">
+                            <div class="item-content">
+                                <i class="bi bi-briefcase-fill social-icon"></i>
+                                <h3 class="item-title">Occupational</h3>
+                                <p class="item-description">
+                                    Aligning work with personal values
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Grid Item 5 -->
+                        <div class="grid-item">
+                            <div class="item-content">
+                                <i class="bi bi-star-fill social-icon"></i>
+                                <h3 class="item-title">Spiritual</h3>
+                                <p class="item-description">
+                                    Encouraging connection to a higher purpose
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Grid Item 6 -->
+                        <div class="grid-item">
+                            <div class="item-content">
+                                <i class="bi bi-tree-fill social-icon"></i>
+                                <h3 class="item-title">Environmental</h3>
+                                <p class="item-description">
+                                    Cultivating healthy spaces and environmental stewardship
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Full width paragraph below grid -->
+                    <p class="section-outro">
+                        Statistic: Employees engaged by purpose are 3x more likely to stay with their employer and 2.5x more productive. 4
+                    </p>
+                </div>
+            </section>
+
 
         </main><!-- End #main -->
 
