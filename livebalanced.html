@@ -28,6 +28,10 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
+    
     <style>
         .video-container {
             position: relative;
@@ -158,78 +162,60 @@
             align-items: center;
         }
 
-        .pillars-diagram {
+        .chart-container {
             position: relative;
             width: 400px;
             height: 400px;
             margin: 0 auto;
         }
 
-        /* Create donut shape with quadrants */
-        .pillars-diagram::before {
-            content: '';
+        /* Chart Icons */
+        .chart-icons {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 19px;
+            left: 19px;
             width: 100%;
             height: 100%;
-            border-radius: 50%;
-            background: conic-gradient(
-                from 0deg,
-                #e8f4f8 0deg 85deg,
-                transparent 85deg 95deg,
-                #e8f4f8 95deg 175deg,
-                transparent 175deg 185deg,
-                #e8f4f8 185deg 265deg,
-                transparent 265deg 275deg,
-                #e8f4f8 275deg 355deg,
-                transparent 355deg 365deg,
-                #e8f4f8 365deg 360deg
-            );
+            pointer-events: none;
         }
 
-        .pillar-quadrant {
+        .chart-icon {
             position: absolute;
-            width: 50%;
-            height: 50%;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transform: translate(-50%, -50%);
         }
 
-        .pillar-quadrant.top-left {
-            top: 0;
-            left: 0;
-            transform: translate(25%, 25%);
-        }
-
-        .pillar-quadrant.top-right {
-            top: 0;
-            right: 0;
-            transform: translate(-25%, 25%);
-        }
-
-        .pillar-quadrant.bottom-right {
-            bottom: 0;
-            right: 0;
-            transform: translate(-25%, -25%);
-        }
-
-        .pillar-quadrant.bottom-left {
-            bottom: 0;
-            left: 0;
-            transform: translate(25%, -25%);
-        }
-
-        .pillar-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .pillar-icon i {
-            font-size: 2.5rem;
+        .chart-icon i {
+            font-size: 18px;
             color: #0C3144;
+        }
+
+        /* Position icons in chart segments */
+        .financial-icon {
+            top: 25%;
+            left: 25%;
+        }
+
+        .physical-icon {
+            top: 25%;
+            right: 25%;
+        }
+
+        .mental-icon {
+            bottom: 25%;
+            right: 25%;
+        }
+
+        .social-icon {
+            bottom: 25%;
+            left: 25%;
         }
 
         /* Text Labels Outside the Diagram */
@@ -240,52 +226,60 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            pointer-events: none;
         }
 
         .pillar-label {
             position: absolute;
             text-align: center;
-            max-width: 150px;
+            max-width: 300px;
         }
 
         .pillar-label.top-left-label {
             top: 10%;
             left: 10%;
-            transform: translate(-100%, -100%);
+            transform: translate(-50%, 50%);
         }
 
         .pillar-label.top-right-label {
             top: 10%;
             right: 10%;
-            transform: translate(100%, -100%);
+            transform: translate(50%, 50%);
         }
 
         .pillar-label.bottom-right-label {
             bottom: 10%;
             right: 10%;
-            transform: translate(100%, 100%);
+            transform: translate(50%, -50%);
         }
 
         .pillar-label.bottom-left-label {
             bottom: 10%;
             left: 10%;
-            transform: translate(-100%, 100%);
+            transform: translate(-50%, -50%);
         }
 
         .pillar-title {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: bold;
             color: white;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
             font-family: 'Georgia', serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .pillar-title.financial-wellness {
+            color: #cc8f11;
         }
 
         .pillar-description {
             font-size: 14px;
-            color: #ccc;
+            color: #e0e0e0;
             margin: 0;
-            line-height: 1.3;
+            line-height: 1.4;
             font-family: 'Arial', sans-serif;
+            font-style: italic;
         }
 
         .concluding-text {
@@ -297,7 +291,7 @@
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
-            .pillars-diagram {
+            .chart-container {
                 width: 300px;
                 height: 300px;
             }
@@ -456,56 +450,46 @@
                             
                             <!-- Four Pillars Diagram -->
                             <div class="pillars-diagram-container text-center mb-5">
-                                <div class="pillars-diagram">
-                                    <!-- Financial Wellness -->
-                                    <div class="pillar-quadrant top-left">
-                                        <div class="pillar-icon">
-                                            <i class="bi bi-eye"></i>
+                                <div class="chart-container">
+                                    <canvas id="pillarsChart"></canvas>
+                                    
+                                    <!-- Icons positioned over chart segments -->
+                                    <div class="chart-icons">
+                                        <div class="chart-icon financial-icon">
+                                            <i class="bi bi-currency-dollar"></i>
+                                        </div>
+                                        <div class="chart-icon physical-icon">
+                                            <i class="bi bi-heart-pulse"></i>
+                                        </div>
+                                        <div class="chart-icon mental-icon">
+                                            <i class="bi bi-emoji-smile"></i>
+                                        </div>
+                                        <div class="chart-icon social-icon">
+                                            <i class="bi bi-people"></i>
                                         </div>
                                     </div>
                                     
-                                    <!-- Physical Wellness -->
-                                    <div class="pillar-quadrant top-right">
-                                        <div class="pillar-icon">
-                                            <i class="bi bi-lightning"></i>
+                                    <!-- Text Labels Outside the Diagram -->
+                                    <div class="pillar-labels">
+                                        <div class="pillar-label top-left-label">
+                                            <h3 class="pillar-title financial-wellness">Financial Wellness</h3>
+                                            <p class="pillar-description">Stability That Builds Legacies</p>
                                         </div>
-                                    </div>
-                                    
-                                    <!-- Mental Wellness -->
-                                    <div class="pillar-quadrant bottom-right">
-                                        <div class="pillar-icon">
-                                            <i class="bi bi-lightbulb"></i>
+                                        
+                                        <div class="pillar-label top-right-label">
+                                            <h3 class="pillar-title">Physical Wellness</h3>
+                                            <p class="pillar-description">Strength from the Inside Out</p>
                                         </div>
-                                    </div>
-                                    
-                                    <!-- Social Wellness -->
-                                    <div class="pillar-quadrant bottom-left">
-                                        <div class="pillar-icon">
-                                            <i class="bi bi-chat-dots"></i>
+                                        
+                                        <div class="pillar-label bottom-right-label">
+                                            <h3 class="pillar-title">Mental Wellness</h3>
+                                            <p class="pillar-description">Wellness That Fosters Growth</p>
                                         </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Text Labels Outside the Diagram -->
-                                <div class="pillar-labels">
-                                    <div class="pillar-label top-left-label">
-                                        <h3 class="pillar-title">Financial Wellness</h3>
-                                        <p class="pillar-description">Stability That Builds Legacies</p>
-                                    </div>
-                                    
-                                    <div class="pillar-label top-right-label">
-                                        <h3 class="pillar-title">Physical Wellness</h3>
-                                        <p class="pillar-description">Strength from the Inside Out</p>
-                                    </div>
-                                    
-                                    <div class="pillar-label bottom-right-label">
-                                        <h3 class="pillar-title">Mental Wellness</h3>
-                                        <p class="pillar-description">Wellness That Fosters Growth</p>
-                                    </div>
-                                    
-                                    <div class="pillar-label bottom-left-label">
-                                        <h3 class="pillar-title">Social Wellness</h3>
-                                        <p class="pillar-description">The Core of Holistic Living</p>
+                                        
+                                        <div class="pillar-label bottom-left-label">
+                                            <h3 class="pillar-title">Social Wellness</h3>
+                                            <p class="pillar-description">The Core of Holistic Living</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -629,6 +613,78 @@
 
         <!-- Custom JS File -->
         <script src="assets/js/custom.js"></script>
+
+        <!-- Chart.js Four Pillars Donut Chart -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const ctx = document.getElementById('pillarsChart').getContext('2d');
+                
+                // Simple chart without icon plugin - icons are now HTML elements
+                
+                const pillarsChart = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Financial Wellness', 'Physical Wellness', 'Mental Wellness', 'Social Wellness'],
+                        datasets: [{
+                            data: [25, 25, 25, 25], // Equal segments for four pillars
+                            backgroundColor: [
+                                '#87CEEB', // Light blue for Financial
+                                '#87CEEB', // Light blue for Physical
+                                '#87CEEB', // Light blue for Mental
+                                '#87CEEB'  // Light blue for Social
+                            ],
+                            borderColor: [
+                                '#0C3144', // Dark blue border
+                                '#0C3144',
+                                '#0C3144',
+                                '#0C3144'
+                            ],
+                            borderWidth: 6,
+                            cutout: '40%', // Creates a smaller donut hole
+                            hoverOffset: 35, // Pops out segments on hover
+                            hoverBorderWidth: 4,
+                            hoverBackgroundColor: [
+                                '#cc8f11', // Darker blue for Financial on hover
+                                '#cc8f11', // Darker blue for Physical on hover
+                                '#cc8f11', // Darker blue for Mental on hover
+                                '#cc8f11'  // Darker blue for Social on hover
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        animation: {
+                            duration: 1200, // Shorter, more subtle duration
+                            easing: 'easeOutQuart', // Gentler easing
+                            animateRotate: false, // No rotation - more subtle
+                            animateScale: true, // Keep scale but it will be gentler
+                            delay: function(context) {
+                                // Much shorter stagger for subtlety
+                                return context.dataIndex * 100;
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false // Hide default legend since we have custom labels
+                            },
+                            tooltip: {
+                                enabled: false // Disable tooltips
+                            }
+                        },
+                        elements: {
+                            arc: {
+                                borderWidth: 8
+                            }
+                        },
+                        interaction: {
+                            mode: 'nearest',
+                            intersect: false
+                        }
+                    }
+                });
+            });
+        </script>
 
 </body>
 
