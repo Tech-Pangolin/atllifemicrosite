@@ -289,6 +289,169 @@
             line-height: 1.6;
         }
 
+        /* Financial Wellness Section Styles */
+        .pillar-section {
+            background-color: white;
+            padding: 80px 0;
+        }
+
+        .pillar-section .pillar-title {
+            color: #cc8f11;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .pillar-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .initiatives-heading {
+            color: #0C3144;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .initiatives-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        .initiatives-list li {
+            color: #0C3144;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .initiatives-list li::before {
+            content: '•';
+            color: #cc8f11;
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .statistic-chart {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .chart-center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0C3144;
+            font-family: 'Arial', sans-serif;
+            z-index: 10;
+        }
+
+        .chart-caption {
+            color: #0C3144;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 20px;
+            line-height: 1.4;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .content-right img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Physical Wellness Section Styles */
+        .physical-wellness {
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+            background-color: white;
+            position: relative;
+            z-index: 10;
+        }
+
+        .intro-text {
+            color: #0C3144;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .initiatives-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .initiative-block {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .initiative-icon {
+            width: 12px;
+            height: 12px;
+            background-color: #cc8f11;
+            flex-shrink: 0;
+            margin-top: 8px;
+        }
+
+        .initiative-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .initiative-title {
+            color: #0C3144;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .initiative-description {
+            color: #0C3144;
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        .statistic-text {
+            color: #0C3144;
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem;
+            text-align: left;
+            margin: 0;
+            font-weight: 500;
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .chart-container {
@@ -311,6 +474,41 @@
             
             .pillar-description {
                 font-size: 12px;
+            }
+
+            .pillar-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .pillar-section .pillar-title {
+                font-size: 2rem;
+            }
+
+            .content-right img {
+                height: 300px;
+            }
+
+            .initiatives-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .initiative-block {
+                gap: 15px;
+            }
+
+            .intro-text {
+                font-size: 1.1rem;
+                margin-bottom: 30px;
+            }
+
+            .initiative-title {
+                font-size: 1rem;
+            }
+
+            .initiative-description {
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -507,6 +705,79 @@
                 </div>
             </section>
 
+            <!-- ======= Financial Wellness Section ======= -->
+            <section class="pillar-section financial-wellness py-5">
+                <div class="container">
+                    <h2 class="pillar-title">Financial Wellness: Stability That Builds Legacies</h2>
+                    
+                    <div class="pillar-content">
+                        <div class="content-left">
+                            <h3 class="initiatives-heading">Our financial wellness initiatives include:</h3>
+                            <ul class="initiatives-list">
+                                <li>Life insurance as a legacy-building tool</li>
+                                <li>Education on budgeting, saving, credit, retirement</li>
+                                <li>Reinsurance strategies fueling reinvestment in people</li>
+                                <li>Equity-focused financial programs for underserved communities</li>
+                            </ul>
+                            <div class="statistic-chart">
+                                <canvas id="financialChart"></canvas>
+                                <div class="chart-center-text">31%</div>
+                            </div>
+                            <p class="chart-caption">Just 31% of American adults are considered financially healthy. 1</p>
+                        </div>
+                        
+                        <div class="content-right">
+                            <img src="assets/img/livebalanced page imgs/LB image 1.png" alt="Financial consultation meeting">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Physical Wellness Section ======= -->
+            <section class="pillar-section physical-wellness py-5">
+                <div class="container">
+                    <h2 class="pillar-title">Physical Wellness: Strength from the Inside Out</h2>
+                    
+                    <p class="intro-text">Partnering with employers and communities, we promote:</p>
+                    
+                    <div class="initiatives-grid">
+                        <div class="initiative-block">
+                            <div class="initiative-icon"></div>
+                            <div class="initiative-content">
+                                <h3 class="initiative-title">Disability and return-to-work support</h3>
+                                <p class="initiative-description">Comprehensive programs to help employees recover and return to productivity</p>
+                            </div>
+                        </div>
+                        
+                        <div class="initiative-block">
+                            <div class="initiative-icon"></div>
+                            <div class="initiative-content">
+                                <h3 class="initiative-title">Preventive health tied to benefits and insurance</h3>
+                                <p class="initiative-description">Integrating wellness incentives with insurance offerings</p>
+                            </div>
+                        </div>
+                        
+                        <div class="initiative-block">
+                            <div class="initiative-icon"></div>
+                            <div class="initiative-content">
+                                <h3 class="initiative-title">Programs addressing sleep, fitness, nutrition, chronic illness</h3>
+                                <p class="initiative-description">Holistic approaches to physical wellbeing</p>
+                            </div>
+                        </div>
+                        
+                        <div class="initiative-block">
+                            <div class="initiative-icon"></div>
+                            <div class="initiative-content">
+                                <h3 class="initiative-title">Outreach and activations at the community level</h3>
+                                <p class="initiative-description">Bringing wellness resources directly to neighborhoods</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="statistic-text">Statistic: 76% need to manage their condition during work hours. 2</p>
+                </div>
+            </section>
+
         </main><!-- End #main -->
 
         <!-- ======= Footer ======= -->
@@ -680,6 +951,50 @@
                         interaction: {
                             mode: 'nearest',
                             intersect: false
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <!-- Financial Wellness Chart -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const financialCtx = document.getElementById('financialChart').getContext('2d');
+                
+                const financialChart = new Chart(financialCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Financially Healthy', 'Not Financially Healthy'],
+                        datasets: [{
+                            data: [31, 69],
+                            backgroundColor: [
+                                '#87CEEB', // Light blue for financially healthy
+                                '#0C3144'  // Dark blue for not financially healthy
+                            ],
+                            borderColor: [
+                                '#0C3144',
+                                '#0C3144'
+                            ],
+                            borderWidth: 2,
+                            cutout: '60%'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                enabled: false
+                            }
+                        },
+                        elements: {
+                            arc: {
+                                borderWidth: 2
+                            }
                         }
                     }
                 });
