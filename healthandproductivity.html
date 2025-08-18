@@ -216,6 +216,69 @@
             text-align: center;
         }
 
+        /* Financial Wellness Text Styles */
+        .financial-intro-text {
+            color: #0C3144;
+            font-family: 'BR Segma', 'Arial', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        /* Financial Statistics Boxes */
+        .financial-stats-row {
+            margin-top: 60px;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #0C3144 0%, #1a4a5f 100%);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(12, 49, 68, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(12, 49, 68, 0.3);
+        }
+
+        .stat-number {
+            color: #cc8f11;
+            font-family: 'Jomolhari', 'Georgia', serif;
+            font-weight: bold;
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            line-height: 1;
+        }
+
+        .stat-label {
+            color: white;
+            font-family: 'BR Segma', 'Arial', sans-serif;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-description {
+            color: #e0e0e0;
+            font-family: 'BR Segma', 'Arial', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .stat-arrow {
+            color: #ff4444;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
         .pillar-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1046,26 +1109,44 @@ That’s why we don’t treat wellness as a perk. We help organizations embed th
             <!-- ======= Financial Wellness Section ======= -->
             <section class="pillar-section financial-wellness py-5">
                 <div class="container">
-                    <h2 class="pillar-title">Financial Wellness: Stability That Builds Legacies</h2>
+                    <h2 class="pillar-title">Financial Wellness: A Growing Workplace Priority</h2>
                     
-                    <div class="pillar-content">
-                        <div class="content-left">
-                            <h3 class="initiatives-heading">Our financial wellness initiatives include:</h3>
-                            <ul class="initiatives-list">
-                                <li>Life insurance as a legacy-building tool</li>
-                                <li>Education on budgeting, saving, credit, retirement</li>
-                                <li>Reinsurance strategies fueling reinvestment in people</li>
-                                <li>Equity-focused financial programs for underserved communities</li>
-                            </ul>
-                            <div class="statistic-chart">
-                                <canvas id="financialChart"></canvas>
-                                <div class="chart-center-text">31%</div>
+                    <p class="financial-intro-text">
+                        One of the most overlooked drivers of health and performance is financial wellness. It isn’t just about money, it’s about managing savings, debt, spending, and retirement planning, all of which directly impact employee stress. 
+                    </p>
+                    
+                    <p class="financial-intro-text">
+                        Since 2022, inflation and stagnant wages have worsened financial insecurity, with more than half of employees expressing concern about rising costs and feeling that their compensation isn’t keeping up. This growing financial pressure doesn’t stay at home, it shows up in the workplace as sleep loss, migraines, and high blood pressure, along with anxiety, depression, reduced focus, and lower productivity.
+                    </p>
+                    
+                    <p class="financial-intro-text">
+                        Despite its wide-reaching impact, only 28% of employers currently offer financial wellness programs. Atlanta Life helps close this gap by equipping organizations with practical, stress-reducing financial education that empowers teams to thrive and businesses to perform.
+                    </p>
+                    
+                    <!-- Statistics Row -->
+                    <div class="financial-stats-row">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="stat-box">
+                                    <div class="stat-number"><span class="stat-arrow">↗</span> 53%</div>
+                                    <div class="stat-label">Employees Worried</div>
+                                    <div class="stat-description">Most employees report rising anxieties about growing expenses and financial uncertainty.</div>
+                                </div>
                             </div>
-                            <p class="chart-caption">Just 31% of American adults are considered financially healthy. 1</p>
-                        </div>
-                        
-                        <div class="content-right">
-                            <img src="assets/img/livebalanced page imgs/LB image 1.png" alt="Financial consultation meeting">
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="stat-box">
+                                    <div class="stat-number"><span class="stat-arrow">↗</span> 59%</div>
+                                    <div class="stat-label">Pay not keeping up</div>
+                                    <div class="stat-description">Employees say their compensation isn’t keeping up with rising costs.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="stat-box">
+                                    <div class="stat-number"><span class="stat-arrow">↘</span> 28%</div>
+                                    <div class="stat-label">Limited Programs</div>
+                                    <div class="stat-description">Only a small percentage of employers currently offer financial wellness programs.</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
