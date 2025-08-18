@@ -158,138 +158,47 @@
             font-size: 2.5rem;
         }
 
-        .pillars-diagram-container {
-            position: relative;
-            margin: 80px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .chart-container {
-            position: relative;
-            width: 400px;
-            height: 400px;
-            margin: 0 auto;
-        }
-
-        /* Chart Icons */
-        .chart-icons {
-            position: absolute;
-            top: 19px;
-            left: 19px;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .chart-icon {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transform: translate(-50%, -50%);
-        }
-
-        .chart-icon i {
+        /* Four Pillars Text Styles */
+        .pillars-intro-text,
+        .pillars-concluding-text {
+            color: #e0e0e0;
+            font-family: 'BR Segma', 'Arial', sans-serif;
             font-size: 18px;
-            color: #0C3144;
+            line-height: 1.6;
+            text-align: left;
         }
 
-        /* Position icons in chart segments */
-        .financial-icon {
-            top: 25%;
-            left: 25%;
+        .pillars-intro-text {
+            margin-bottom: 40px;
         }
 
-        .physical-icon {
-            top: 25%;
-            right: 25%;
+        /* Four Pillars Icons */
+        .pillars-icons-container {
+            margin: 60px 0;
         }
 
-        .mental-icon {
-            bottom: 25%;
-            right: 25%;
-        }
-
-        .social-icon {
-            bottom: 25%;
-            left: 25%;
-        }
-
-        /* Text Labels Outside the Diagram */
-        .pillar-labels {
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-        }
-
-        .pillar-label {
-            position: absolute;
+        .pillar-icon {
             text-align: center;
-            max-width: 300px;
+            transition: transform 0.3s ease;
         }
 
-        .pillar-label.top-left-label {
-            top: 10%;
-            left: 10%;
-            transform: translate(-50%, 50%);
+        .pillar-icon:hover {
+            transform: translateY(-5px);
         }
 
-        .pillar-label.top-right-label {
-            top: 10%;
-            right: 10%;
-            transform: translate(50%, 50%);
-        }
-
-        .pillar-label.bottom-right-label {
-            bottom: 10%;
-            right: 10%;
-            transform: translate(50%, -50%);
-        }
-
-        .pillar-label.bottom-left-label {
-            bottom: 10%;
-            left: 10%;
-            transform: translate(-50%, -50%);
-        }
-
-        .pillar-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            margin-bottom: 8px;
+        .pillar-icon .pillar-title {
+            color: #cc8f11;
             font-family: 'Jomolhari', 'Georgia', serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
             letter-spacing: 0.5px;
         }
 
-        .pillar-title.financial-wellness {
-            color: #cc8f11;
-        }
-
-        .pillar-description {
-            font-size: 14px;
-            color: #e0e0e0;
-            margin: 0;
-            line-height: 1.4;
-            font-family: 'BR Segma', 'Arial', sans-serif;
-            font-style: italic;
-        }
-
-        .concluding-text {
-            color: #ccc;
-            font-family: 'BR Segma', 'Arial', sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
+        .pillar-icon i {
+            font-size: 144px;
+            color: white;
+            display: block;
         }
 
         /* Financial Wellness Section Styles */
@@ -1090,64 +999,45 @@
                 <div class="container" data-aos="fade-up">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2 class="section-title text-start mb-5">
-                                The Four Pillars of Health & Productivity
-                            </h2>
+                            <!-- Opening Paragraph (Left Justified) -->
+                            <p class="pillars-intro-text">
+                                Wellness isn’t static, prioritizing health and wellness is a choice. It requires action, consistency, and intention.  Individuals must actively pursue wellness across all aspects of life, and employers play a critical role in shaping that environment. With our research, we came up with four key dimensions that make up total wellness: 
+                            </p>
                             
-                            <!-- Four Pillars Diagram -->
-                            <div class="pillars-diagram-container text-center mb-5">
-                                <div class="chart-container">
-                                    <canvas id="pillarsChart"></canvas>
-                                    
-                                    <!-- Icons positioned over chart segments -->
-                                    <div class="chart-icons">
-                                        <div class="chart-icon financial-icon">
+                            <!-- Combined Title and Icons Row -->
+                            <div class="pillars-icons-container text-center mb-5">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="pillar-icon">
+                                            <h3 class="pillar-title">Financial</h3>
                                             <i class="bi bi-currency-dollar"></i>
                                         </div>
-                                        <div class="chart-icon physical-icon">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="pillar-icon">
+                                            <h3 class="pillar-title">Physical</h3>
                                             <i class="bi bi-heart-pulse"></i>
                                         </div>
-                                        <div class="chart-icon mental-icon">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="pillar-icon">
+                                            <h3 class="pillar-title">Mental</h3>
                                             <i class="bi bi-emoji-smile"></i>
                                         </div>
-                                        <div class="chart-icon social-icon">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="pillar-icon">
+                                            <h3 class="pillar-title">Social</h3>
                                             <i class="bi bi-people"></i>
                                         </div>
                                     </div>
-                                    
-                                    <!-- Text Labels Outside the Diagram -->
-                                    <div class="pillar-labels">
-                                        <div class="pillar-label top-left-label">
-                                            <h3 class="pillar-title financial-wellness">Financial Wellness</h3>
-                                            <p class="pillar-description">Stability That Builds Legacies</p>
-                                        </div>
-                                        
-                                        <div class="pillar-label top-right-label">
-                                            <h3 class="pillar-title">Physical Wellness</h3>
-                                            <p class="pillar-description">Strength from the Inside Out</p>
-                                        </div>
-                                        
-                                        <div class="pillar-label bottom-right-label">
-                                            <h3 class="pillar-title">Mental Wellness</h3>
-                                            <p class="pillar-description">Wellness That Fosters Growth</p>
-                                        </div>
-                                        
-                                        <div class="pillar-label bottom-left-label">
-                                            <h3 class="pillar-title">Social Wellness</h3>
-                                            <p class="pillar-description">The Core of Holistic Living</p>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             
-                            <!-- Concluding Paragraph -->
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <p class="concluding-text">
-                                        Our Health & Productivity approach addresses these four essential dimensions to create a comprehensive framework that drives organizational performance while supporting individual wellbeing at work, at home, and in their communities.
-                                    </p>
-                                </div>
-                            </div>
+                            <p class="pillars-concluding-text">
+                                These interconnected areas shape how people live, work, and recover , and when one is out of balance, the impact is felt across the entire organization. Financial stress can disrupt sleep, concentration, and morale. Mental health challenges may show up as burnout or extended leave. A lack of purpose often drives disengagement. These aren’t just personal issues, they’re performance risks.
+That’s why we don’t treat wellness as a perk. We help organizations embed these four pillars into benefits, policy, and engagement strategies that support real people and drive real results.    
+                            </p>
                         </div>
                     </div>
                 </div>
