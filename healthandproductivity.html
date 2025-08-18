@@ -636,9 +636,20 @@
             color: #cc8f11;
             font-family: 'Jomolhari', 'Georgia', serif;
             font-weight: bold;
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             margin-bottom: 40px;
-            text-align: left;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 1.5;
+        }
+
+        .left-column-title span {
+            color: white;
+        }
+
+        .left-column p {
+            color: #f5f5f5;
+            font-size: 1.1rem;
         }
 
         .left-column-list {
@@ -718,15 +729,65 @@
             top: -1px;
         }
 
-        .right-column-image {
-            margin-top: auto;
+        .left-column-image {
+            margin-top: 50px; 
         }
 
-        .right-column-image img {
+        .left-column-image img {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        /* Right Column Statistics */
+        .right-column-stats {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding: 20px 0;
+        }
+
+        .stat-item {
+            margin-bottom: 30px;
+        }
+
+        .stat-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .stat-sentence {
+            color: #0C3144;
+            font-family: 'BR Segma', 'Arial', sans-serif;
+            font-size: 1.8rem;
+            line-height: 1.3;
+            margin: 0;
+            margin-left: 100px;
+            text-align: left;
+            font-weight: 800;
+            position: relative;
+        }
+
+        .stat-item {
+            position: relative;
+        }
+
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 100px;
+            width: 60%;
+            height: 4px;
+            background-color: #cc8f11;
+        }
+
+        .stat-item:first-child::before {
+            top: -15px;
         }
 
         /* Final Section Styles */
@@ -1152,6 +1213,46 @@ That’s why we don’t treat wellness as a perk. We help organizations embed th
                 </div>
             </section>
 
+            <!-- ======= Two Column Section ======= -->
+            <section class="two-column-section py-5">
+                <div class="container">
+                    <div class="two-column-content">
+                        <!-- Left Column - Dark Blue Background -->
+                        <div class="left-column">
+                            <h2 class="left-column-title">The <span>true cost</span> of disengagement <span>is real</span></h2>
+                            <p>
+                                <span class="bold-text">Disengagement</span>, <span class="bold-text">absenteeism</span>, and <span class="bold-text">burnout</span> don’t just affect morale, they impact your <span class="bold-text">bottom line</span>. When employees are struggling mentally or physically, business <span class="bold-text">performance</span> declines.</span>
+                            </p>
+                            <p>
+                                Whether you lead a team of 50 or 50,000, <span class="bold-text">investing</span> in employee wellbeing is a <span class="bold-text">strategic advantage</span> and forward-thinking organizations are already <span class="bold-text">leading the way</span>.
+                            </p>
+
+                            <div class="left-column-image">
+                                <img src="assets/img/health_productivity/disengagement.png" alt="Wellness approach illustration">
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column - Off-White Background -->
+                        <div class="right-column">
+                            <div class="right-column-stats">
+                                <div class="stat-item">
+                                    <p class="stat-sentence">$1,635/year Per Employee <br> Lost to Absenteeism</p>
+                                </div>
+                                <div class="stat-item">
+                                    <p class="stat-sentence">$530 Billon Lost Annually to <br> Unproductive Meetings/Time</p>
+                                </div>
+                                <div class="stat-item">
+                                    <p class="stat-sentence">7% of Employees Say They Feel <br> Truly Productive</p>
+                                </div>
+                                <div class="stat-item">
+                                    <p class="stat-sentence">1 in 4 Adults Experiences a <br> Mental Health Condition</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- ======= Physical Wellness Section ======= -->
             <section class="pillar-section physical-wellness py-5">
                 <div class="container">
@@ -1313,42 +1414,7 @@ That’s why we don’t treat wellness as a perk. We help organizations embed th
                 </div>
             </section>
 
-            <!-- ======= Two Column Section ======= -->
-            <section class="two-column-section py-5">
-                <div class="container">
-                    <div class="two-column-content">
-                        <!-- Left Column - Dark Blue Background -->
-                        <div class="left-column">
-                            <h2 class="left-column-title">Why Holistic Wellness Matters for People and Performance</h2>
-                            <ul class="left-column-list">
-                                <li>People who live their purpose at work are more productive than people who don't. They are also healthier, more resilient, and more likely to stay at the company. 5</li>
-                                <li>Boosted wellness yields $1,1003-$3,500 per employee annually, or 17-55% of average pay. 6</li>
-                                <li>Globally, scaled mental health interventions could drive $3.73=$11.7 trillion in value, and improve GDP by $4.4 trillion by 2050. 7</li>
-                                <li>Yet only 57% of employees report good overall health, while 1 in 5 employees face burnout. These outcomes come from tackling not just absenteeism, but presenteeism, when employees are present but not fully engaged. 8</li>
-                            </ul>
-                        </div>
-                        
-                        <!-- Right Column - Off-White Background -->
-                        <div class="right-column">
-                            <h2 class="right-column-title">Building a Sustainable Wellness Strategy</h2>
-                            <p class="right-column-intro">
-                                Atlanta Life's model mirrors proven organizational approaches by focusing on:
-                            </p>
-                            <ul class="right-column-list">
-                                <li>Understanding employee health baselines</li>
-                                <li>Tailoring wellness initiatives to diverse needs</li>
-                                <li>Measuring 3-5 key health and productivity metrics</li>
-                                <li>Ensuring leadership sponsorship and accountability</li>
-                                <li>Addressing root workplace causes of stress and burnout</li>
-                                <li>Embedding wellness within organizational culture, not only benefits</li>
-                            </ul>
-                            <div class="right-column-image">
-                                <img src="assets/img/livebalanced page imgs/LB image 3.png" alt="Wellness approach illustration">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
 
             <!-- ======= Final Section ======= -->
             <section class="final-section py-5">
