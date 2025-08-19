@@ -207,7 +207,8 @@
             padding: 80px 0;
         }
 
-        .pillar-section .pillar-title {
+        .pillar-section .pillar-title, 
+        .final-section .pillar-title {
             color: #cc8f11;
             font-family: 'Jomolhari', 'Georgia', serif;
             font-weight: bold;
@@ -974,6 +975,59 @@
             transform: translate(-50%, -50%) rotate(300deg) translateX(120px) rotate(45deg);
         }
 
+        /* Pyramid Grid Styles */
+        .pyramid-grid {
+            margin-top: 60px;
+        }
+
+        .pyramid-grid .row {
+            justify-content: center;
+        }
+
+
+        .pyramid-image-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .pyramid-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .pyramid-content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .pyramid-item {
+            padding: 10px 0;
+            color: #e0e0e0;
+        }
+
+        .item1 {
+            transform: translateX(-200px);
+        }
+
+        .item2 {
+            transform: translateX(-100px);
+        }
+
+        .pyramid-title {
+            font-family: 'Jomolhari', 'Georgia', serif;
+            font-weight: bold;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .pyramid-text {
+            font-family: 'BR Segma', 'Arial', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
         /* Right Column Statistics */
         .right-column-stats {
             display: flex;
@@ -1025,6 +1079,9 @@
         .final-section {
             background-color: #0C3144;
             color: #cc8f11;
+        }
+        .final-section .intro-text {
+            color: white;
         }
 
         .content-block {
@@ -1758,166 +1815,41 @@
                 </div>
             </section>
 
-            <!-- ======= Mental Wellness Section ======= -->
-            <section class="pillar-section mental-wellness py-5">
-                <div class="container">
-                    <h2 class="pillar-title">Mental Wellness: Resilience That Drives Results</h2>
-
-                    <div class="pillar-content">
-                        <div class="content-left">
-                            <img src="assets/img/livebalanced page imgs/LB image 2.png" alt="Mindfulness group session">
-                        </div>
-
-                        <div class="content-right">
-                            <h3 class="initiatives-heading">We tackle mental health head-on with:</h3>
-                            <ul class="initiatives-list">
-                                <li>Workplace training on stress, anxiety, and burnout</li>
-                                <li>Tools for emotional and behavioral wellbeing</li>
-                                <li>Benefits design inclusive of mental health services</li>
-                                <li>Collaboration with mental health experts and employers</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="statistic-container">
-                        <p class="statistic-number">57%</p>
-                        <p class="statistic-title">Workers Report Burnout</p>
-                        <p class="statistic-caption">57% of workers reported symptoms associated with workplace burnout.
-                            3</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ======= Social Wellness Section ======= -->
-            <section class="pillar-section social-wellness py-5">
-                <div class="container">
-                    <!-- Full width header -->
-                    <h2 class="pillar-title">Social Wellness: The Core of Holistic Living</h2>
-
-                    <!-- Full width paragraph below header -->
-                    <p class="section-intro">
-                        We address purpose in all dimensions: intellectual, emotional, occupational, social, spiritual
-                        and environmental.
-                    </p>
-
-                    <!-- 2x3 Grid for content -->
-                    <div class="social-grid">
-                        <!-- Grid Item 1 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-lightbulb-fill social-icon"></i>
-                                <h3 class="item-title">Intellectual</h3>
-                                <p class="item-description">
-                                    Fostering growth, learning and creativity
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Grid Item 2 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-heart-fill social-icon"></i>
-                                <h3 class="item-title">Emotional</h3>
-                                <p class="item-description">
-                                    Promoting emotional intelligence and inner peace
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Grid Item 3 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-people-fill social-icon"></i>
-                                <h3 class="item-title">Social</h3>
-                                <p class="item-description">
-                                    Building social ties and workplace belonging
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Grid Item 4 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-briefcase-fill social-icon"></i>
-                                <h3 class="item-title">Occupational</h3>
-                                <p class="item-description">
-                                    Aligning work with personal values
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Grid Item 5 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-star-fill social-icon"></i>
-                                <h3 class="item-title">Spiritual</h3>
-                                <p class="item-description">
-                                    Encouraging connection to a higher purpose
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Grid Item 6 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-tree-fill social-icon"></i>
-                                <h3 class="item-title">Environmental</h3>
-                                <p class="item-description">
-                                    Cultivating healthy spaces and environmental stewardship
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Full width paragraph below grid -->
-                    <p class="section-outro">
-                        Statistic: Employees engaged by purpose are 3x more likely to stay with their employer and 2.5x
-                        more productive. 4
-                    </p>
-                </div>
-            </section>
-
-
+            
 
             <!-- ======= Final Section ======= -->
             <section class="final-section py-5">
                 <div class="container">
-                    <!-- First Content Block -->
-                    <div class="content-block">
-                        <h1 class="final-h1">Atlanta Life: Health to Performance</h1>
-                        <p class="final-p">
-                            By aligning data-driven health insights with business performance metrics, we offer:
-                        </p>
-                        <ul class="final-list">
-                            <li>A measurable, ROI-driven health and productivity framework</li>
-                            <li>Seamless integration into benefits, reinsurance and workplace strategies</li>
-                            <li>Programs supporting employee health while delivering measurable business outcomes</li>
-                        </ul>
-                        <p class="final-p">
-                            Health & Productivity is how Atlanta Life helps organizations not only perform better, but
-                            sustain that performance through healthy, engaged employees.
-                        </p>
+                    <div class="reusable-bold-header">
+                        <h2 class="pillar-title">Let's build a healthier workforce together</h2>
+                        <p class="intro-text">Atlanta Life has spent over 120 years protecting people. Now, we're helping organizations empower them. Let's turn your benefit strategy into a growth strategy.</p>
                     </div>
 
-                    <!-- Second Content Block -->
-                    <div class="content-block">
-                        <h1 class="final-h1">Call to Action</h1>
-                        <p class="final-p">
-                            Let's collaborate to build a health and productivity strategy that drives business results
-                            while supporting employee wellbeing.
-                        </p>
-                        <p class="final-p">
-                            Contact Us: BusinessDevelopment@atlantalife.com
-                        </p>
+                    <div class="pyramid-grid">
+                        <div class="row align-items-center">
+                            <!-- Left Side - Pyramid Image -->
+                                <div class="pyramid-image-container col-md-6">
+                                    <img src="assets/img/health_productivity/pyramid.svg" alt="Health and productivity pyramid" class="pyramid-image">
+                                </div>
+                            
+                            <!-- Right Side - 1x3 Grid -->
+                            <div class="col-md-4">
+                                <div class="pyramid-content-grid">
+                                    <div class="pyramid-item item1">
+                                        <h2 class="pyramid-title">Growth Strategy</h2>
+                                        <p class="pyramid-text">Transform benefits into business advantage</p>
+                                    </div>
+                                    <div class="pyramid-item item2">
+                                        <h2 class="pyramid-title">Empowered Teams</h2>
+                                        <p class="pyramid-text">Support all dimentions of employee wellness</p>
+                                    </div>
+                                    <div class="pyramid-item">
+                                        <h2 class="pyramid-title">120 Years of Protection</h2>
+                                        <p class="pyramid-text">Built on a legacy of caring for people</p>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-
-                    <!-- Horizontal Rule -->
-                    <hr class="final-divider">
-
-                    <!-- Final Paragraph -->
-                    <p class="final-conclusion">
-                        Atlanta Live Insurance Company | A Legacy of Empowerment Since 1905
-                    </p>
                 </div>
             </section>
 
