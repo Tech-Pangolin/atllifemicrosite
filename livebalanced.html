@@ -17,10 +17,10 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
-    
+
     <!-- BR Segma Font -->
     <link href="https://www.cdnfonts.com/br-segma.font" rel="stylesheet">
-    
+
     <!-- Jomolhari Font -->
     <style>
         @font-face {
@@ -40,12 +40,736 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    
+
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
-    
+
     <!-- Custom CSS -->
-    <link href="assets/css/livebalanced_1755635269.css" rel="stylesheet">
+    <!-- <link href="assets/css/livebalanced_1755635269.css" rel="stylesheet"> -->
+
+    <style>
+        #livebalanced-hero {
+            background: url("assets/img/livebalanced page imgs/LB_heroimage.webp") center center / cover no-repeat;
+            min-height: 100vh;
+        }
+
+        .hero-title {
+            margin-bottom: 0px;
+        }
+
+        .hero-title-main,
+        .hero-title-accent {
+            font-family: Jomolhari, Georgia, serif;
+            font-weight: bold;
+        }
+
+        .hero-title-main {
+            color: rgb(12, 49, 68);
+        }
+
+        .hero-title-accent {
+            color: rgb(204, 143, 17);
+        }
+
+        .hero-subtitle,
+        .hero-description {
+            font-family: "BR Segma", Arial, sans-serif;
+        }
+
+        .hero-subtitle {
+            color: rgb(12, 49, 68);
+            margin-top: 20px;
+        }
+
+        .hero-subtitle-accent {
+            color: rgb(204, 143, 17);
+        }
+
+        .hero-description {
+            color: rgb(12, 49, 68);
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 20px;
+            max-width: 600px;
+        }
+
+        .hero-description-accent {
+            color: rgb(204, 143, 17);
+            font-weight: bold;
+        }
+
+        #four-pillars {
+            background-color: rgb(12, 49, 68);
+            color: white;
+        }
+
+        #four-pillars .section-title {
+            color: rgb(204, 143, 17);
+            font-family: Jomolhari, Georgia, serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+
+        .pillars-diagram-container {
+            position: relative;
+            margin: 80px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 0px auto;
+        }
+
+        .chart-icons {
+            position: absolute;
+            top: 19px;
+            left: 19px;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .chart-icon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+            transform: translate(-50%, -50%);
+        }
+
+        .chart-icon i {
+            font-size: 18px;
+            color: rgb(12, 49, 68);
+        }
+
+        .financial-icon {
+            top: 25%;
+            left: 25%;
+        }
+
+        .physical-icon {
+            top: 25%;
+            right: 25%;
+        }
+
+        .mental-icon {
+            bottom: 25%;
+            right: 25%;
+        }
+
+        .social-icon {
+            bottom: 25%;
+            left: 25%;
+        }
+
+        .pillar-labels {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        .pillar-label {
+            position: absolute;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .pillar-label.top-left-label {
+            top: 10%;
+            left: 10%;
+            transform: translate(-50%, 50%);
+        }
+
+        .pillar-label.top-right-label {
+            top: 10%;
+            right: 10%;
+            transform: translate(50%, 50%);
+        }
+
+        .pillar-label.bottom-right-label {
+            bottom: 10%;
+            right: 10%;
+            transform: translate(50%, -50%);
+        }
+
+        .pillar-label.bottom-left-label {
+            bottom: 10%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pillar-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 8px;
+            font-family: Jomolhari, Georgia, serif;
+            letter-spacing: 0.5px;
+        }
+
+        .pillar-title.financial-wellness {
+            color: rgb(204, 143, 17);
+        }
+
+        .pillar-description {
+            font-size: 14px;
+            color: rgb(224, 224, 224);
+            margin: 0px;
+            line-height: 1.4;
+            font-family: "BR Segma", Arial, sans-serif;
+            font-style: italic;
+        }
+
+        .concluding-text {
+            color: rgb(204, 204, 204);
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .pillar-section {
+            background-color: white;
+            padding: 80px 0px;
+        }
+
+        .pillar-section .pillar-title {
+            color: rgb(204, 143, 17);
+            font-family: Jomolhari, Georgia, serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .pillar-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .initiatives-heading {
+            color: rgb(12, 49, 68);
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+
+        .initiatives-list {
+            list-style: none;
+            padding: 0px;
+            margin-bottom: 40px;
+        }
+
+        .initiatives-list li {
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .initiatives-list li::before {
+            content: "•";
+            color: rgb(204, 143, 17);
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0px;
+            top: -2px;
+        }
+
+        .initiatives-list li {
+            color: rgb(12, 49, 68);
+        }
+
+        .statistic-chart {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0px auto;
+        }
+
+        .chart-center-text,
+        .chart-caption {
+            font-family: "BR Segma", Arial, sans-serif;
+            color: rgb(12, 49, 68);
+        }
+
+        .chart-center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        .chart-caption {
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 20px;
+            line-height: 1.4;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .content-right img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .physical-wellness {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 20px;
+            background-color: white;
+            position: relative;
+            z-index: 10;
+        }
+
+        .intro-text {
+            color: rgb(12, 49, 68);
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .initiatives-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .initiative-block {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .initiative-icon {
+            width: 12px;
+            height: 12px;
+            background-color: rgb(204, 143, 17);
+            flex-shrink: 0;
+            margin-top: 8px;
+        }
+
+        .initiative-content {
+            flex: 1 1 0%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .initiative-title,
+        .initiative-description {
+            font-family: "BR Segma", Arial, sans-serif;
+            color: rgb(12, 49, 68);
+        }
+
+        .initiative-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .initiative-description {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0px;
+            opacity: 0.9;
+        }
+
+        .statistic-text {
+            color: rgb(12, 49, 68);
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1rem;
+            text-align: left;
+            margin: 0px;
+            font-weight: 500;
+        }
+
+        .mental-wellness {
+            background-color: rgb(12, 49, 68);
+            color: rgb(204, 143, 17);
+        }
+
+        .mental-wellness .pillar-title {
+            color: rgb(204, 143, 17);
+            font-family: Jomolhari, Georgia, serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .mental-wellness .pillar-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .mental-wellness .content-left img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .mental-wellness .initiatives-heading {
+            color: white;
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+
+        .mental-wellness .initiatives-list {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .mental-wellness .initiatives-list li {
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+            color: white;
+        }
+
+        .mental-wellness .initiatives-list li::before {
+            content: "•";
+            color: rgb(204, 143, 17);
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0px;
+            top: -2px;
+        }
+
+        .statistic-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .statistic-number,
+        .statistic-title,
+        .statistic-caption {
+            font-family: "BR Segma", Arial, sans-serif;
+            color: white;
+            margin: 0px;
+        }
+
+        .statistic-number {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .statistic-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .statistic-caption {
+            font-size: 1rem;
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+
+        .social-wellness {
+            background-color: rgb(248, 249, 250);
+            color: rgb(12, 49, 68);
+        }
+
+        .social-wellness .pillar-title {
+            color: rgb(204, 143, 17);
+            font-family: Jomolhari, Georgia, serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .social-wellness .section-intro {
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: left;
+            margin-bottom: 50px;
+            color: rgb(12, 49, 68);
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .grid-item {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 15px;
+        }
+
+        .item-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .social-icon {
+            font-size: 2.5rem;
+            color: rgb(204, 143, 17);
+            margin-bottom: 15px;
+        }
+
+        .item-title,
+        .item-description {
+            font-family: "BR Segma", Arial, sans-serif;
+            color: rgb(12, 49, 68);
+        }
+
+        .item-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .item-description {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0px;
+        }
+
+        .section-outro {
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+            color: rgb(12, 49, 68);
+            margin-top: 40px;
+        }
+
+        .two-column-section {
+            background-color: rgb(248, 249, 250);
+        }
+
+        .two-column-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0px;
+            min-height: 600px;
+        }
+
+        .left-column {
+            background-color: rgb(12, 49, 68);
+            color: rgb(204, 143, 17);
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .left-column-title {
+            color: rgb(204, 143, 17);
+            font-family: Jomolhari, Georgia, serif;
+            font-weight: bold;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .left-column-list {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .left-column-list li {
+            color: white;
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .left-column-list li::before {
+            content: "•";
+            color: rgb(204, 143, 17);
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0px;
+            top: -2px;
+        }
+
+        .right-column {
+            background-color: rgb(248, 249, 250);
+            color: rgb(12, 49, 68);
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-column-title {
+            color: rgb(12, 49, 68);
+            font-family: Jomolhari, Georgia, serif;
+            font-weight: bold;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .right-column-intro {
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: rgb(12, 49, 68);
+        }
+
+        .right-column-list {
+            list-style: none;
+            padding: 0px;
+            margin: 0px 0px 40px;
+        }
+
+        .right-column-list li {
+            color: rgb(12, 49, 68);
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .right-column-list li::before {
+            content: "•";
+            color: rgb(204, 143, 17);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0px;
+            top: -1px;
+        }
+
+        .right-column-image {
+            margin-top: auto;
+        }
+
+        .right-column-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+        }
+
+        .final-section {
+            background-color: rgb(12, 49, 68);
+            color: rgb(204, 143, 17);
+        }
+
+        .content-block {
+            margin-bottom: 60px;
+        }
+
+        .final-h1 {
+            color: rgb(204, 143, 17);
+            font-family: Jomolhari, Georgia, serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .final-p {
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .final-list {
+            list-style: none;
+            padding: 0px;
+            margin: 25px 0px;
+        }
+
+        .final-list li {
+            color: white;
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .final-list li::before {
+            content: "•";
+            color: rgb(204, 143, 17);
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0px;
+            top: -2px;
+        }
+
+        .final-divider {
+            border: none;
+            height: 2px;
+            background-color: rgb(204, 143, 17);
+            margin: 60px 0px;
+            opacity: 0.8;
+        }
+
+        .final-conclusion {
+            font-family: "BR Segma", Arial, sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+        }
+    </style>
 
     <!-- =======================================================
   * Template Name: FlexStart
@@ -63,6 +787,7 @@
 
     gtag('config', 'G-0TNVPCP4PN');
 </script>
+<!-- <script src="css_cleaner/css-analyzer.js"></script> -->
 
 <body>
 
@@ -82,9 +807,10 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
-                    
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle scrollto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle scrollto" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             About
                         </a>
                         <ul class="dropdown-menu">
@@ -93,7 +819,7 @@
                             <li><a class="dropdown-item" href="index.html#platform">Our Platform</a></li>
                         </ul>
                     </li>
-                    
+
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle scrollto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Solutions
@@ -103,14 +829,16 @@
                             <li><a class="dropdown-item" href="#partnerships">Partnerships</a></li>
                         </ul>
                     </li> -->
-                    
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle scrollto active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle scrollto active" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             LiveBalanced
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="livebalanced.html">About LiveBalanced</a></li>
-                            <li><a class="dropdown-item" href="healthandproductivity.html">Health & Productivity</a></li>
+                            <li><a class="dropdown-item" href="healthandproductivity.html">Health & Productivity</a>
+                            </li>
                             <li><a class="dropdown-item" href="wellness.html">Financial Wellness</a></li>
                             <li><a class="dropdown-item" href="wellness.html">Physical Wellness</a></li>
                             <li><a class="dropdown-item" href="wellness.html">Social Wellness</a></li>
@@ -118,9 +846,10 @@
                             <!-- <li><a class="dropdown-item" href="wellness.html">LivedBalanced Strategy</a></li> -->
                         </ul>
                     </li>
-                    
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle scrollto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle scrollto" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Community Engagement
                         </a>
                         <ul class="dropdown-menu">
@@ -128,10 +857,11 @@
                             <li><a class="dropdown-item" href="#community-events">Community Events</a></li>
                             <li><a class="dropdown-item" href="#academic-empowerment">Academic Empowerment</a></li>
                             <li><a class="dropdown-item" href="#hbcu-partnerships">HBCU Partnerships</a></li> -->
-                            <li><a class="dropdown-item" href="childrensbooks.html">Essential Reads for Every Child</a></li>
+                            <li><a class="dropdown-item" href="childrensbooks.html">Essential Reads for Every Child</a>
+                            </li>
                         </ul>
                     </li>
-                    
+
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle scrollto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Resources
@@ -162,10 +892,14 @@
                                     <span class="hero-title-accent"> | LiveBalanced</span>
                                 </h1>
                                 <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                                    Introducing <span class="hero-subtitle-accent">LiveBalanced</span>: A Holistic Approach to Wellbeing
+                                    Introducing <span class="hero-subtitle-accent">LiveBalanced</span>: A Holistic
+                                    Approach to Wellbeing
                                 </h2>
                                 <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
-                                    At Atlanta Life, we believe wellness is multi-dimensional, embracing mind, body, finances, and purpose. That's why our <span class="hero-description-accent">Holistic Wellness</span> approach empowers individuals, families, and communities to thrive in every aspect of life.
+                                    At Atlanta Life, we believe wellness is multi-dimensional, embracing mind, body,
+                                    finances, and purpose. That's why our <span class="hero-description-accent">Holistic
+                                        Wellness</span> approach empowers individuals, families, and communities to
+                                    thrive in every aspect of life.
                                 </p>
                             </div>
                         </div>
@@ -181,12 +915,12 @@
                             <h2 class="section-title text-start mb-5">
                                 The Four Pillars of LiveBalanced
                             </h2>
-                            
+
                             <!-- Four Pillars Diagram -->
                             <div class="pillars-diagram-container text-center mb-5">
                                 <div class="chart-container">
                                     <canvas id="pillarsChart"></canvas>
-                                    
+
                                     <!-- Icons positioned over chart segments -->
                                     <div class="chart-icons">
                                         <div class="chart-icon financial-icon">
@@ -202,24 +936,24 @@
                                             <i class="bi bi-people"></i>
                                         </div>
                                     </div>
-                                    
+
                                     <!-- Text Labels Outside the Diagram -->
                                     <div class="pillar-labels">
                                         <div class="pillar-label top-left-label">
                                             <h3 class="pillar-title financial-wellness">Financial Wellness</h3>
                                             <p class="pillar-description">Stability That Builds Legacies</p>
                                         </div>
-                                        
+
                                         <div class="pillar-label top-right-label">
                                             <h3 class="pillar-title">Physical Wellness</h3>
                                             <p class="pillar-description">Strength from the Inside Out</p>
                                         </div>
-                                        
+
                                         <div class="pillar-label bottom-right-label">
                                             <h3 class="pillar-title">Mental Wellness</h3>
                                             <p class="pillar-description">Wellness That Fosters Growth</p>
                                         </div>
-                                        
+
                                         <div class="pillar-label bottom-left-label">
                                             <h3 class="pillar-title">Social Wellness</h3>
                                             <p class="pillar-description">The Core of Holistic Living</p>
@@ -227,12 +961,14 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Concluding Paragraph -->
                             <div class="row">
                                 <div class="col-lg-8">
                                     <p class="concluding-text">
-                                        Our Holistic Wellness approach addresses these four essential dimensions to create a comprehensive framework for wellbeing that supports individuals at work, at home, and in their communities.
+                                        Our Holistic Wellness approach addresses these four essential dimensions to
+                                        create a comprehensive framework for wellbeing that supports individuals at
+                                        work, at home, and in their communities.
                                     </p>
                                 </div>
                             </div>
@@ -245,7 +981,7 @@
             <section class="pillar-section financial-wellness py-5">
                 <div class="container">
                     <h2 class="pillar-title">Financial Wellness: Stability That Builds Legacies</h2>
-                    
+
                     <div class="pillar-content">
                         <div class="content-left">
                             <h3 class="initiatives-heading">Our financial wellness initiatives include:</h3>
@@ -259,11 +995,13 @@
                                 <canvas id="financialChart"></canvas>
                                 <div class="chart-center-text">31%</div>
                             </div>
-                            <p class="chart-caption">Just 31% of American adults are considered financially healthy. 1</p>
+                            <p class="chart-caption">Just 31% of American adults are considered financially healthy. 1
+                            </p>
                         </div>
-                        
+
                         <div class="content-right">
-                            <img src="assets/img/livebalanced page imgs/LB image 1.png" alt="Financial consultation meeting">
+                            <img src="assets/img/livebalanced page imgs/LB image 1.png"
+                                alt="Financial consultation meeting">
                         </div>
                     </div>
                 </div>
@@ -273,43 +1011,47 @@
             <section class="pillar-section physical-wellness py-5">
                 <div class="container">
                     <h2 class="pillar-title">Physical Wellness: Strength from the Inside Out</h2>
-                    
+
                     <p class="intro-text">Partnering with employers and communities, we promote:</p>
-                    
+
                     <div class="initiatives-grid">
                         <div class="initiative-block">
                             <div class="initiative-icon"></div>
                             <div class="initiative-content">
                                 <h3 class="initiative-title">Disability and return-to-work support</h3>
-                                <p class="initiative-description">Comprehensive programs to help employees recover and return to productivity</p>
+                                <p class="initiative-description">Comprehensive programs to help employees recover and
+                                    return to productivity</p>
                             </div>
                         </div>
-                        
+
                         <div class="initiative-block">
                             <div class="initiative-icon"></div>
                             <div class="initiative-content">
                                 <h3 class="initiative-title">Preventive health tied to benefits and insurance</h3>
-                                <p class="initiative-description">Integrating wellness incentives with insurance offerings</p>
+                                <p class="initiative-description">Integrating wellness incentives with insurance
+                                    offerings</p>
                             </div>
                         </div>
-                        
+
                         <div class="initiative-block">
                             <div class="initiative-icon"></div>
                             <div class="initiative-content">
-                                <h3 class="initiative-title">Programs addressing sleep, fitness, nutrition, chronic illness</h3>
+                                <h3 class="initiative-title">Programs addressing sleep, fitness, nutrition, chronic
+                                    illness</h3>
                                 <p class="initiative-description">Holistic approaches to physical wellbeing</p>
                             </div>
                         </div>
-                        
+
                         <div class="initiative-block">
                             <div class="initiative-icon"></div>
                             <div class="initiative-content">
                                 <h3 class="initiative-title">Outreach and activations at the community level</h3>
-                                <p class="initiative-description">Bringing wellness resources directly to neighborhoods</p>
+                                <p class="initiative-description">Bringing wellness resources directly to neighborhoods
+                                </p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <p class="statistic-text">Statistic: 76% need to manage their condition during work hours. 2</p>
                 </div>
             </section>
@@ -318,12 +1060,12 @@
             <section class="pillar-section mental-wellness py-5">
                 <div class="container">
                     <h2 class="pillar-title">Mental Wellness: Resilience That Drives Results</h2>
-                    
+
                     <div class="pillar-content">
                         <div class="content-left">
                             <img src="assets/img/livebalanced page imgs/LB image 2.png" alt="Mindfulness group session">
                         </div>
-                        
+
                         <div class="content-right">
                             <h3 class="initiatives-heading">We tackle mental health head-on with:</h3>
                             <ul class="initiatives-list">
@@ -334,11 +1076,12 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="statistic-container">
                         <p class="statistic-number">57%</p>
                         <p class="statistic-title">Workers Report Burnout</p>
-                        <p class="statistic-caption">57% of workers reported symptoms associated with workplace burnout. 3</p>
+                        <p class="statistic-caption">57% of workers reported symptoms associated with workplace burnout.
+                            3</p>
                     </div>
                 </div>
             </section>
@@ -348,12 +1091,13 @@
                 <div class="container">
                     <!-- Full width header -->
                     <h2 class="pillar-title">Social Wellness: The Core of Holistic Living</h2>
-                    
+
                     <!-- Full width paragraph below header -->
                     <p class="section-intro">
-                        We address purpose in all dimensions: intellectual, emotional, occupational, social, spiritual and environmental.
+                        We address purpose in all dimensions: intellectual, emotional, occupational, social, spiritual
+                        and environmental.
                     </p>
-                    
+
                     <!-- 2x3 Grid for content -->
                     <div class="social-grid">
                         <!-- Grid Item 1 -->
@@ -366,7 +1110,7 @@
                                 </p>
                             </div>
                         </div>
-                        
+
                         <!-- Grid Item 2 -->
                         <div class="grid-item">
                             <div class="item-content">
@@ -377,7 +1121,7 @@
                                 </p>
                             </div>
                         </div>
-                        
+
                         <!-- Grid Item 3 -->
                         <div class="grid-item">
                             <div class="item-content">
@@ -388,7 +1132,7 @@
                                 </p>
                             </div>
                         </div>
-                        
+
                         <!-- Grid Item 4 -->
                         <div class="grid-item">
                             <div class="item-content">
@@ -399,7 +1143,7 @@
                                 </p>
                             </div>
                         </div>
-                        
+
                         <!-- Grid Item 5 -->
                         <div class="grid-item">
                             <div class="item-content">
@@ -410,7 +1154,7 @@
                                 </p>
                             </div>
                         </div>
-                        
+
                         <!-- Grid Item 6 -->
                         <div class="grid-item">
                             <div class="item-content">
@@ -422,10 +1166,11 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Full width paragraph below grid -->
                     <p class="section-outro">
-                        Statistic: Employees engaged by purpose are 3x more likely to stay with their employer and 2.5x more productive. 4
+                        Statistic: Employees engaged by purpose are 3x more likely to stay with their employer and 2.5x
+                        more productive. 4
                     </p>
                 </div>
             </section>
@@ -438,13 +1183,19 @@
                         <div class="left-column">
                             <h2 class="left-column-title">Why Holistic Wellness Matters for People and Performance</h2>
                             <ul class="left-column-list">
-                                <li>People who live their purpose at work are more productive than people who don't. They are also healthier, more resilient, and more likely to stay at the company. 5</li>
-                                <li>Boosted wellness yields $1,1003-$3,500 per employee annually, or 17-55% of average pay. 6</li>
-                                <li>Globally, scaled mental health interventions could drive $3.73=$11.7 trillion in value, and improve GDP by $4.4 trillion by 2050. 7</li>
-                                <li>Yet only 57% of employees report good overall health, while 1 in 5 employees face burnout. These outcomes come from tackling not just absenteeism, but presenteeism, when employees are present but not fully engaged. 8</li>
+                                <li>People who live their purpose at work are more productive than people who don't.
+                                    They are also healthier, more resilient, and more likely to stay at the company. 5
+                                </li>
+                                <li>Boosted wellness yields $1,1003-$3,500 per employee annually, or 17-55% of average
+                                    pay. 6</li>
+                                <li>Globally, scaled mental health interventions could drive $3.73=$11.7 trillion in
+                                    value, and improve GDP by $4.4 trillion by 2050. 7</li>
+                                <li>Yet only 57% of employees report good overall health, while 1 in 5 employees face
+                                    burnout. These outcomes come from tackling not just absenteeism, but presenteeism,
+                                    when employees are present but not fully engaged. 8</li>
                             </ul>
                         </div>
-                        
+
                         <!-- Right Column - Off-White Background -->
                         <div class="right-column">
                             <h2 class="right-column-title">Building a Sustainable Wellness Strategy</h2>
@@ -460,7 +1211,8 @@
                                 <li>Embedding wellness within organizational culture, not only benefits</li>
                             </ul>
                             <div class="right-column-image">
-                                <img src="assets/img/livebalanced page imgs/LB image 3.png" alt="Wellness approach illustration">
+                                <img src="assets/img/livebalanced page imgs/LB image 3.png"
+                                    alt="Wellness approach illustration">
                             </div>
                         </div>
                     </div>
@@ -490,7 +1242,8 @@
                     <div class="content-block">
                         <h1 class="final-h1">Call to Action</h1>
                         <p class="final-p">
-                            Let's collaborate to build a wellness strategy that transforms lives and uplifts communities.
+                            Let's collaborate to build a wellness strategy that transforms lives and uplifts
+                            communities.
                         </p>
                         <p class="final-p">
                             Contact Us: BusinessDevelopment@atlantalife.com
@@ -616,11 +1369,11 @@
 
         <!-- Chart.js Four Pillars Donut Chart -->
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
                 const ctx = document.getElementById('pillarsChart').getContext('2d');
-                
+
                 // Simple chart without icon plugin - icons are now HTML elements
-                
+
                 const pillarsChart = new Chart(ctx, {
                     type: 'doughnut',
                     data: {
@@ -659,7 +1412,7 @@
                             easing: 'easeOutQuart', // Gentler easing
                             animateRotate: false, // No rotation - more subtle
                             animateScale: true, // Keep scale but it will be gentler
-                            delay: function(context) {
+                            delay: function (context) {
                                 // Much shorter stagger for subtlety
                                 return context.dataIndex * 100;
                             }
@@ -688,9 +1441,9 @@
 
         <!-- Financial Wellness Chart -->
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
                 const financialCtx = document.getElementById('financialChart').getContext('2d');
-                
+
                 const financialChart = new Chart(financialCtx, {
                     type: 'doughnut',
                     data: {
