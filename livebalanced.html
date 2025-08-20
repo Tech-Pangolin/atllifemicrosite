@@ -47,39 +47,38 @@
     <!-- Custom CSS -->
 
     <style>
-        #livebalanced-hero {
+        #livebalanced #livebalanced-hero {
             background: url("assets/img/livebalanced page imgs/LB_heroimage.webp") center center / cover no-repeat;
             min-height: 100vh;
         }
 
-
-        .hero-title-main,
-        .hero-title-accent {
+        #livebalanced .hero-title-main,
+        #livebalanced .hero-title-accent {
             font-family: Jomolhari, Georgia, serif;
             font-weight: bold;
         }
 
-        .hero-title-main,
-        .initiatives-list li {
+        #livebalanced .hero-title-main,
+        #livebalanced .initiatives-list li {
             color: rgb(12, 49, 68);
         }
 
-        .hero-title-accent,
-        .hero-subtitle-accent {
+        #livebalanced .hero-title-accent,
+        #livebalanced .hero-subtitle-accent {
             color: rgb(204, 143, 17);
         }
 
-        .hero-subtitle,
-        .hero-description {
+        #livebalanced .hero-subtitle,
+        #livebalanced .hero-description {
             font-family: "BR Segma", Arial, sans-serif;
         }
 
-        .hero-subtitle {
+        #livebalanced .hero-subtitle {
             color: rgb(12, 49, 68);
             margin-top: 20px;
         }
 
-        .hero-description {
+        #livebalanced .hero-description {
             color: rgb(12, 49, 68);
             font-size: 18px;
             line-height: 1.6;
@@ -87,24 +86,24 @@
             width: 100%;
         }
 
-        .hero-description-accent {
+        #livebalanced .hero-description-accent {
             color: rgb(204, 143, 17);
             font-weight: bold;
         }
 
-        #four-pillars {
+        #livebalanced #four-pillars {
             background-color: rgb(12, 49, 68);
             color: white;
         }
 
-        #four-pillars .section-title {
+        #livebalanced #four-pillars .section-title {
             color: rgb(204, 143, 17);
             font-family: Jomolhari, Georgia, serif;
             font-weight: bold;
             font-size: 2.5rem;
         }
 
-        .pillars-diagram-container {
+        #livebalanced .pillars-diagram-container {
             position: relative;
             margin: 80px 0px;
             display: flex;
@@ -112,14 +111,14 @@
             align-items: center;
         }
 
-        .chart-container {
+        #livebalanced .chart-container {
             position: relative;
             width: 400px;
             height: 400px;
             margin: 0px auto;
         }
 
-        .chart-icons {
+        #livebalanced .chart-icons {
             position: absolute;
             top: 19px;
             left: 19px;
@@ -128,7 +127,7 @@
             pointer-events: none;
         }
 
-        .chart-icon {
+        #livebalanced .chart-icon {
             position: absolute;
             width: 40px;
             height: 40px;
@@ -141,33 +140,38 @@
             transform: translate(-50%, -50%);
         }
 
-        .chart-icon i {
+        #livebalanced .chart-icon i {
             font-size: 18px;
             color: rgb(12, 49, 68);
         }
 
-        .chart-icon.financial-icon {
+        #livebalanced .chart-icon.financial-icon {
             top: 25%;
             left: 25%;
         }
 
-        .chart-icon.physical-icon {
+        #livebalanced .chart-icon.financial-icon:hover {
+            top: 0%;
+            left: 0%;
+        }
+
+        #livebalanced .chart-icon.physical-icon {
             top: 25%;
             right: 25%;
         }
 
-        .chart-icon.mental-icon {
+        #livebalanced .chart-icon.mental-icon {
             bottom: 25%;
             right: 25%;
         }
 
-        .chart-icon.social-icon {
+        #livebalanced .chart-icon.social-icon {
             bottom: 25%;
             left: 25%;
             margin-bottom: unset;
         }
 
-        .pillar-labels {
+        #livebalanced .pillar-labels {
             position: absolute;
             width: 600px;
             height: 600px;
@@ -177,37 +181,37 @@
             pointer-events: none;
         }
 
-        .pillar-label {
+        #livebalanced .pillar-label {
             position: absolute;
             text-align: center;
             max-width: 300px;
         }
 
-        .pillar-label.top-left-label {
+        #livebalanced .pillar-label.top-left-label {
             top: 10%;
             left: 10%;
             transform: translate(-50%, 50%);
         }
 
-        .pillar-label.top-right-label {
+        #livebalanced .pillar-label.top-right-label {
             top: 10%;
             right: 10%;
             transform: translate(50%, 50%);
         }
 
-        .pillar-label.bottom-right-label {
+        #livebalanced .pillar-label.bottom-right-label {
             bottom: 10%;
             right: 10%;
             transform: translate(50%, -50%);
         }
 
-        .pillar-label.bottom-left-label {
+        #livebalanced .pillar-label.bottom-left-label {
             bottom: 10%;
             left: 10%;
             transform: translate(-50%, -50%);
         }
 
-        .pillar-title {
+        #livebalanced .pillar-title {
             font-size: 18px;
             font-weight: bold;
             color: white;
@@ -216,7 +220,7 @@
             letter-spacing: 0.5px;
         }
 
-        .pillar-description {
+        #livebalanced .pillar-description {
             font-size: 14px;
             color: rgb(224, 224, 224);
             margin: 0px;
@@ -225,19 +229,19 @@
             font-style: italic;
         }
 
-        .concluding-text {
+        #livebalanced .concluding-text {
             color: rgb(204, 204, 204);
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 16px;
             line-height: 1.6;
         }
 
-        .pillar-section {
+        #livebalanced .pillar-section {
             background-color: white;
             padding: 80px 0px;
         }
 
-        .pillar-section .pillar-title {
+        #livebalanced .pillar-section .pillar-title {
             color: rgb(204, 143, 17);
             font-family: Jomolhari, Georgia, serif;
             font-weight: bold;
@@ -246,27 +250,27 @@
             text-align: center;
         }
 
-        .pillar-content {
+        #livebalanced .pillar-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
             align-items: start;
         }
 
-        .initiatives-heading {
+        #livebalanced .initiatives-heading {
             color: rgb(12, 49, 68);
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.5rem;
             margin-bottom: 25px;
         }
 
-        .initiatives-list {
+        #livebalanced .initiatives-list {
             list-style: none;
             padding: 0px;
             margin-bottom: 40px;
         }
 
-        .initiatives-list li {
+        #livebalanced .initiatives-list li {
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.1rem;
             line-height: 1.6;
@@ -275,7 +279,7 @@
             position: relative;
         }
 
-        .initiatives-list li::before {
+        #livebalanced .initiatives-list li::before {
             content: "•";
             color: rgb(204, 143, 17);
             font-weight: bold;
@@ -285,20 +289,20 @@
             top: -2px;
         }
 
-        .statistic-chart {
+        #livebalanced .statistic-chart {
             position: relative;
             width: 200px;
             height: 200px;
             margin: 0px auto;
         }
 
-        .chart-center-text,
-        .chart-caption {
+        #livebalanced .chart-center-text,
+        #livebalanced .chart-caption {
             font-family: "BR Segma", Arial, sans-serif;
             color: rgb(12, 49, 68);
         }
 
-        .chart-center-text {
+        #livebalanced .chart-center-text {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -308,7 +312,7 @@
             z-index: 10;
         }
 
-        .chart-caption {
+        #livebalanced .chart-caption {
             font-size: 0.9rem;
             text-align: center;
             margin-top: 20px;
@@ -317,21 +321,21 @@
             width: 100%;
         }
 
-        .content-right img {
+        #livebalanced .content-right img {
             width: 100%;
             height: 400px;
             object-fit: cover;
             border-radius: 8px;
         }
 
-        .physical-wellness {
+        #livebalanced .physical-wellness {
             box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 20px;
             background-color: white;
             position: relative;
             z-index: 10;
         }
 
-        .intro-text {
+        #livebalanced .intro-text {
             color: rgb(12, 49, 68);
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.2rem;
@@ -339,20 +343,20 @@
             text-align: left;
         }
 
-        .initiatives-grid {
+        #livebalanced .initiatives-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
             margin-bottom: 50px;
         }
 
-        .initiative-block {
+        #livebalanced .initiative-block {
             display: flex;
             align-items: flex-start;
             gap: 20px;
         }
 
-        .initiative-icon {
+        #livebalanced .initiative-icon {
             width: 12px;
             height: 12px;
             background-color: rgb(204, 143, 17);
@@ -360,33 +364,27 @@
             margin-top: 8px;
         }
 
-        .initiative-content {
+        #livebalanced .initiative-content {
             flex: 1 1 0%;
             display: flex;
             flex-direction: column;
         }
 
-        .initiative-title,
-        .initiative-description {
-            font-family: "BR Segma", Arial, sans-serif;
-            color: rgb(12, 49, 68);
-        }
-
-        .initiative-title {
+        #livebalanced .initiative-title {
             font-size: 1.1rem;
             font-weight: bold;
             margin-bottom: 8px;
             line-height: 1.4;
         }
 
-        .initiative-description {
+        #livebalanced .initiative-description {
             font-size: 1rem;
             line-height: 1.5;
             margin: 0px;
             opacity: 0.9;
         }
 
-        .statistic-text {
+        #livebalanced .statistic-text {
             color: rgb(12, 49, 68);
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1rem;
@@ -395,21 +393,12 @@
             font-weight: 500;
         }
 
-        .mental-wellness {
+        #livebalanced .mental-wellness {
             background-color: rgb(12, 49, 68);
             color: rgb(204, 143, 17);
         }
 
-        .mental-wellness .pillar-title {
-            color: rgb(204, 143, 17);
-            font-family: Jomolhari, Georgia, serif;
-            font-weight: bold;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            text-align: center;
-        }
-
-        .mental-wellness .pillar-content {
+        #livebalanced .mental-wellness .pillar-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
@@ -417,26 +406,26 @@
             margin-bottom: 60px;
         }
 
-        .mental-wellness .content-left img {
+        #livebalanced .mental-wellness .content-left img {
             width: 100%;
             height: auto;
             border-radius: 8px;
         }
 
-        .mental-wellness .initiatives-heading {
+        #livebalanced .mental-wellness .initiatives-heading {
             color: white;
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.5rem;
             margin-bottom: 25px;
         }
 
-        .mental-wellness .initiatives-list {
+        #livebalanced .mental-wellness .initiatives-list {
             list-style: none;
             padding: 0px;
             margin: 0px;
         }
 
-        .mental-wellness .initiatives-list li {
+        #livebalanced .mental-wellness .initiatives-list li {
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.1rem;
             line-height: 1.6;
@@ -446,53 +435,43 @@
             color: white;
         }
 
-        .mental-wellness .initiatives-list li::before {
-            content: "•";
-            color: rgb(204, 143, 17);
-            font-weight: bold;
-            font-size: 1.5rem;
-            position: absolute;
-            left: 0px;
-            top: -2px;
-        }
-
-        .statistic-container {
+        #livebalanced .statistic-container {
             text-align: center;
             margin-top: 40px;
         }
 
-        .statistic-number,
-        .statistic-title,
-        .statistic-caption {
+        #livebalanced .statistic-number,
+        #livebalanced .statistic-title,
+        #livebalanced .statistic-caption {
             font-family: "BR Segma", Arial, sans-serif;
             color: white;
             margin: 0px;
         }
 
-        .statistic-number {
+        #livebalanced .statistic-number {
             font-size: 4rem;
             font-weight: bold;
             margin-bottom: 10px;
         }
 
-        .statistic-title {
+        #livebalanced .statistic-title {
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 15px;
         }
 
-        .statistic-caption {
+        #livebalanced .statistic-caption {
             font-size: 1rem;
             line-height: 1.4;
             opacity: 0.9;
         }
 
-        .social-wellness {
+        #livebalanced .social-wellness {
             background-color: rgb(248, 249, 250);
             color: rgb(12, 49, 68);
         }
 
-        .social-wellness .pillar-title {
+        #livebalanced .social-wellness .pillar-title {
             color: rgb(204, 143, 17);
             font-family: Jomolhari, Georgia, serif;
             font-weight: bold;
@@ -501,7 +480,7 @@
             text-align: left;
         }
 
-        .social-wellness .section-intro {
+        #livebalanced .social-wellness .section-intro {
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.2rem;
             line-height: 1.6;
@@ -510,7 +489,7 @@
             color: rgb(12, 49, 68);
         }
 
-        .social-grid {
+        #livebalanced .social-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto auto;
@@ -518,7 +497,7 @@
             margin-bottom: 50px;
         }
 
-        .grid-item {
+        #livebalanced .grid-item {
             background: white;
             border-radius: 12px;
             padding: 30px;
@@ -526,43 +505,37 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .grid-item:hover {
+        #livebalanced .grid-item:hover {
             transform: translateY(-5px);
             box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 15px;
         }
 
-        .item-content {
+        #livebalanced .item-content {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             text-align: left;
         }
 
-        .social-icon {
+        #livebalanced .social-icon {
             font-size: 2.5rem;
             color: rgb(204, 143, 17);
             margin-bottom: 15px;
         }
 
-        .item-title,
-        .item-description {
-            font-family: "BR Segma", Arial, sans-serif;
-            color: rgb(12, 49, 68);
-        }
-
-        .item-title {
+        #livebalanced .item-title {
             font-size: 1.3rem;
             font-weight: bold;
             margin-bottom: 15px;
         }
 
-        .item-description {
+        #livebalanced .item-description {
             font-size: 1rem;
             line-height: 1.5;
             margin: 0px;
         }
 
-        .section-outro {
+        #livebalanced .section-outro {
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.1rem;
             line-height: 1.6;
@@ -571,18 +544,18 @@
             margin-top: 40px;
         }
 
-        .two-column-section {
+        #livebalanced .two-column-section {
             background-color: rgb(248, 249, 250);
         }
 
-        .two-column-content {
+        #livebalanced .two-column-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 0px;
             min-height: 600px;
         }
 
-        .left-column {
+        #livebalanced .left-column {
             background-color: rgb(12, 49, 68);
             color: rgb(204, 143, 17);
             padding: 60px 40px;
@@ -591,7 +564,7 @@
             justify-content: flex-start;
         }
 
-        .left-column-title {
+        #livebalanced .left-column-title {
             color: rgb(204, 143, 17);
             font-family: Jomolhari, Georgia, serif;
             font-weight: bold;
@@ -600,13 +573,7 @@
             text-align: left;
         }
 
-        .left-column-list {
-            list-style: none;
-            padding: 0px;
-            margin: 0px;
-        }
-
-        .left-column-list li {
+        #livebalanced .left-column-list li {
             color: white;
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.1rem;
@@ -616,17 +583,7 @@
             position: relative;
         }
 
-        .left-column-list li::before {
-            content: "•";
-            color: rgb(204, 143, 17);
-            font-weight: bold;
-            font-size: 1.5rem;
-            position: absolute;
-            left: 0px;
-            top: -2px;
-        }
-
-        .right-column {
+        #livebalanced .right-column {
             background-color: rgb(248, 249, 250);
             color: rgb(12, 49, 68);
             padding: 60px 40px;
@@ -634,7 +591,7 @@
             flex-direction: column;
         }
 
-        .right-column-title {
+        #livebalanced .right-column-title {
             color: rgb(12, 49, 68);
             font-family: Jomolhari, Georgia, serif;
             font-weight: bold;
@@ -643,7 +600,7 @@
             text-align: left;
         }
 
-        .right-column-intro {
+        #livebalanced .right-column-intro {
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.1rem;
             line-height: 1.6;
@@ -651,13 +608,13 @@
             color: rgb(12, 49, 68);
         }
 
-        .right-column-list {
+        #livebalanced .right-column-list {
             list-style: none;
             padding: 0px;
             margin: 0px 0px 40px;
         }
 
-        .right-column-list li {
+        #livebalanced .right-column-list li {
             color: rgb(12, 49, 68);
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1rem;
@@ -667,7 +624,7 @@
             position: relative;
         }
 
-        .right-column-list li::before {
+        #livebalanced .right-column-list li::before {
             content: "•";
             color: rgb(204, 143, 17);
             font-weight: bold;
@@ -677,36 +634,22 @@
             top: -1px;
         }
 
-        .right-column-image {
+        #livebalanced .right-column-image {
             margin-top: auto;
         }
 
-        .right-column-image img {
+        #livebalanced .right-column-image img {
             width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
         }
 
-        .final-section {
-            background-color: rgb(12, 49, 68);
-            color: rgb(204, 143, 17);
-        }
-
-        .content-block {
+        #livebalanced .content-block {
             margin-bottom: 60px;
         }
 
-        .final-h1 {
-            color: rgb(204, 143, 17);
-            font-family: Jomolhari, Georgia, serif;
-            font-weight: bold;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            text-align: left;
-        }
-
-        .final-p {
+        #livebalanced .final-p {
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.1rem;
             line-height: 1.6;
@@ -714,13 +657,13 @@
             color: white;
         }
 
-        .final-list {
+        #livebalanced .final-list {
             list-style: none;
             padding: 0px;
             margin: 25px 0px;
         }
 
-        .final-list li {
+        #livebalanced .final-list li {
             color: white;
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.1rem;
@@ -730,17 +673,21 @@
             position: relative;
         }
 
-        .final-list li::before {
-            content: "•";
+        #livebalanced .final-h1 {
             color: rgb(204, 143, 17);
+            font-family: Jomolhari, Georgia, serif;
             font-weight: bold;
-            font-size: 1.5rem;
-            position: absolute;
-            left: 0px;
-            top: -2px;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: left;
         }
 
-        .final-divider {
+        #livebalanced .final-section {
+            background-color: rgb(12, 49, 68);
+            color: rgb(204, 143, 17);
+        }
+
+        #livebalanced .final-divider {
             border: none;
             height: 2px;
             background-color: rgb(204, 143, 17);
@@ -748,7 +695,7 @@
             opacity: 0.8;
         }
 
-        .final-conclusion {
+        #livebalanced .final-conclusion {
             font-family: "BR Segma", Arial, sans-serif;
             font-size: 1.2rem;
             line-height: 1.6;
@@ -756,42 +703,40 @@
             color: white;
             font-weight: 500;
         }
-        
-        /* Desktop hero content display */
-        .hero-content-mobile {
+
+        #livebalanced .hero-content-mobile {
             display: none;
         }
-        
-        .hero-content {
+
+        #livebalanced .hero-content {
             display: block;
             background-color: rgba(255, 255, 255, 0.6);
             padding: 30px 20px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 20px 0px;
         }
-        
-        h1.hero-title {
+
+        #livebalanced h1.hero-title {
             margin-bottom: 2rem;
         }
 
-        /* Mobile Four Pillars Grid Styles */
-        .mobile-pillars-grid {
-            padding: 20px 0;
+        #livebalanced .mobile-pillars-grid {
+            padding: 20px 0px;
         }
 
-        .mobile-pillar-item {
+        #livebalanced .mobile-pillar-item {
             text-align: center;
             padding: 25px 15px;
             margin-bottom: 20px;
             border-bottom: 2px solid rgba(204, 143, 17, 0.3);
         }
 
-        .mobile-pillar-item:last-child {
+        #livebalanced .mobile-pillar-item:last-child {
             border-bottom: none;
-            margin-bottom: 0;
+            margin-bottom: 0px;
         }
 
-        .mobile-pillar-title {
+        #livebalanced .mobile-pillar-title {
             font-size: 1.5rem;
             font-weight: bold;
             color: white;
@@ -800,175 +745,13 @@
             letter-spacing: 0.5px;
         }
 
-        .mobile-pillar-description {
+        #livebalanced .mobile-pillar-description {
             font-size: 1rem;
             color: rgb(224, 224, 224);
-            margin: 0;
+            margin: 0px;
             line-height: 1.4;
             font-family: "BR Segma", Arial, sans-serif;
             font-style: italic;
-        }
-
-        /* Ensure mobile grid takes full width */
-        @media (max-width: 991.98px) {
-            .mobile-pillars-grid .row {
-                margin: 0;
-            }
-            
-            .mobile-pillars-grid .col-12 {
-                padding: 0;
-            }
-            
-            /* Center the four pillars title on mobile */
-            #four-pillars .section-title {
-                text-align: center !important;
-            }
-            
-            /* Financial Wellness mobile adjustments */
-            .financial-wellness .pillar-content {
-                grid-template-columns: 1fr !important;
-                gap: 0 !important;
-            }
-            
-            .financial-wellness .content-left {
-                width: 100% !important;
-            }
-            
-            .financial-wellness .initiatives-heading,
-            .financial-wellness .initiatives-list {
-                padding-left: 20px !important;
-            }
-            
-            /* Physical Wellness mobile adjustments */
-            .initiatives-grid {
-                grid-template-columns: 1fr !important;
-                gap: 30px !important;
-                padding-left: 20px !important;
-            }
-            
-            .initiative-block {
-                margin-bottom: 20px;
-            }
-            
-            .initiative-block:last-child {
-                margin-bottom: 0;
-            }
-            
-            /* Mental Wellness mobile adjustments */
-            .mental-wellness .pillar-content {
-                grid-template-columns: 1fr !important;
-                gap: 0 !important;
-            }
-            
-            .mental-wellness .content-right {
-                width: 100% !important;
-            }
-            
-            .mental-wellness .initiatives-heading,
-            .mental-wellness .initiatives-list {
-                padding-left: 20px !important;
-            }
-            
-            /* Social Wellness mobile adjustments */
-            .social-wellness .pillar-title {
-                text-align: center !important;
-            }
-            
-            .social-wellness .section-intro {
-                text-align: left !important;
-                padding-left: 20px !important;
-            }
-            
-            .social-grid {
-                grid-template-columns: 1fr !important;
-                gap: 15px !important;
-            }
-            
-            .grid-item {
-                margin-bottom: 10px;
-                padding: 15px !important;
-            }
-            
-            .grid-item:last-child {
-                margin-bottom: 0;
-            }
-            
-            .grid-item .item-title {
-                font-size: 1.1rem !important;
-                margin-bottom: 8px !important;
-            }
-            
-            .grid-item .item-description {
-                font-size: 0.9rem !important;
-                line-height: 1.3 !important;
-            }
-            
-            .grid-item .social-icon {
-                font-size: 1.8rem !important;
-                margin-bottom: 10px !important;
-            }
-            
-            /* Two Column Section mobile adjustments */
-            .two-column-content {
-                grid-template-columns: 1fr !important;
-                gap: 0 !important;
-            }
-            
-            .left-column,
-            .right-column {
-                padding: 40px 20px !important;
-            }
-            
-            .left-column-title {
-                text-align: center !important;
-            }
-            
-            /* Hero section mobile adjustments */
-            .hero-content-mobile {
-                background-color: rgba(255, 255, 255, 0.6) !important;
-                padding: 30px 20px !important;
-                border-radius: 10px !important;
-                margin: 20px 0 !important;
-            }
-            
-            /* Show mobile version on small screens */
-            .hero-content-mobile {
-                display: block !important;
-            }
-            
-            /* Hide desktop version on small screens */
-            .hero-content {
-                display: none !important;
-            }
-            
-            /* Mobile hero title adjustments */
-            .hero-title {
-                margin-bottom: 30px !important;
-                display: flex !important;
-                flex-direction: column !important;
-                align-items: center !important;
-                text-align: center !important;
-            }
-            
-            .hero-title-main,
-            .hero-title-accent {
-                font-size: 2.5rem !important;
-                line-height: 1.2 !important;
-            }
-            
-            /* Mobile final conclusion adjustments */
-            .final-conclusion {
-                font-size: 1rem !important;
-                line-height: 1.8 !important;
-                color: transparent !important;
-            }
-            
-            .final-conclusion::before {
-                content: "Atlanta Life Insurance Company\A A Legacy of Empowerment Since 1905";
-                white-space: pre-line;
-                color: white !important;
-                display: block;
-            }
         }
     </style>
 
@@ -992,36 +775,34 @@
 
 <body>
 
-    <!-- Previous Videos -->
-    <!-- <iframe src="https://drive.google.com/file/d/15N6wx6Bl6cBOGdr7ErsQc4fJZOTSUB6S/preview" allow="autoplay"></iframe> -->
-    <!-- <iframe src="https://drive.google.com/file/d/1lB-W4Mt-yMnwK6ZszmWBcHV1bSunXkg_/preview" allow="autoplay"></iframe> -->
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div id="livebalanced">
+        <!-- ======= Header ======= -->
+        <header id="header" class="header fixed-top">
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center">
-                <img src="assets/img/atl-logo.png" alt="">
-                <span>Atlanta Life</span>
-            </a>
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <img src="assets/img/atl-logo.png" alt="">
+                    <span>Atlanta Life</span>
+                </a>
 
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle scrollto" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            About
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="index.html#team">Meet the Team</a></li>
-                            <li><a class="dropdown-item" href="index.html#about">History & Legacy</a></li>
-                            <li><a class="dropdown-item" href="index.html#platform">Our Platform</a></li>
-                        </ul>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle scrollto" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html#team">Meet the Team</a></li>
+                                <li><a class="dropdown-item" href="index.html#about">History & Legacy</a></li>
+                                <li><a class="dropdown-item" href="index.html#platform">Our Platform</a></li>
+                            </ul>
+                        </li>
 
-                    <!-- <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle scrollto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Reinsurance Solutions
                         </a>
@@ -1030,704 +811,725 @@
                         </ul>
                     </li> -->
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle scrollto active" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            LiveBalanced
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="livebalanced.html">About LiveBalanced</a></li>
-                            <li><a class="dropdown-item" href="healthandproductivity.html">Health & Productivity</a>
-                            </li>
-                              <li><a class="dropdown-item" href="financialwellness.html">Financial Wellness</a></li>
-                            <li><a class="dropdown-item" href="physicalwellness.html">Physical Wellness</a></li>
-                            <li><a class="dropdown-item" href="socialwellness.html">Social Wellness</a></li>
-                            <li><a class="dropdown-item" href="mentalwellness.html">Mental Wellness</a></li>
-                        </ul>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle scrollto active" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                LiveBalanced
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="livebalanced.html">About LiveBalanced</a></li>
+                                <li><a class="dropdown-item" href="healthandproductivity.html">Health & Productivity</a>
+                                </li>
+                                <li><a class="dropdown-item" href="financialwellness.html">Financial Wellness</a></li>
+                                <li><a class="dropdown-item" href="physicalwellness.html">Physical Wellness</a></li>
+                                <li><a class="dropdown-item" href="socialwellness.html">Social Wellness</a></li>
+                                <li><a class="dropdown-item" href="mentalwellness.html">Mental Wellness</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle scrollto" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Community Engagement
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- <li><a class="dropdown-item" href="#strategy">Our Strategy</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle scrollto" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Community Engagement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- <li><a class="dropdown-item" href="#strategy">Our Strategy</a></li>
                                 <li><a class="dropdown-item" href="#community-events">Community Events</a></li>
                                 <li><a class="dropdown-item" href="#academic-empowerment">Academic Empowerment</a></li>
                                 <li><a class="dropdown-item" href="#hbcu-partnerships">HBCU Partnerships</a></li> -->
-                            <li><a class="dropdown-item" href="childrensbooks.html">Essential Reads for Every Child</a>
-                            </li>
-                        </ul>
-                    </li>
+                                <li><a class="dropdown-item" href="childrensbooks.html">Essential Reads for Every
+                                        Child</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle scrollto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            News & Media
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="publications.html">Publications</a></li>
-                            <li><a class="dropdown-item" href="eblf.html">EBLF 2025</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle scrollto" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                News & Media
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="publications.html">Publications</a></li>
+                                <li><a class="dropdown-item" href="eblf.html">EBLF 2025</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav><!-- .navbar -->
 
 
-        </div>
-    </header><!-- End Header -->
+            </div>
+        </header><!-- End Header -->
 
-    <main id="main">
         <main id="main">
+            <main id="main">
 
-            <!-- ======= LiveBalanced Hero Section ======= -->
-            <section id="livebalanced-hero" class="hero d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 d-flex flex-column justify-content-center">
-                            <div class="hero-content" data-aos="fade-up">
-                                <h1 class="hero-title">
-                                    <span class="hero-title-main">ATLANTA LIFE</span>
-                                    <span class="hero-title-accent"> | LiveBalanced</span>
-                                </h1>
-                                <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                                    Introducing <span class="hero-subtitle-accent">LiveBalanced</span>: A Holistic
-                                    Approach to Wellbeing
-                                </h2>
-                                <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
-                                    At Atlanta Life, we believe wellness is multi-dimensional, embracing mind, body,
-                                    finances, and purpose. That's why our <span class="hero-description-accent">Holistic
-                                        Wellness</span> approach empowers individuals, families, and communities to
-                                    thrive in every aspect of life.
-                                </p>
-                            </div>
-                            <div class="hero-content-mobile" data-aos="fade-up">
-                                <h1 class="hero-title">
-                                    <span class="hero-title-main">ATLANTA LIFE</span>
-                                    <span class="hero-title-accent">LiveBalanced</span>
-                                </h1>
-                                <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                                    Introducing <span class="hero-subtitle-accent">LiveBalanced</span>:
-                                    <br>A Holistic Approach to Wellbeing
-                                </h2>
-                                <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
-                                    At Atlanta Life, we believe wellness is multi-dimensional, embracing mind, body,
-                                    finances, and purpose. That's why our <span class="hero-description-accent">Holistic
-                                        Wellness</span> approach empowers individuals, families, and communities to
-                                    thrive in every aspect of life.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ======= Four Pillars Section ======= -->
-            <section id="four-pillars" class="py-5">
-                <div class="container" data-aos="fade-up">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2 class="section-title text-start mb-5">
-                                The Four Pillars of LiveBalanced
-                            </h2>
-
-                            <!-- Desktop Four Pillars Diagram -->
-                            <div class="pillars-diagram-container text-center mb-5 d-none d-lg-block">
-                                <div class="chart-container">
-                                    <canvas id="pillarsChart"></canvas>
-
-                                    <!-- Icons positioned over chart segments -->
-                                    <div class="chart-icons">
-                                        <div class="chart-icon financial-icon">
-                                            <i class="bi bi-currency-dollar"></i>
-                                        </div>
-                                        <div class="chart-icon physical-icon">
-                                            <i class="bi bi-heart-pulse"></i>
-                                        </div>
-                                        <div class="chart-icon mental-icon">
-                                            <i class="bi bi-emoji-smile"></i>
-                                        </div>
-                                        <div class="chart-icon social-icon">
-                                            <i class="bi bi-people"></i>
-                                        </div>
-                                    </div>
-
-                                    <!-- Text Labels Outside the Diagram -->
-                                    <div class="pillar-labels">
-                                        <div class="pillar-label top-left-label">
-                                            <h3 class="pillar-title financial-wellness">Financial Wellness</h3>
-                                            <p class="pillar-description">Stability That Builds Legacies</p>
-                                        </div>
-
-                                        <div class="pillar-label top-right-label">
-                                            <h3 class="pillar-title">Physical Wellness</h3>
-                                            <p class="pillar-description">Strength from the Inside Out</p>
-                                        </div>
-
-                                        <div class="pillar-label bottom-right-label">
-                                            <h3 class="pillar-title">Mental Wellness</h3>
-                                            <p class="pillar-description">Wellness That Fosters Growth</p>
-                                        </div>
-
-                                        <div class="pillar-label bottom-left-label">
-                                            <h3 class="pillar-title">Social Wellness</h3>
-                                            <p class="pillar-description">The Core of Holistic Living</p>
-                                        </div>
-                                    </div>
+                <!-- ======= LiveBalanced Hero Section ======= -->
+                <section id="livebalanced-hero" class="hero d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 d-flex flex-column justify-content-center">
+                                <div class="hero-content" data-aos="fade-up">
+                                    <h1 class="hero-title">
+                                        <span class="hero-title-main">ATLANTA LIFE</span>
+                                        <span class="hero-title-accent"> | LiveBalanced</span>
+                                    </h1>
+                                    <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                                        Introducing <span class="hero-subtitle-accent">LiveBalanced</span>: A Holistic
+                                        Approach to Wellbeing
+                                    </h2>
+                                    <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                                        At Atlanta Life, we believe wellness is multi-dimensional, embracing mind, body,
+                                        finances, and purpose. That's why our <span
+                                            class="hero-description-accent">Holistic
+                                            Wellness</span> approach empowers individuals, families, and communities to
+                                        thrive in every aspect of life.
+                                    </p>
                                 </div>
-                            </div>
-
-                            <!-- Mobile Four Pillars Grid -->
-                            <div class="mobile-pillars-grid d-lg-none mb-5">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="mobile-pillar-item">
-                                            <h3 class="mobile-pillar-title financial-wellness">Financial Wellness</h3>
-                                            <p class="mobile-pillar-description">Stability That Builds Legacies</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="mobile-pillar-item">
-                                            <h3 class="mobile-pillar-title">Physical Wellness</h3>
-                                            <p class="mobile-pillar-description">Strength from the Inside Out</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="mobile-pillar-item">
-                                            <h3 class="mobile-pillar-title">Mental Wellness</h3>
-                                            <p class="mobile-pillar-description">Wellness That Fosters Growth</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="mobile-pillar-item">
-                                            <h3 class="mobile-pillar-title">Social Wellness</h3>
-                                            <p class="mobile-pillar-description">The Core of Holistic Living</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Concluding Paragraph -->
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <p class="concluding-text">
-                                        Our Holistic Wellness approach addresses these four essential dimensions to
-                                        create a comprehensive framework for wellbeing that supports individuals at
-                                        work, at home, and in their communities.
+                                <div class="hero-content-mobile" data-aos="fade-up">
+                                    <h1 class="hero-title">
+                                        <span class="hero-title-main">ATLANTA LIFE</span>
+                                        <span class="hero-title-accent">LiveBalanced</span>
+                                    </h1>
+                                    <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                                        Introducing <span class="hero-subtitle-accent">LiveBalanced</span>:
+                                        <br>A Holistic Approach to Wellbeing
+                                    </h2>
+                                    <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                                        At Atlanta Life, we believe wellness is multi-dimensional, embracing mind, body,
+                                        finances, and purpose. That's why our <span
+                                            class="hero-description-accent">Holistic
+                                            Wellness</span> approach empowers individuals, families, and communities to
+                                        thrive in every aspect of life.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- ======= Financial Wellness Section ======= -->
-            <section class="pillar-section financial-wellness py-5">
-                <div class="container">
-                    <h2 class="pillar-title">Financial Wellness: Stability That Builds Legacies</h2>
+                <!-- ======= Four Pillars Section ======= -->
+                <section id="four-pillars" class="py-5">
+                    <div class="container" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="section-title text-start mb-5">
+                                    The Four Pillars of LiveBalanced
+                                </h2>
 
-                    <div class="pillar-content">
-                        <div class="content-left">
-                            <h3 class="initiatives-heading">Our financial wellness initiatives include:</h3>
-                            <ul class="initiatives-list">
-                                <li>Life insurance as a legacy-building tool</li>
-                                <li>Education on budgeting, saving, credit, retirement</li>
-                                <li>Reinsurance strategies fueling reinvestment in people</li>
-                                <li>Equity-focused financial programs for underserved communities</li>
-                            </ul>
-                            <div class="statistic-chart">
-                                <canvas id="financialChart"></canvas>
-                                <div class="chart-center-text">31%</div>
+                                <!-- Desktop Four Pillars Diagram -->
+                                <div class="pillars-diagram-container text-center mb-5 d-none d-lg-block">
+                                    <div class="chart-container">
+                                        <canvas id="pillarsChart"></canvas>
+
+                                        <!-- Icons positioned over chart segments -->
+                                        <div class="chart-icons">
+                                            <div class="chart-icon financial-icon">
+                                                <i class="bi bi-currency-dollar"></i>
+                                            </div>
+                                            <div class="chart-icon physical-icon">
+                                                <i class="bi bi-heart-pulse"></i>
+                                            </div>
+                                            <div class="chart-icon mental-icon">
+                                                <i class="bi bi-emoji-smile"></i>
+                                            </div>
+                                            <div class="chart-icon social-icon">
+                                                <i class="bi bi-people"></i>
+                                            </div>
+                                        </div>
+
+                                        <!-- Text Labels Outside the Diagram -->
+                                        <div class="pillar-labels">
+                                            <div class="pillar-label top-left-label">
+                                                <h3 class="pillar-title financial-wellness">Financial Wellness</h3>
+                                                <p class="pillar-description">Stability That Builds Legacies</p>
+                                            </div>
+
+                                            <div class="pillar-label top-right-label">
+                                                <h3 class="pillar-title">Physical Wellness</h3>
+                                                <p class="pillar-description">Strength from the Inside Out</p>
+                                            </div>
+
+                                            <div class="pillar-label bottom-right-label">
+                                                <h3 class="pillar-title">Mental Wellness</h3>
+                                                <p class="pillar-description">Wellness That Fosters Growth</p>
+                                            </div>
+
+                                            <div class="pillar-label bottom-left-label">
+                                                <h3 class="pillar-title">Social Wellness</h3>
+                                                <p class="pillar-description">The Core of Holistic Living</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Mobile Four Pillars Grid -->
+                                <div class="mobile-pillars-grid d-lg-none mb-5">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="mobile-pillar-item">
+                                                <h3 class="mobile-pillar-title financial-wellness">Financial Wellness
+                                                </h3>
+                                                <p class="mobile-pillar-description">Stability That Builds Legacies</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mobile-pillar-item">
+                                                <h3 class="mobile-pillar-title">Physical Wellness</h3>
+                                                <p class="mobile-pillar-description">Strength from the Inside Out</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mobile-pillar-item">
+                                                <h3 class="mobile-pillar-title">Mental Wellness</h3>
+                                                <p class="mobile-pillar-description">Wellness That Fosters Growth</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mobile-pillar-item">
+                                                <h3 class="mobile-pillar-title">Social Wellness</h3>
+                                                <p class="mobile-pillar-description">The Core of Holistic Living</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Concluding Paragraph -->
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <p class="concluding-text">
+                                            Our Holistic Wellness approach addresses these four essential dimensions to
+                                            create a comprehensive framework for wellbeing that supports individuals at
+                                            work, at home, and in their communities.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="chart-caption">Just 31% of American adults are considered financially healthy. 1
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======= Financial Wellness Section ======= -->
+                <section class="pillar-section financial-wellness py-5">
+                    <div class="container">
+                        <h2 class="pillar-title">Financial Wellness: Stability That Builds Legacies</h2>
+
+                        <div class="pillar-content">
+                            <div class="content-left">
+                                <h3 class="initiatives-heading">Our financial wellness initiatives include:</h3>
+                                <ul class="initiatives-list">
+                                    <li>Life insurance as a legacy-building tool</li>
+                                    <li>Education on budgeting, saving, credit, retirement</li>
+                                    <li>Reinsurance strategies fueling reinvestment in people</li>
+                                    <li>Equity-focused financial programs for underserved communities</li>
+                                </ul>
+                                <div class="statistic-chart">
+                                    <canvas id="financialChart"></canvas>
+                                    <div class="chart-center-text">31%</div>
+                                </div>
+                                <p class="chart-caption">Just 31% of American adults are considered financially healthy.
+                                    1
+                                </p>
+                            </div>
+
+                            <div class="content-right d-none d-lg-block">
+                                <img src="assets/img/livebalanced page imgs/LB image 1.png"
+                                    alt="Financial consultation meeting">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======= Physical Wellness Section ======= -->
+                <section class="pillar-section physical-wellness py-5">
+                    <div class="container">
+                        <h2 class="pillar-title">Physical Wellness: Strength from the Inside Out</h2>
+
+                        <p class="intro-text">Partnering with employers and communities, we promote:</p>
+
+                        <div class="initiatives-grid">
+                            <div class="initiative-block">
+                                <div class="initiative-icon"></div>
+                                <div class="initiative-content">
+                                    <h3 class="initiative-title">Disability and return-to-work support</h3>
+                                    <p class="initiative-description">Comprehensive programs to help employees recover
+                                        and
+                                        return to productivity</p>
+                                </div>
+                            </div>
+
+                            <div class="initiative-block">
+                                <div class="initiative-icon"></div>
+                                <div class="initiative-content">
+                                    <h3 class="initiative-title">Preventive health tied to benefits and insurance</h3>
+                                    <p class="initiative-description">Integrating wellness incentives with insurance
+                                        offerings</p>
+                                </div>
+                            </div>
+
+                            <div class="initiative-block">
+                                <div class="initiative-icon"></div>
+                                <div class="initiative-content">
+                                    <h3 class="initiative-title">Programs addressing sleep, fitness, nutrition, chronic
+                                        illness</h3>
+                                    <p class="initiative-description">Holistic approaches to physical wellbeing</p>
+                                </div>
+                            </div>
+
+                            <div class="initiative-block">
+                                <div class="initiative-icon"></div>
+                                <div class="initiative-content">
+                                    <h3 class="initiative-title">Outreach and activations at the community level</h3>
+                                    <p class="initiative-description">Bringing wellness resources directly to
+                                        neighborhoods
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="statistic-text">Statistic: 76% need to manage their condition during work hours. 2</p>
+                    </div>
+                </section>
+
+                <!-- ======= Mental Wellness Section ======= -->
+                <section class="pillar-section mental-wellness py-5">
+                    <div class="container">
+                        <h2 class="pillar-title">Mental Wellness: Resilience That Drives Results</h2>
+
+                        <div class="pillar-content">
+                            <div class="content-left d-none d-lg-block">
+                                <img src="assets/img/livebalanced page imgs/LB image 2.png"
+                                    alt="Mindfulness group session">
+                            </div>
+
+                            <div class="content-right">
+                                <h3 class="initiatives-heading">We tackle mental health head-on with:</h3>
+                                <ul class="initiatives-list">
+                                    <li>Workplace training on stress, anxiety, and burnout</li>
+                                    <li>Tools for emotional and behavioral wellbeing</li>
+                                    <li>Benefits design inclusive of mental health services</li>
+                                    <li>Collaboration with mental health experts and employers</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="statistic-container">
+                            <p class="statistic-number">57%</p>
+                            <p class="statistic-title">Workers Report Burnout</p>
+                            <p class="statistic-caption">57% of workers reported symptoms associated with workplace
+                                burnout.
+                                3</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======= Social Wellness Section ======= -->
+                <section class="pillar-section social-wellness py-5">
+                    <div class="container">
+                        <!-- Full width header -->
+                        <h2 class="pillar-title">Social Wellness: The Core of Holistic Living</h2>
+
+                        <!-- Full width paragraph below header -->
+                        <p class="section-intro">
+                            We address purpose in all dimensions: intellectual, emotional, occupational, social,
+                            spiritual
+                            and environmental.
+                        </p>
+
+                        <!-- 2x3 Grid for content -->
+                        <div class="social-grid">
+                            <!-- Grid Item 1 -->
+                            <div class="grid-item">
+                                <div class="item-content">
+                                    <i class="bi bi-lightbulb-fill social-icon"></i>
+                                    <h3 class="item-title">Intellectual</h3>
+                                    <p class="item-description">
+                                        Fostering growth, learning and creativity
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Grid Item 2 -->
+                            <div class="grid-item">
+                                <div class="item-content">
+                                    <i class="bi bi-heart-fill social-icon"></i>
+                                    <h3 class="item-title">Emotional</h3>
+                                    <p class="item-description">
+                                        Promoting emotional intelligence and inner peace
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Grid Item 3 -->
+                            <div class="grid-item">
+                                <div class="item-content">
+                                    <i class="bi bi-people-fill social-icon"></i>
+                                    <h3 class="item-title">Social</h3>
+                                    <p class="item-description">
+                                        Building social ties and workplace belonging
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Grid Item 4 -->
+                            <div class="grid-item">
+                                <div class="item-content">
+                                    <i class="bi bi-briefcase-fill social-icon"></i>
+                                    <h3 class="item-title">Occupational</h3>
+                                    <p class="item-description">
+                                        Aligning work with personal values
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Grid Item 5 -->
+                            <div class="grid-item">
+                                <div class="item-content">
+                                    <i class="bi bi-star-fill social-icon"></i>
+                                    <h3 class="item-title">Spiritual</h3>
+                                    <p class="item-description">
+                                        Encouraging connection to a higher purpose
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Grid Item 6 -->
+                            <div class="grid-item">
+                                <div class="item-content">
+                                    <i class="bi bi-tree-fill social-icon"></i>
+                                    <h3 class="item-title">Environmental</h3>
+                                    <p class="item-description">
+                                        Cultivating healthy spaces and environmental stewardship
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Full width paragraph below grid -->
+                        <p class="section-outro">
+                            Statistic: Employees engaged by purpose are 3x more likely to stay with their employer and
+                            2.5x
+                            more productive. 4
+                        </p>
+                    </div>
+                </section>
+
+                <!-- ======= Two Column Section ======= -->
+                <section class="two-column-section py-5">
+                    <div class="container">
+                        <div class="two-column-content">
+                            <!-- Left Column - Dark Blue Background -->
+                            <div class="left-column">
+                                <h2 class="left-column-title">Why Holistic Wellness Matters for People and Performance
+                                </h2>
+                                <ul class="left-column-list">
+                                    <li>People who live their purpose at work are more productive than people who don't.
+                                        They are also healthier, more resilient, and more likely to stay at the company.
+                                        5
+                                    </li>
+                                    <li>Boosted wellness yields $1,1003-$3,500 per employee annually, or 17-55% of
+                                        average
+                                        pay. 6</li>
+                                    <li>Globally, scaled mental health interventions could drive $3.73=$11.7 trillion in
+                                        value, and improve GDP by $4.4 trillion by 2050. 7</li>
+                                    <li>Yet only 57% of employees report good overall health, while 1 in 5 employees
+                                        face
+                                        burnout. These outcomes come from tackling not just absenteeism, but
+                                        presenteeism,
+                                        when employees are present but not fully engaged. 8</li>
+                                </ul>
+                            </div>
+
+                            <!-- Right Column - Off-White Background -->
+                            <div class="right-column">
+                                <h2 class="right-column-title">Building a Sustainable Wellness Strategy</h2>
+                                <p class="right-column-intro">
+                                    Atlanta Life's model mirrors proven organizational approaches by focusing on:
+                                </p>
+                                <ul class="right-column-list">
+                                    <li>Understanding employee health baselines</li>
+                                    <li>Tailoring wellness initiatives to diverse needs</li>
+                                    <li>Measuring 3-5 key health and productivity metrics</li>
+                                    <li>Ensuring leadership sponsorship and accountability</li>
+                                    <li>Addressing root workplace causes of stress and burnout</li>
+                                    <li>Embedding wellness within organizational culture, not only benefits</li>
+                                </ul>
+                                <div class="right-column-image">
+                                    <img src="assets/img/livebalanced page imgs/LB image 3.png"
+                                        alt="Wellness approach illustration">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======= Final Section ======= -->
+                <section class="final-section py-5">
+                    <div class="container">
+                        <!-- First Content Block -->
+                        <div class="content-block">
+                            <h1 class="final-h1">Atlanta Life: Insight to Impact</h1>
+                            <p class="final-p">
+                                By aligning data-driven global insights with our century-old legacy, we offer:
+                            </p>
+                            <ul class="final-list">
+                                <li>A measurable, value-aligned wellness framework</li>
+                                <li>Seamless integration into benefits, reinsurance and engagement strategies</li>
+                                <li>Programs supporting underserved communities while delivering measurable ROI</li>
+                            </ul>
+                            <p class="final-p">
+                                Holistic wellness is how Atlanta Life helps people not only live longer, but live
+                                better.
                             </p>
                         </div>
 
-                        <div class="content-right d-none d-lg-block">
-                            <img src="assets/img/livebalanced page imgs/LB image 1.png"
-                                alt="Financial consultation meeting">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ======= Physical Wellness Section ======= -->
-            <section class="pillar-section physical-wellness py-5">
-                <div class="container">
-                    <h2 class="pillar-title">Physical Wellness: Strength from the Inside Out</h2>
-
-                    <p class="intro-text">Partnering with employers and communities, we promote:</p>
-
-                    <div class="initiatives-grid">
-                        <div class="initiative-block">
-                            <div class="initiative-icon"></div>
-                            <div class="initiative-content">
-                                <h3 class="initiative-title">Disability and return-to-work support</h3>
-                                <p class="initiative-description">Comprehensive programs to help employees recover and
-                                    return to productivity</p>
-                            </div>
-                        </div>
-
-                        <div class="initiative-block">
-                            <div class="initiative-icon"></div>
-                            <div class="initiative-content">
-                                <h3 class="initiative-title">Preventive health tied to benefits and insurance</h3>
-                                <p class="initiative-description">Integrating wellness incentives with insurance
-                                    offerings</p>
-                            </div>
-                        </div>
-
-                        <div class="initiative-block">
-                            <div class="initiative-icon"></div>
-                            <div class="initiative-content">
-                                <h3 class="initiative-title">Programs addressing sleep, fitness, nutrition, chronic
-                                    illness</h3>
-                                <p class="initiative-description">Holistic approaches to physical wellbeing</p>
-                            </div>
-                        </div>
-
-                        <div class="initiative-block">
-                            <div class="initiative-icon"></div>
-                            <div class="initiative-content">
-                                <h3 class="initiative-title">Outreach and activations at the community level</h3>
-                                <p class="initiative-description">Bringing wellness resources directly to neighborhoods
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p class="statistic-text">Statistic: 76% need to manage their condition during work hours. 2</p>
-                </div>
-            </section>
-
-            <!-- ======= Mental Wellness Section ======= -->
-            <section class="pillar-section mental-wellness py-5">
-                <div class="container">
-                    <h2 class="pillar-title">Mental Wellness: Resilience That Drives Results</h2>
-
-                    <div class="pillar-content">
-                        <div class="content-left d-none d-lg-block">
-                            <img src="assets/img/livebalanced page imgs/LB image 2.png" alt="Mindfulness group session">
-                        </div>
-
-                        <div class="content-right">
-                            <h3 class="initiatives-heading">We tackle mental health head-on with:</h3>
-                            <ul class="initiatives-list">
-                                <li>Workplace training on stress, anxiety, and burnout</li>
-                                <li>Tools for emotional and behavioral wellbeing</li>
-                                <li>Benefits design inclusive of mental health services</li>
-                                <li>Collaboration with mental health experts and employers</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="statistic-container">
-                        <p class="statistic-number">57%</p>
-                        <p class="statistic-title">Workers Report Burnout</p>
-                        <p class="statistic-caption">57% of workers reported symptoms associated with workplace burnout.
-                            3</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ======= Social Wellness Section ======= -->
-            <section class="pillar-section social-wellness py-5">
-                <div class="container">
-                    <!-- Full width header -->
-                    <h2 class="pillar-title">Social Wellness: The Core of Holistic Living</h2>
-
-                    <!-- Full width paragraph below header -->
-                    <p class="section-intro">
-                        We address purpose in all dimensions: intellectual, emotional, occupational, social, spiritual
-                        and environmental.
-                    </p>
-
-                    <!-- 2x3 Grid for content -->
-                    <div class="social-grid">
-                        <!-- Grid Item 1 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-lightbulb-fill social-icon"></i>
-                                <h3 class="item-title">Intellectual</h3>
-                                <p class="item-description">
-                                    Fostering growth, learning and creativity
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Grid Item 2 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-heart-fill social-icon"></i>
-                                <h3 class="item-title">Emotional</h3>
-                                <p class="item-description">
-                                    Promoting emotional intelligence and inner peace
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Grid Item 3 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-people-fill social-icon"></i>
-                                <h3 class="item-title">Social</h3>
-                                <p class="item-description">
-                                    Building social ties and workplace belonging
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Grid Item 4 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-briefcase-fill social-icon"></i>
-                                <h3 class="item-title">Occupational</h3>
-                                <p class="item-description">
-                                    Aligning work with personal values
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Grid Item 5 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-star-fill social-icon"></i>
-                                <h3 class="item-title">Spiritual</h3>
-                                <p class="item-description">
-                                    Encouraging connection to a higher purpose
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Grid Item 6 -->
-                        <div class="grid-item">
-                            <div class="item-content">
-                                <i class="bi bi-tree-fill social-icon"></i>
-                                <h3 class="item-title">Environmental</h3>
-                                <p class="item-description">
-                                    Cultivating healthy spaces and environmental stewardship
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Full width paragraph below grid -->
-                    <p class="section-outro">
-                        Statistic: Employees engaged by purpose are 3x more likely to stay with their employer and 2.5x
-                        more productive. 4
-                    </p>
-                </div>
-            </section>
-
-            <!-- ======= Two Column Section ======= -->
-            <section class="two-column-section py-5">
-                <div class="container">
-                    <div class="two-column-content">
-                        <!-- Left Column - Dark Blue Background -->
-                        <div class="left-column">
-                            <h2 class="left-column-title">Why Holistic Wellness Matters for People and Performance</h2>
-                            <ul class="left-column-list">
-                                <li>People who live their purpose at work are more productive than people who don't.
-                                    They are also healthier, more resilient, and more likely to stay at the company. 5
-                                </li>
-                                <li>Boosted wellness yields $1,1003-$3,500 per employee annually, or 17-55% of average
-                                    pay. 6</li>
-                                <li>Globally, scaled mental health interventions could drive $3.73=$11.7 trillion in
-                                    value, and improve GDP by $4.4 trillion by 2050. 7</li>
-                                <li>Yet only 57% of employees report good overall health, while 1 in 5 employees face
-                                    burnout. These outcomes come from tackling not just absenteeism, but presenteeism,
-                                    when employees are present but not fully engaged. 8</li>
-                            </ul>
-                        </div>
-
-                        <!-- Right Column - Off-White Background -->
-                        <div class="right-column">
-                            <h2 class="right-column-title">Building a Sustainable Wellness Strategy</h2>
-                            <p class="right-column-intro">
-                                Atlanta Life's model mirrors proven organizational approaches by focusing on:
+                        <!-- Second Content Block -->
+                        <div class="content-block">
+                            <h1 class="final-h1">Call to Action</h1>
+                            <p class="final-p">
+                                Let's collaborate to build a wellness strategy that transforms lives and uplifts
+                                communities.
                             </p>
-                            <ul class="right-column-list">
-                                <li>Understanding employee health baselines</li>
-                                <li>Tailoring wellness initiatives to diverse needs</li>
-                                <li>Measuring 3-5 key health and productivity metrics</li>
-                                <li>Ensuring leadership sponsorship and accountability</li>
-                                <li>Addressing root workplace causes of stress and burnout</li>
-                                <li>Embedding wellness within organizational culture, not only benefits</li>
-                            </ul>
-                            <div class="right-column-image">
-                                <img src="assets/img/livebalanced page imgs/LB image 3.png"
-                                    alt="Wellness approach illustration">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ======= Final Section ======= -->
-            <section class="final-section py-5">
-                <div class="container">
-                    <!-- First Content Block -->
-                    <div class="content-block">
-                        <h1 class="final-h1">Atlanta Life: Insight to Impact</h1>
-                        <p class="final-p">
-                            By aligning data-driven global insights with our century-old legacy, we offer:
-                        </p>
-                        <ul class="final-list">
-                            <li>A measurable, value-aligned wellness framework</li>
-                            <li>Seamless integration into benefits, reinsurance and engagement strategies</li>
-                            <li>Programs supporting underserved communities while delivering measurable ROI</li>
-                        </ul>
-                        <p class="final-p">
-                            Holistic wellness is how Atlanta Life helps people not only live longer, but live better.
-                        </p>
-                    </div>
-
-                    <!-- Second Content Block -->
-                    <div class="content-block">
-                        <h1 class="final-h1">Call to Action</h1>
-                        <p class="final-p">
-                            Let's collaborate to build a wellness strategy that transforms lives and uplifts
-                            communities.
-                        </p>
-                        <p class="final-p">
-                            Contact Us: BusinessDevelopment@atlantalife.com
-                        </p>
-                    </div>
-
-                    <!-- Horizontal Rule -->
-                    <hr class="final-divider">
-
-                    <!-- Final Paragraph -->
-                    <p class="final-conclusion">
-                        Atlanta Life Insurance Company | A Legacy of Empowerment Since 1905
-                    </p>
-                </div>
-            </section>
-
-
-        </main><!-- End #main -->
-
-        <!-- ======= Footer ======= -->
-        <footer id="footer" class="footer">
-
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row gy-4">
-                        <div class="col-lg-5 col-md-12 footer-info">
-                            <a href="index.html" class="logo d-flex align-items-center">
-                                <img src="assets/img/atl-logo.png" alt="">
-                                <span>Atlanta Life</span>
-                            </a>
-                            <p>Legacy | Power | Community | Pride | Honor | Prosperity</p>
-                            <div class="social-links mt-3">
-                                <a href="https://twitter.com/atlantalifeins" class="twitter"><i
-                                        class="bi bi-twitter"></i></a>
-                                <a href="https://www.facebook.com/atlantalifeins/" class="facebook"><i
-                                        class="bi bi-facebook"></i></a>
-                                <a href="https://www.instagram.com/atlantalife" class="instagram"><i
-                                        class="bi bi-instagram"></i></a>
-                                <a href="https://www.youtube.com/@atlantalifeinsurance1624" class="linkedin"><i
-                                        class="bi bi-youtube"></i></a>
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-2 col-6 footer-links">
-                            <!-- Spacer div -->
-                            <h4>Follow Us!</h4>
-                            <ul>
-                                <li><i class="bi bi-chevron-right"></i> <a href="https://twitter.com/atlantalifeins">X
-                                        (Formerly Twitter)</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a
-                                        href="https://www.instagram.com/atlantalife">Instagram</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a
-                                        href="https://www.youtube.com/@AtlantaLifeInsuranceCompany">Youtube</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a
-                                        href="https://www.facebook.com/atlantalifeins/">Facebook</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-2 col-6 footer-links">
-                            <h4>Read About Us</h4>
-                            <ul>
-                                <li><i class="bi bi-chevron-right"></i> <a href="flyers/ALIC_2024_OnePage.pdf">One Page
-                                        Brief</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a
-                                        href="flyers/ALIC_2024_Partnership.pdf">Partnership</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a
-                                        href="flyers/ALIC_2024_Reinsurer.pdf">Reinsurance</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a
-                                        href="flyers/ALIC_2024_CapabilityStatement.pdf">Capabilities Statement</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a
-                                        href="flyers/ALIC_2024_StrategicBenefitsPartner.pdf">Strategic Benefit
-                                        Partner</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                            <h4>Contact Us</h4>
-                            <p>
-                                600 Peachtree St NE <br>
-                                Suite 2350 <br>
-                                Atlanta, GA 30308 <br>
-                                United States <br><br>
-                                <strong>Phone:</strong> +1 888-407-3209<br>
-                                <strong>Email:</strong> info@atlantalife.com<br>
+                            <p class="final-p">
+                                Contact Us: BusinessDevelopment@atlantalife.com
                             </p>
-
                         </div>
 
+                        <!-- Horizontal Rule -->
+                        <hr class="final-divider">
+
+                        <!-- Final Paragraph -->
+                        <p class="final-conclusion">
+                            Atlanta Life Insurance Company | A Legacy of Empowerment Since 1905
+                        </p>
+                    </div>
+                </section>
+
+
+            </main><!-- End #main -->
+
+            <!-- ======= Footer ======= -->
+            <footer id="footer" class="footer">
+
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row gy-4">
+                            <div class="col-lg-5 col-md-12 footer-info">
+                                <a href="index.html" class="logo d-flex align-items-center">
+                                    <img src="assets/img/atl-logo.png" alt="">
+                                    <span>Atlanta Life</span>
+                                </a>
+                                <p>Legacy | Power | Community | Pride | Honor | Prosperity</p>
+                                <div class="social-links mt-3">
+                                    <a href="https://twitter.com/atlantalifeins" class="twitter"><i
+                                            class="bi bi-twitter"></i></a>
+                                    <a href="https://www.facebook.com/atlantalifeins/" class="facebook"><i
+                                            class="bi bi-facebook"></i></a>
+                                    <a href="https://www.instagram.com/atlantalife" class="instagram"><i
+                                            class="bi bi-instagram"></i></a>
+                                    <a href="https://www.youtube.com/@atlantalifeinsurance1624" class="linkedin"><i
+                                            class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-6 footer-links">
+                                <!-- Spacer div -->
+                                <h4>Follow Us!</h4>
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <a
+                                            href="https://twitter.com/atlantalifeins">X
+                                            (Formerly Twitter)</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <a
+                                            href="https://www.instagram.com/atlantalife">Instagram</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <a
+                                            href="https://www.youtube.com/@AtlantaLifeInsuranceCompany">Youtube</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <a
+                                            href="https://www.facebook.com/atlantalifeins/">Facebook</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-2 col-6 footer-links">
+                                <h4>Read About Us</h4>
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <a href="flyers/ALIC_2024_OnePage.pdf">One
+                                            Page
+                                            Brief</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <a
+                                            href="flyers/ALIC_2024_Partnership.pdf">Partnership</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <a
+                                            href="flyers/ALIC_2024_Reinsurer.pdf">Reinsurance</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <a
+                                            href="flyers/ALIC_2024_CapabilityStatement.pdf">Capabilities Statement</a>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <a
+                                            href="flyers/ALIC_2024_StrategicBenefitsPartner.pdf">Strategic Benefit
+                                            Partner</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                                <h4>Contact Us</h4>
+                                <p>
+                                    600 Peachtree St NE <br>
+                                    Suite 2350 <br>
+                                    Atlanta, GA 30308 <br>
+                                    United States <br><br>
+                                    <strong>Phone:</strong> +1 888-407-3209<br>
+                                    <strong>Email:</strong> info@atlantalife.com<br>
+                                </p>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="container">
-                <div class="copyright">
-                    &copy; Copyright <strong><span>Atlanta Life</span></strong>. All Rights Reserved
+                <div class="container">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Atlanta Life</span></strong>. All Rights Reserved
+                    </div>
+
                 </div>
+            </footer><!-- End Footer -->
 
-            </div>
-        </footer><!-- End Footer -->
+            <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                    class="bi bi-arrow-up-short"></i></a>
+    </div>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Form submission -->
+    <script src="forms/validate.js"></script>
 
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-                class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-        <!-- Jquery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- Form submission -->
-        <script src="forms/validate.js"></script>
-
-        <!-- Vendor JS Files -->
-        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-        <!-- Template Main JS File -->
-        <script src="assets/js/main.js"></script>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="css-analyzer.js"></script>
 
 
-        <!-- Chart.js Four Pillars Donut Chart -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const ctx = document.getElementById('pillarsChart').getContext('2d');
+    <!-- Chart.js Four Pillars Donut Chart -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('pillarsChart').getContext('2d');
 
-                // Simple chart without icon plugin - icons are now HTML elements
+            // Simple chart without icon plugin - icons are now HTML elements
 
-                const pillarsChart = new Chart(ctx, {
-                    type: 'doughnut',
-                    data: {
-                        labels: ['Financial Wellness', 'Physical Wellness', 'Mental Wellness', 'Social Wellness'],
-                        datasets: [{
-                            data: [25, 25, 25, 25], // Equal segments for four pillars
-                            backgroundColor: [
-                                '#87CEEB', // Light blue for Financial
-                                '#87CEEB', // Light blue for Physical
-                                '#87CEEB', // Light blue for Mental
-                                '#87CEEB'  // Light blue for Social
-                            ],
-                            borderColor: [
-                                '#0C3144', // Dark blue border
-                                '#0C3144',
-                                '#0C3144',
-                                '#0C3144'
-                            ],
-                            borderWidth: 6,
-                            cutout: '40%', // Creates a smaller donut hole
-                            hoverOffset: 35, // Pops out segments on hover
-                            hoverBorderWidth: 4,
-                            hoverBackgroundColor: [
-                                '#cc8f11', // Darker blue for Financial on hover
-                                '#cc8f11', // Darker blue for Physical on hover
-                                '#cc8f11', // Darker blue for Mental on hover
-                                '#cc8f11'  // Darker blue for Social on hover
-                            ]
-                        }]
+            const pillarsChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Financial Wellness', 'Physical Wellness', 'Mental Wellness', 'Social Wellness'],
+                    datasets: [{
+                        data: [25, 25, 25, 25], // Equal segments for four pillars
+                        backgroundColor: [
+                            '#87CEEB', // Light blue for Financial
+                            '#87CEEB', // Light blue for Physical
+                            '#87CEEB', // Light blue for Mental
+                            '#87CEEB'  // Light blue for Social
+                        ],
+                        borderColor: [
+                            '#0C3144', // Dark blue border
+                            '#0C3144',
+                            '#0C3144',
+                            '#0C3144'
+                        ],
+                        borderWidth: 6,
+                        cutout: '40%', // Creates a smaller donut hole
+                        hoverOffset: 35, // Pops out segments on hover
+                        hoverBorderWidth: 4,
+                        hoverBackgroundColor: [
+                            '#cc8f11', // Darker blue for Financial on hover
+                            '#cc8f11', // Darker blue for Physical on hover
+                            '#cc8f11', // Darker blue for Mental on hover
+                            '#cc8f11'  // Darker blue for Social on hover
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 1200, // Shorter, more subtle duration
+                        easing: 'easeOutQuart', // Gentler easing
+                        animateRotate: false, // No rotation - more subtle
+                        animateScale: true, // Keep scale but it will be gentler
+                        delay: function (context) {
+                            // Much shorter stagger for subtlety
+                            return context.dataIndex * 100;
+                        }
                     },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        animation: {
-                            duration: 1200, // Shorter, more subtle duration
-                            easing: 'easeOutQuart', // Gentler easing
-                            animateRotate: false, // No rotation - more subtle
-                            animateScale: true, // Keep scale but it will be gentler
-                            delay: function (context) {
-                                // Much shorter stagger for subtlety
-                                return context.dataIndex * 100;
-                            }
+                    plugins: {
+                        legend: {
+                            display: false // Hide default legend since we have custom labels
                         },
-                        plugins: {
-                            legend: {
-                                display: false // Hide default legend since we have custom labels
-                            },
-                            tooltip: {
-                                enabled: false // Disable tooltips
-                            }
+                        tooltip: {
+                            enabled: false // Disable tooltips
+                        }
+                    },
+                    elements: {
+                        arc: {
+                            borderWidth: 8
+                        }
+                    },
+                    interaction: {
+                        mode: 'nearest',
+                        intersect: false
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- Financial Wellness Chart -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const financialCtx = document.getElementById('financialChart').getContext('2d');
+
+            const financialChart = new Chart(financialCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Financially Healthy', 'Not Financially Healthy'],
+                    datasets: [{
+                        data: [31, 69],
+                        backgroundColor: [
+                            '#87CEEB', // Light blue for financially healthy
+                            '#0C3144'  // Dark blue for not financially healthy
+                        ],
+                        borderColor: [
+                            '#0C3144',
+                            '#0C3144'
+                        ],
+                        borderWidth: 2,
+                        cutout: '60%'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
                         },
-                        elements: {
-                            arc: {
-                                borderWidth: 8
-                            }
-                        },
-                        interaction: {
-                            mode: 'nearest',
-                            intersect: false
+                        tooltip: {
+                            enabled: false
+                        }
+                    },
+                    elements: {
+                        arc: {
+                            borderWidth: 2
                         }
                     }
-                });
+                }
             });
-        </script>
-
-        <!-- Financial Wellness Chart -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const financialCtx = document.getElementById('financialChart').getContext('2d');
-
-                const financialChart = new Chart(financialCtx, {
-                    type: 'doughnut',
-                    data: {
-                        labels: ['Financially Healthy', 'Not Financially Healthy'],
-                        datasets: [{
-                            data: [31, 69],
-                            backgroundColor: [
-                                '#87CEEB', // Light blue for financially healthy
-                                '#0C3144'  // Dark blue for not financially healthy
-                            ],
-                            borderColor: [
-                                '#0C3144',
-                                '#0C3144'
-                            ],
-                            borderWidth: 2,
-                            cutout: '60%'
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: {
-                                display: false
-                            },
-                            tooltip: {
-                                enabled: false
-                            }
-                        },
-                        elements: {
-                            arc: {
-                                borderWidth: 2
-                            }
-                        }
-                    }
-                });
-            });
-        </script>
+        });
+    </script>
 
 </body>
 
