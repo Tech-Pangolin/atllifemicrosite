@@ -6,6 +6,10 @@ background: url("../img/health_productivity/hero.webp") center center / cover no
 margin-bottom: 0px;
 }
 
+.gold-accent {
+color: rgb(179, 122, 4);
+}
+
 #four-pillars {
 background-color: rgb(12, 49, 68); color: white;
 }
@@ -31,7 +35,7 @@ transform: translateY(-5px);
 }
 
 .pillar-icon .pillar-title {
-color: rgb(204, 143, 17); font-family: Jomolhari, Georgia, serif; font-weight: bold; font-size: 1.5rem; margin-bottom: 20px; letter-spacing: 0.5px;
+color: rgb(179, 122, 4); font-family: Jomolhari, Georgia, serif; font-weight: bold; font-size: 1.5rem; margin-bottom: 20px; letter-spacing: 0.5px;
 }
 
 .pillar-icon i {
@@ -43,7 +47,7 @@ background-color: white; padding: 80px 0px;
 }
 
 .pillar-section .pillar-title, .final-section .pillar-title {
-color: rgb(204, 143, 17); font-family: Jomolhari, Georgia, serif; font-weight: bold; font-size: 2.5rem; margin-bottom: 50px; text-align: center;
+color: rgb(179, 122, 4); font-family: Jomolhari, Georgia, serif; font-weight: bold; font-size: 2.5rem; margin-bottom: 50px; text-align: center;
 }
 
 .financial-intro-text {
@@ -63,7 +67,7 @@ transform: translateY(-10px); box-shadow: rgba(12, 49, 68, 0.3) 0px 20px 40px;
 }
 
 .stat-number {
-color: rgb(204, 143, 17); font-family: Jomolhari, Georgia, serif; font-weight: bold; font-size: 3.5rem; margin-bottom: 15px; line-height: 1;
+color: rgb(179, 122, 4); font-family: Jomolhari, Georgia, serif; font-weight: bold; font-size: 3.5rem; margin-bottom: 15px; line-height: 1;
 }
 
 .stat-label {
@@ -91,7 +95,7 @@ display: flex; align-items: flex-start; gap: 20px;
 }
 
 .initiative-icon {
-width: 12px; height: 12px; background-color: rgb(204, 143, 17); flex-shrink: 0; margin-top: 8px;
+width: 12px; height: 12px; background-color: rgb(179, 122, 4); flex-shrink: 0; margin-top: 8px;
 }
 
 .initiative-content {
@@ -118,12 +122,349 @@ background-color: rgb(248, 249, 250);
 display: grid; grid-template-columns: 1fr 1fr; gap: 0px; min-height: 600px;
 }
 
+/* Mobile responsive for two-column section */
+@media (max-width: 825px) {
+    .two-column-content {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        max-width: 410px;
+        margin: 0 auto;
+    }
+    
+    .two-column-content .left-column,
+    .two-column-content .right-column {
+        padding: 30px 20px !important;
+    }
+    
+    .two-column-content .left-column-title {
+        font-size: 2rem !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .two-column-content .left-column p {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    .two-column-content .left-column-image {
+        margin-top: 30px !important;
+    }
+    
+    .two-column-content .left-column-image img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .two-column-content .stat-sentence {
+        font-size: 1.4rem !important;
+        margin-left: 0 !important;
+        line-height: 1.4 !important;
+        text-align: center !important;
+    }
+    
+    .two-column-content .stat-item {
+        text-align: center !important;
+    }
+    
+    .two-column-content .stat-item::before {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 50% !important;
+    }
+    
+    /* People centered section mobile responsive */
+    .people-centered .initiative-block {
+        margin-bottom: 40px !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 20px !important;
+    }
+    
+    .people-centered .initiative-icon {
+        width: 60px !important;
+        height: 60px !important;
+        margin: 0 auto 10px auto !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .people-centered .initiative-icon i {
+        font-size: 2.5rem !important;
+        font-weight: bold !important;
+        color: white !important;
+    }
+    
+    /* Healthier teams section mobile responsive */
+    .healthier-teams .pie-diagram-container {
+        display: none !important;
+    }
+    
+    .healthier-teams .row {
+        justify-content: center !important;
+    }
+    
+    .healthier-teams .col-md-4 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .healthier-teams .pie-caption {
+        height: auto !important;
+        padding: 20px 0 !important;
+        text-align: center !important;
+        max-width: 600px !important;
+        margin: 0 auto !important;
+    }
+    
+    .healthier-teams .pie-caption-left,
+    .healthier-teams .pie-caption-right {
+        text-align: center !important;
+    }
+    
+    .healthier-teams .caption-item {
+        margin-bottom: 30px !important;
+        text-align: center !important;
+    }
+    
+    .healthier-teams .caption-header,
+    .healthier-teams .caption-text {
+        text-align: center !important;
+        margin-left: 0 !important;
+    }
+    
+    /* Pyramid section mobile responsive */
+    .pyramid-grid .pyramid-image-container {
+        display: none !important;
+    }
+    
+    .pyramid-grid .pyramid-content-grid {
+        text-align: center !important;
+        max-width: 410px !important;
+        margin: 0 auto !important;
+    }
+    
+    .pyramid-grid .pyramid-item {
+        transform: none !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .pyramid-grid .pyramid-title {
+        font-size: 1.6rem !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .pyramid-grid .pyramid-text {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    .pyramid-grid .pyramid-icon {
+        display: block !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .pyramid-grid .pyramid-icon i {
+        font-size: 2.5rem !important;
+        color: rgb(179, 122, 4) !important;
+    }
+    
+    /* Real solutions section responsive */
+    .solutions-grid .row {
+        justify-content: center !important;
+    }
+    
+    .solutions-grid .col-md-3 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+    
+    .solutions-grid .solution-item {
+        padding: 25px 15px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .solutions-grid .solution-icon i {
+        font-size: 2rem !important;
+    }
+    
+    .solutions-grid .solution-header {
+        font-size: 1rem !important;
+    }
+    
+    /* Final section responsive */
+    .final-section .pyramid-grid .row {
+        justify-content: center !important;
+    }
+    
+    .final-section .pyramid-content-grid {
+        max-width: 600px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* Responsive rules for other sections (excluding disengagement) */
+@media (max-width: 1400px) {
+    /* People centered section responsive */
+    .people-centered .initiative-block {
+        margin-bottom: 40px !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 20px !important;
+    }
+    
+    .people-centered .initiative-icon {
+        width: 60px !important;
+        height: 60px !important;
+        margin: 0 auto 10px auto !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .people-centered .initiative-icon i {
+        font-size: 2.5rem !important;
+        font-weight: bold !important;
+        color: white !important;
+    }
+    
+    .people-centered .initiative-content {
+        text-align: center !important;
+    }
+    
+    .people-centered .initiative-title {
+        font-size: 1.3rem !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .people-centered .initiative-description {
+        font-size: 1.1rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* Healthier teams section responsive */
+    .healthier-teams .pie-diagram-container {
+        display: none !important;
+    }
+    
+    .healthier-teams .row {
+        justify-content: center !important;
+    }
+    
+    .healthier-teams .col-md-4 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .healthier-teams .pie-caption {
+        height: auto !important;
+        padding: 20px 0 !important;
+        text-align: center !important;
+        max-width: 600px !important;
+        margin: 0 auto !important;
+    }
+    
+    .healthier-teams .pie-caption-left,
+    .healthier-teams .pie-caption-right {
+        text-align: center !important;
+    }
+    
+    .healthier-teams .caption-item {
+        margin-bottom: 30px !important;
+        text-align: center !important;
+    }
+    
+    .healthier-teams .caption-header,
+    .healthier-teams .caption-text {
+        text-align: center !important;
+        margin-left: 0 !important;
+    }
+    
+    /* Pyramid section responsive */
+    .pyramid-grid .pyramid-image-container {
+        display: none !important;
+    }
+    
+    .pyramid-grid .pyramid-content-grid {
+        text-align: center !important;
+        max-width: 410px !important;
+        margin: 0 auto !important;
+    }
+    
+    .pyramid-grid .pyramid-item {
+        transform: none !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .pyramid-grid .pyramid-title {
+        font-size: 1.6rem !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .pyramid-grid .pyramid-text {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    .pyramid-grid .pyramid-icon {
+        display: block !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .pyramid-grid .pyramid-icon i {
+        font-size: 2.5rem !important;
+        color: rgb(179, 122, 4) !important;
+    }
+    
+    /* Real solutions section responsive */
+    .solutions-grid .row {
+        justify-content: center !important;
+    }
+    
+    .solutions-grid .col-md-3 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+    
+    .solutions-grid .solution-item {
+        padding: 25px 15px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .solutions-grid .solution-icon i {
+        font-size: 2rem !important;
+    }
+    
+    .solutions-grid .solution-header {
+        font-size: 1rem !important;
+    }
+    
+    /* Final section responsive */
+    .final-section .pyramid-grid .row {
+        justify-content: center !important;
+    }
+    
+    .final-section .pyramid-content-grid {
+        max-width: 600px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* Show pyramid icons only on screens narrower than 1400px */
+@media (min-width: 1400px) {
+    .pyramid-grid .pyramid-icon {
+        display: none !important;
+    }
+}
+
 .left-column {
-background-color: rgb(12, 49, 68); color: rgb(204, 143, 17); padding: 60px 40px; display: flex; flex-direction: column; justify-content: flex-start;
+background-color: rgb(12, 49, 68); color: rgb(179, 122, 4); padding: 60px 40px; display: flex; flex-direction: column; justify-content: flex-start;
 }
 
 .left-column-title {
-color: rgb(204, 143, 17); font-family: Jomolhari, Georgia, serif; font-weight: bold; font-size: 2.5rem; margin-bottom: 40px; text-align: center; text-transform: uppercase; line-height: 1.5;
+color: rgb(179, 122, 4); font-family: Jomolhari, Georgia, serif; font-weight: bold; font-size: 2.5rem; margin-bottom: 40px; text-align: center; text-transform: uppercase; line-height: 1.5;
 }
 
 .left-column-title span {
@@ -155,7 +496,7 @@ background-color: white;
 }
 
 .people-centered .pillar-title {
-color: rgb(204, 143, 17); font-family: Jomolhari, Georgia, serif; font-weight: bold; font-size: 2.5rem; margin-bottom: 50px; text-align: center;
+color: rgb(179, 122, 4); font-family: Jomolhari, Georgia, serif; font-weight: bold; font-size: 2.5rem; margin-bottom: 50px; text-align: center;
 }
 
 .people-centered-top {
@@ -195,7 +536,7 @@ margin-bottom: 20px;
 }
 
 .solution-icon i {
-font-size: 2.5rem; color: rgb(204, 143, 17);
+font-size: 2.5rem; color: rgb(179, 122, 4);
 }
 
 .solution-header {
@@ -247,7 +588,7 @@ position: relative; width: 400px; height: 400px; display: flex; justify-content:
 }
 
 .pie-slice {
-position: absolute; width: 80px; height: 80px; border: 1px solid rgb(12, 49, 68); border-radius: 50% 50% 50% 0px; background: linear-gradient(135deg, rgb(204, 143, 17), rgb(255, 190, 13)); transition: 0.3s; cursor: pointer; display: flex; align-items: center; justify-content: center;
+position: absolute; width: 80px; height: 80px; border: 1px solid rgb(12, 49, 68); border-radius: 50% 50% 50% 0px; background: linear-gradient(135deg, rgb(179, 122, 4), rgb(255, 190, 13)); transition: 0.3s; cursor: pointer; display: flex; align-items: center; justify-content: center;
 }
 
 .pie-slice i {
@@ -367,7 +708,7 @@ position: relative;
 }
 
 .stat-item::before {
-content: ""; position: absolute; top: -15px; left: 100px; width: 60%; height: 4px; background-color: rgb(204, 143, 17);
+content: ""; position: absolute; top: -15px; left: 100px; width: 60%; height: 4px; background-color: rgb(179, 122, 4);
 }
 
 .stat-item:first-child::before {
@@ -375,7 +716,7 @@ top: -15px;
 }
 
 .final-section {
-background-color: rgb(12, 49, 68); color: rgb(204, 143, 17);
+background-color: rgb(12, 49, 68); color: rgb(179, 122, 4);
 }
 
 .final-section .intro-text {
