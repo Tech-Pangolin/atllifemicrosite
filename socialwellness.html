@@ -87,6 +87,111 @@
             padding-bottom: 0px;
             margin-bottom: 0px;
         }
+
+        .financial-h2 {
+            color: #C28A17;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+
+        }
+
+        .legacy-box {
+            padding: 60px 30px;
+            margin: 20px 0;
+            background: url(assets/img/wellness/legacybox.png) no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 210px;
+        }
+
+        .equity-box {
+            padding: 60px 30px;
+            margin: 20px 0;
+            background: url(assets/img/wellness/equitybox.png) no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 210px;
+        }
+
+        .financial-box {
+            padding: 60px 30px;
+            margin: 20px 0;
+            background: url(assets/img/wellness/financialbox.png) no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 241px;
+        }
+
+        .reinsurance-box {
+            padding: 60px 30px;
+            margin: 20px 0;
+            background: url(assets/img/wellness/reinsurancebox.png) no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 240px;
+        }
+
+        .legacy-box h4,
+        .equity-box h4,
+        .financial-box h4,
+        .reinsurance-box h4,
+        #blog h4 {
+            color: #FFF;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .legacy-box p,
+        .equity-box p,
+        .financial-box p,
+        .reinsurance-box p {
+            color: #FFF;
+        }
+
+        .financial-h2 {
+            color: #C28A17;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+
+        }
+
+        #blog h3 {
+            color: #C28A17;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .value {
+            margin: 20px;
+            color: #FFF;
+            font-size: 60px;
+            text-align: center;
+        }
+
+        .impact-text {
+            color: #FFF;
+            font-size: 16px;
+            text-align: center;
+            margin: 20px
+        }
+
+        .box {
+            border: 3px solid #E0D2B7;
+            margin: 25px 0;
+            padding: 20px;
+        }
+
+        .box p {
+            color: #FFF;
+        }
+
+        .box h4 {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        ul li {
+            color: #FFF;
+            /* margin-left: 30px; */
+        }
+        p{color:#FFF}
     </style>
     <!-- =======================================================
   * Template Name: FlexStart
@@ -154,7 +259,7 @@
                             <li><a class="dropdown-item" href="livebalanced.html">About LiveBalanced</a></li>
                             <li><a class="dropdown-item" href="healthandproductivity.html">Health & Productivity</a>
                             </li>
-                             <li><a class="dropdown-item" href="financialwellness.html">Financial Wellness</a></li>
+                            <li><a class="dropdown-item" href="financialwellness.html">Financial Wellness</a></li>
                             <li><a class="dropdown-item" href="physicalwellness.html">Physical Wellness</a></li>
                             <li><a class="dropdown-item" href="socialwellness.html">Social Wellness</a></li>
                             <li><a class="dropdown-item" href="mentalwellness.html">Mental Wellness</a></li>
@@ -201,31 +306,96 @@
             <section class="breadcrumbs">
                 <div class="container">
 
-                    <ol>
+                    <!-- <ol>
                         <li><a href="index.html">Home</a></li>
                         <li>360 Wellness</li>
                     </ol>
-                    <h2>360 Wellness</h2>
+                    <h2>360 Wellness</h2> -->
 
                 </div>
             </section><!-- End Breadcrumbs -->
 
             <!-- ======= Blog Section ======= -->
-            <section id="blog" class="blog">
+            <section id="blog" class="blog pw" style="background-color: #0B3144;">
                 <div class="container" data-aos="fade-up">
 
                     <div class="row">
 
                         <div class="col">
-                            <h2>Coming soon!</h2>
+                            <div class="col">
+                                <h2 class="mb-3 financial-h2 mb-5"> Mental Wellness: Resilience That Drives Results</h2>
+                                <p style="color:#FFF">
+                                    Purpose is the inner compass that drives fulfillment and meaning. It weaves together
+                                    emotional, social, intellectual, occupational, spiritual, and environmental
+                                    wellness.
+                                    Purpose is the glue that holds the pillars together.
+                                </p>
+                            </div>
+
                         </div>
 
 
                     </div>
+                    <div class="row">
+                        <div class="col-12 my-3">
+                            <h3>What We Deliver:</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h4>Purpose & Values Alignment</h4>
+                                <p>Helping employees connect their work to something bigger.</p>
+                            </div>
+                            <div class="col-4">
+                                <img src="assets/img/wellness/sw-topleft.png" alt="" srcset="" class="img-fluid" style="width:49%">
+                                <img src="assets/img/wellness/sw-topright.png" alt="" srcset="" class="img-fluid" style="width:49%">
+                            </div>
+                            <div class="col-4">
+                                <h4>Growth & Intellectual Wellness</h4>
+                                <p>Encouraging learning, curiosity, and creativity.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h4>Spiritual & Environmental Exploration</h4>
+                                <p>Encouraging reflection, sustainability, and community service.</p>
+                            </div>
+                            <div class="col-4">
+                                <img src="assets/img/wellness/sw-bottomleft.png" alt="" srcset="" class="img-fluid" style="width:49%">
+                                <img src="assets/img/wellness/sw-bottomright.png" alt="" srcset="" class="img-fluid" style="width:49%">
+                            </div>
+                            <div class="col-4">
+                                <h4>Emotional & Social Wellness</h4>
+                                <p>Relationship-building, inner peace, and empathy.</p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col-6">
+                                <h3>Impact:</h3>
+                                <div class="row">
+                                    <div class="col">
+                                        <ul>
+                                            <li>57% of global workers report burnout; mental health challenges cost
+                                                employers an estimated $200B annually.</li>
+                                            <li>Unaddressed mental health issues lead to presenteeism, poor
+                                                productivity, and long-term disengagement.</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                    <h3 class="mx-4">Why it Matters:</h3>
+                                    <p class="mx-4">Purpose turns jobs into journeys. It reduces burnout, builds
+                                        belonging, and fosters leadership. Companies that invest in purpose create
+                                        healthier, more resilient cultures.</p>
+                               
+                            </div>
+                        </div>
 
 
 
-                </div>
+                    </div>
             </section>
         </main><!-- End #main -->
 
