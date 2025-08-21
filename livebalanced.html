@@ -41,8 +41,6 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <!-- Chart.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
 
 
 
@@ -318,7 +316,7 @@
                                 </p>
                             </div>
                             <div class="col col-md-6 d-none d-lg-block"> <img
-                                    src="assets/img/livebalanced/LB image 1.png" alt="Financial consultation meeting"
+                                    src="assets/img/livebalanced/LBimage1.png" alt="Financial consultation meeting"
                                     class="fin-img-width"></div>
                         </div>
                     </div>
@@ -385,7 +383,7 @@
                     <div class="container">
                         <h2 class="pillar-title">Mental Wellness: Resilience That Drives Results</h2>
                         <div class="row">
-                            <div class="col-12 col-md-6"> <img src="assets/img/livebalanced page imgs/LB image 2.png"
+                            <div class="col-12 col-md-6"> <img src="assets/img/livebalanced/LBimage2.png"
                                     alt="Mindfulness group session" class="img-fluid"></div>
                             <div class="col-12 col-md-6">
                                 <h3 class="initiatives-heading">We tackle mental health head-on with:</h3>
@@ -543,7 +541,7 @@
                                     <li>Embedding wellness within organizational culture, not only benefits</li>
                                 </ul>
                                 <div class="right-column-image">
-                                    <img src="assets/img/livebalanced/LB image 3.png"
+                                    <img src="assets/img/livebalanced/LBimage3.png"
                                         alt="Wellness approach illustration">
                                 </div>
                             </div>
@@ -701,80 +699,7 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="css-analyzer.js"></script>
-
-
-    <!-- Chart.js Four Pillars Donut Chart -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const ctx = document.getElementById('pillarsChart').getContext('2d');
-
-            // Simple chart without icon plugin - icons are now HTML elements
-
-            const pillarsChart = new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Financial Wellness', 'Physical Wellness', 'Mental Wellness', 'Social Wellness'],
-                    datasets: [{
-                        data: [25, 25, 25, 25], // Equal segments for four pillars
-                        backgroundColor: [
-                            '#87CEEB', // Light blue for Financial
-                            '#87CEEB', // Light blue for Physical
-                            '#87CEEB', // Light blue for Mental
-                            '#87CEEB'  // Light blue for Social
-                        ],
-                        borderColor: [
-                            '#0C3144', // Dark blue border
-                            '#0C3144',
-                            '#0C3144',
-                            '#0C3144'
-                        ],
-                        borderWidth: 6,
-                        cutout: '40%', // Creates a smaller donut hole
-                        hoverOffset: 35, // Pops out segments on hover
-                        hoverBorderWidth: 4,
-                        hoverBackgroundColor: [
-                            '#cc8f11', // Darker blue for Financial on hover
-                            '#cc8f11', // Darker blue for Physical on hover
-                            '#cc8f11', // Darker blue for Mental on hover
-                            '#cc8f11'  // Darker blue for Social on hover
-                        ]
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    animation: {
-                        duration: 1200, // Shorter, more subtle duration
-                        easing: 'easeOutQuart', // Gentler easing
-                        animateRotate: false, // No rotation - more subtle
-                        animateScale: true, // Keep scale but it will be gentler
-                        delay: function (context) {
-                            // Much shorter stagger for subtlety
-                            return context.dataIndex * 100;
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            display: false // Hide default legend since we have custom labels
-                        },
-                        tooltip: {
-                            enabled: false // Disable tooltips
-                        }
-                    },
-                    elements: {
-                        arc: {
-                            borderWidth: 8
-                        }
-                    },
-                    interaction: {
-                        mode: 'nearest',
-                        intersect: false
-                    }
-                }
-            });
-        });
-    </script>
-
+   
     <!-- Financial Wellness Chart -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
