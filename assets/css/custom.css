@@ -1,5 +1,9 @@
- .hero .btn-get-started {
-  padding:15px
+section#hero{
+  margin-top: 100px!important;
+}
+
+.hero .btn-get-started {
+  padding:15px!important;
  }
  .video-container {
    position: relative;
