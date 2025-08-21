@@ -1,0 +1,1129 @@
+section#hero{
+  margin-top: 100px!important;
+}
+
+.hero .btn-get-started {
+  padding:15px!important;
+ }
+ .video-container {
+   position: relative;
+   width: 100%;
+   padding-bottom: 56.25%;
+   /* 16:9 aspect ratio */
+   height: 0;
+   overflow: hidden;
+ }
+
+ .video-container iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: 0;
+ }
+
+ #eblf .video-container {
+   position: relative;
+   width: 100%;
+   padding-bottom: 56.25%;
+   height: 0px;
+   overflow: hidden;
+ }
+
+ #eblf .video-container iframe {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   border: 0px;
+ }
+
+ #eblf #strategic p {
+   color: rgb(12, 49, 68);
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;
+ }
+
+ #eblf #strategic h2 {
+   color: rgb(12, 49, 68);
+   text-transform: uppercase;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ #eblf .blog .entry {
+   padding-bottom: 0px;
+   margin-bottom: 0px;
+ }
+
+
+
+
+ #financial-wellness .legacy-box {
+   padding: 60px 30px;
+   margin: 20px 0px;
+   background: url("../img/wellness/legacybox.png") 0% 0% / cover no-repeat;
+   width: 100%;
+   height: 210px;
+ }
+
+ #financial-wellness .equity-box {
+   padding: 60px 30px;
+   margin: 20px 0px;
+   background: url("../img/wellness/equitybox.png") 0% 0% / cover no-repeat;
+   width: 100%;
+   height: 210px;
+ }
+
+ #financial-wellness .financial-box {
+   padding: 60px 30px;
+   margin: 20px 0px;
+   background: url("../img/wellness/financialbox.png") 0% 0% / cover no-repeat;
+   width: 100%;
+   height: 241px;
+ }
+
+ #financial-wellness .reinsurance-box {
+   padding: 60px 30px;
+   margin: 20px 0px;
+   background: url("../img/wellness/reinsurancebox.png") 0% 0% / cover no-repeat;
+   width: 100%;
+   height: 240px;
+ }
+
+ #financial-wellness .legacy-box h4,
+ #financial-wellness .equity-box h4,
+ #financial-wellness .financial-box h4,
+ #financial-wellness .reinsurance-box h4,
+ #blog h4 {
+   color: rgb(255, 255, 255);
+   font-family: "Times New Roman", Times, serif;
+ }
+
+ #financial-wellness .legacy-box p,
+ #financial-wellness .equity-box p,
+ #financial-wellness .financial-box p,
+ #financial-wellness .reinsurance-box p {
+   color: rgb(255, 255, 255);
+ }
+
+ #financial-wellness .financial-h2 {
+   color: rgb(194, 138, 23);
+   font-family: "Times New Roman", Times, serif;
+   font-size: 50px;
+ }
+
+ #financial-wellness #blog h3 {
+   color: rgb(194, 138, 23);
+   font-family: "Times New Roman", Times, serif;
+ }
+
+ #financial-wellness .value {
+   margin: 20px;
+   color: rgb(255, 255, 255);
+   font-size: 60px;
+   text-align: center;
+ }
+
+ #financial-wellness .impact-text {
+   color: rgb(255, 255, 255);
+   font-size: 16px;
+   text-align: center;
+   margin: 20px;
+ }
+
+
+#livebalanced .tl {
+   background: url(../img/livebalanced/topleft-financial.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+#livebalanced .tr {
+   background: url(../img/livebalanced/topright-physical.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+#livebalanced .bl {
+   background: url(../img/livebalanced/bottomleft-social.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+#livebalanced .br {
+   background: url(../img/livebalanced/bottomright-mental.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+
+ #livebalanced .tl:hover {
+   background: url(../img/livebalanced/topleft-financial-hl.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+ #livebalanced .tr:hover {
+   background: url(../img/livebalanced/topright-physical-hl.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+ #livebalanced .bl:hover {
+   background: url(../img/livebalanced/bottomleft-social-hl.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+ #livebalanced .br:hover {
+   background: url(../img/livebalanced/bottomright-mental-hl.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+ #livebalanced .livebalanced-panel{
+  margin-left:200px;
+ }
+
+ #livebalanced .hero-title-main,
+ #livebalanced .hero-title-accent {
+   font-family: Jomolhari, Georgia, serif;
+   font-weight: bold;
+ }
+
+ #livebalanced .hero-title-main,
+ #livebalanced .initiatives-list li {
+   color: rgb(12, 49, 68);
+ }
+
+ #livebalanced .hero-title-accent,
+ #livebalanced .hero-subtitle-accent {
+   color: rgb(204, 143, 17);
+ }
+
+ #livebalanced .hero-subtitle,
+ #livebalanced .hero-description {
+   font-family: "BR Segma", Arial, sans-serif;
+ }
+
+ #livebalanced .hero-subtitle {
+   color: rgb(12, 49, 68);
+   margin-top: 20px;
+ }
+
+ #livebalanced .hero-description {
+   color: rgb(12, 49, 68);
+   font-size: 18px;
+   line-height: 1.6;
+   margin-top: 20px;
+   width: 100%;
+ }
+
+ #livebalanced .hero-description-accent {
+   color: rgb(204, 143, 17);
+   font-weight: bold;
+ }
+
+ #livebalanced #four-pillars {
+   background-color: rgb(12, 49, 68);
+   color: white;
+ }
+
+ #livebalanced #four-pillars .section-title {
+   color: rgb(204, 143, 17);
+   font-family: Jomolhari, Georgia, serif;
+   font-weight: bold;
+   font-size: 2.5rem;
+ }
+
+ #livebalanced .pillars-diagram-container {
+   position: relative;
+   margin: 80px 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #livebalanced .chart-container {
+   position: relative;
+   width: 400px;
+   height: 400px;
+   margin: 0px auto;
+ }
+
+ #livebalanced .chart-icons {
+   position: absolute;
+   top: 19px;
+   left: 19px;
+   width: 100%;
+   height: 100%;
+   pointer-events: none;
+ }
+
+ #livebalanced .chart-icon {
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   background: white;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+   transform: translate(-50%, -50%);
+ }
+
+ #livebalanced .chart-icon i {
+   font-size: 18px;
+   color: rgb(12, 49, 68);
+ }
+
+ #livebalanced .chart-icon.financial-icon {
+   top: 25%;
+   left: 25%;
+ }
+
+ #livebalanced .chart-icon.financial-icon:hover {
+   top: 0%;
+   left: 0%;
+ }
+
+ #livebalanced .chart-icon.physical-icon {
+   top: 25%;
+   right: 25%;
+ }
+
+ #livebalanced .chart-icon.mental-icon {
+   bottom: 25%;
+   right: 25%;
+ }
+
+ #livebalanced .chart-icon.social-icon {
+   bottom: 25%;
+   left: 25%;
+   margin-bottom: unset;
+ }
+
+ #livebalanced .pillar-labels {
+   position: absolute;
+   width: 600px;
+   height: 600px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   pointer-events: none;
+ }
+
+ #livebalanced .pillar-label {
+   position: absolute;
+   text-align: center;
+   max-width: 300px;
+ }
+
+ #livebalanced .pillar-label.top-left-label {
+   top: 10%;
+   left: 10%;
+   transform: translate(-50%, 50%);
+ }
+
+ #livebalanced .pillar-label.top-right-label {
+   top: 10%;
+   right: 10%;
+   transform: translate(50%, 50%);
+ }
+
+ #livebalanced .pillar-label.bottom-right-label {
+   bottom: 10%;
+   right: 10%;
+   transform: translate(50%, -50%);
+ }
+
+ #livebalanced .pillar-label.bottom-left-label {
+   bottom: 10%;
+   left: 10%;
+   transform: translate(-50%, -50%);
+ }
+
+ #livebalanced .pillar-title {
+   font-size: 18px;
+   font-weight: bold;
+   color: white;
+   margin-bottom: 8px;
+   font-family: Jomolhari, Georgia, serif;
+   letter-spacing: 0.5px;
+ }
+
+ #livebalanced .pillar-description {
+   font-size: 14px;
+   color: rgb(224, 224, 224);
+   margin: 0px;
+   line-height: 1.4;
+   font-family: "BR Segma", Arial, sans-serif;
+   font-style: italic;
+ }
+
+ #livebalanced .concluding-text {
+   color: rgb(204, 204, 204);
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 16px;
+   line-height: 1.6;
+ }
+
+ #livebalanced .pillar-section {
+   background-color: white;
+   padding: 80px 0px;
+ }
+
+ #livebalanced .pillar-section .pillar-title {
+   color: rgb(204, 143, 17);
+   font-family: Jomolhari, Georgia, serif;
+   font-weight: bold;
+   font-size: 2.5rem;
+   margin-bottom: 50px;
+   text-align: center;
+ }
+
+ #livebalanced .initiatives-heading {
+   color: rgb(12, 49, 68);
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.5rem;
+   margin-bottom: 25px;
+ }
+
+ #livebalanced .initiatives-list {
+   list-style: none;
+   padding: 0px;
+   margin-bottom: 40px;
+ }
+
+ #livebalanced .initiatives-list li {
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.1rem;
+   line-height: 1.6;
+   margin-bottom: 15px;
+   padding-left: 25px;
+   position: relative;
+ }
+
+ #livebalanced .initiatives-list li::before {
+   content: "•";
+   color: rgb(204, 143, 17);
+   font-weight: bold;
+   font-size: 1.5rem;
+   position: absolute;
+   left: 0px;
+   top: -2px;
+ }
+
+ #livebalanced .statistic-chart {
+   position: relative;
+   width: 200px;
+   height: 200px;
+   margin: 0px auto;
+ }
+
+ #livebalanced .chart-center-text,
+ #livebalanced .chart-caption {
+   font-family: "BR Segma", Arial, sans-serif;
+   color: rgb(12, 49, 68);
+ }
+
+ #livebalanced .chart-center-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 2rem;
+   font-weight: bold;
+   z-index: 10;
+ }
+
+ #livebalanced .chart-caption {
+   font-size: 0.9rem;
+   text-align: center;
+   margin-top: 20px;
+   line-height: 1.4;
+   max-width: 100%;
+   width: 100%;
+ }
+
+ #livebalanced .content-right img {
+   width: 100%;
+   height: 400px;
+   object-fit: cover;
+   border-radius: 8px;
+ }
+
+ #livebalanced .physical-wellness {
+   box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 20px;
+   background-color: white;
+   position: relative;
+   z-index: 10;
+ }
+
+ #livebalanced .intro-text {
+   color: rgb(12, 49, 68);
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.2rem;
+   margin-bottom: 40px;
+   text-align: left;
+ }
+
+
+ #livebalanced .initiative-block {
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+ }
+
+ #livebalanced .initiative-icon {
+   width: 12px;
+   height: 12px;
+   background-color: rgb(204, 143, 17);
+   flex-shrink: 0;
+   margin-top: 8px;
+ }
+
+ #livebalanced .initiative-content {
+   flex: 1 1 0%;
+   display: flex;
+   flex-direction: column;
+ }
+
+ #livebalanced .initiative-title {
+   font-size: 1.1rem;
+   font-weight: bold;
+   margin-bottom: 8px;
+   line-height: 1.4;
+ }
+
+ #livebalanced .initiative-description {
+   font-size: 1rem;
+   line-height: 1.5;
+   margin: 0px;
+   opacity: 0.9;
+ }
+
+ #livebalanced .statistic-text {
+   color: rgb(12, 49, 68);
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1rem;
+   text-align: left;
+   margin: 0px;
+   font-weight: 500;
+ }
+
+ #livebalanced .mental-wellness {
+   background-color: rgb(12, 49, 68);
+   color: rgb(204, 143, 17);
+ }
+
+ #livebalanced .mental-wellness .pillar-content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 60px;
+   align-items: center;
+   margin-bottom: 60px;
+ }
+
+ #livebalanced .fin-img-width {
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+ }
+
+ #livebalanced .mental-wellness .initiatives-heading {
+   color: white;
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.5rem;
+   margin-bottom: 25px;
+ }
+
+ #livebalanced .mental-wellness .initiatives-list {
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
+ }
+
+ #livebalanced .mental-wellness .initiatives-list li {
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.1rem;
+   line-height: 1.6;
+   margin-bottom: 15px;
+   padding-left: 25px;
+   position: relative;
+   color: white;
+ }
+
+ #livebalanced .statistic-container {
+   text-align: center;
+   margin-top: 40px;
+ }
+
+ #livebalanced .statistic-number,
+ #livebalanced .statistic-title,
+ #livebalanced .statistic-caption {
+   font-family: "BR Segma", Arial, sans-serif;
+   color: white;
+   margin: 0px;
+ }
+
+ #livebalanced .statistic-number {
+   font-size: 4rem;
+   font-weight: bold;
+   margin-bottom: 10px;
+ }
+
+ #livebalanced .statistic-title {
+   font-size: 1.5rem;
+   font-weight: bold;
+   margin-bottom: 15px;
+ }
+
+ #livebalanced .statistic-caption {
+   font-size: 1rem;
+   line-height: 1.4;
+   opacity: 0.9;
+ }
+
+ #livebalanced .social-wellness {
+   background-color: rgb(248, 249, 250);
+   color: rgb(12, 49, 68);
+ }
+
+ #livebalanced .social-wellness .pillar-title {
+   color: rgb(204, 143, 17);
+   font-family: Jomolhari, Georgia, serif;
+   font-weight: bold;
+   font-size: 2.5rem;
+   margin-bottom: 30px;
+   text-align: left;
+ }
+
+ #livebalanced .social-wellness .section-intro {
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.2rem;
+   line-height: 1.6;
+   text-align: left;
+   margin-bottom: 50px;
+   color: rgb(12, 49, 68);
+ }
+
+ #livebalanced .grid-item {
+   background: white;
+   border-radius: 12px;
+   padding: 30px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+   transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ #livebalanced .grid-item:hover {
+   transform: translateY(-5px);
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 15px;
+ }
+
+ #livebalanced .item-content {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   text-align: left;
+ }
+
+ #livebalanced .social-icon {
+   font-size: 2.5rem;
+   color: rgb(204, 143, 17);
+   margin-bottom: 15px;
+ }
+
+ #livebalanced .item-title {
+   font-size: 1.3rem;
+   font-weight: bold;
+   margin-bottom: 15px;
+ }
+
+ #livebalanced .item-description {
+   font-size: 1rem;
+   line-height: 1.5;
+   margin: 0px;
+ }
+
+ #livebalanced .section-outro {
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.1rem;
+   line-height: 1.6;
+   text-align: center;
+   color: rgb(12, 49, 68);
+   margin-top: 40px;
+ }
+
+ #livebalanced .two-column-section {
+   background-color: rgb(248, 249, 250);
+ }
+
+ #livebalanced .two-column-content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0px;
+   min-height: 600px;
+ }
+
+ #livebalanced .left-column {
+   background-color: rgb(12, 49, 68);
+   color: rgb(204, 143, 17);
+   padding: 60px 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+ }
+
+ #livebalanced .left-column-title {
+   color: rgb(204, 143, 17);
+   font-family: Jomolhari, Georgia, serif;
+   font-weight: bold;
+   font-size: 2.2rem;
+   margin-bottom: 40px;
+   text-align: left;
+ }
+
+ #livebalanced .left-column-list li {
+   color: white;
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.1rem;
+   line-height: 1.6;
+   margin-bottom: 20px;
+   padding-left: 25px;
+   position: relative;
+ }
+
+ #livebalanced .right-column {
+   background-color: rgb(248, 249, 250);
+   color: rgb(12, 49, 68);
+   padding: 60px 40px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ #livebalanced .right-column-title {
+   color: rgb(12, 49, 68);
+   font-family: Jomolhari, Georgia, serif;
+   font-weight: bold;
+   font-size: 2.2rem;
+   margin-bottom: 30px;
+   text-align: left;
+ }
+
+ #livebalanced .right-column-intro {
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.1rem;
+   line-height: 1.6;
+   margin-bottom: 30px;
+   color: rgb(12, 49, 68);
+ }
+
+ #livebalanced .right-column-list {
+   list-style: none;
+   padding: 0px;
+   margin: 0px 0px 40px;
+ }
+
+ #livebalanced .right-column-list li {
+   color: rgb(12, 49, 68);
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1rem;
+   line-height: 1.5;
+   margin-bottom: 15px;
+   padding-left: 20px;
+   position: relative;
+ }
+
+ #livebalanced .right-column-list li::before {
+   content: "•";
+   color: rgb(204, 143, 17);
+   font-weight: bold;
+   font-size: 1.2rem;
+   position: absolute;
+   left: 0px;
+   top: -1px;
+ }
+
+ #livebalanced .right-column-image {
+   margin-top: auto;
+ }
+
+ #livebalanced .right-column-image img {
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+ }
+
+ #livebalanced .content-block {
+   margin-bottom: 60px;
+ }
+
+ #livebalanced .final-p {
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.1rem;
+   line-height: 1.6;
+   margin-bottom: 25px;
+   color: white;
+ }
+
+ #livebalanced .final-list {
+   list-style: none;
+   padding: 0px;
+   margin: 25px 0px;
+ }
+
+ #livebalanced .final-list li {
+   color: white;
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.1rem;
+   line-height: 1.6;
+   margin-bottom: 15px;
+   padding-left: 25px;
+   position: relative;
+ }
+
+ #livebalanced .final-h1 {
+   color: rgb(204, 143, 17);
+   font-family: Jomolhari, Georgia, serif;
+   font-weight: bold;
+   font-size: 2.5rem;
+   margin-bottom: 30px;
+   text-align: left;
+ }
+
+ #livebalanced .final-section {
+   background-color: rgb(12, 49, 68);
+   color: rgb(204, 143, 17);
+ }
+
+ #livebalanced .final-divider {
+   border: none;
+   height: 2px;
+   background-color: rgb(204, 143, 17);
+   margin: 60px 0px;
+   opacity: 0.8;
+ }
+
+ #livebalanced .final-conclusion {
+   font-family: "BR Segma", Arial, sans-serif;
+   font-size: 1.2rem;
+   line-height: 1.6;
+   text-align: center;
+   color: white;
+   font-weight: 500;
+ }
+
+ #livebalanced .hero-content-mobile {
+   display: none;
+ }
+
+ #livebalanced .hero-content {
+   display: block;
+   background-color: rgba(255, 255, 255, 0.6);
+   padding: 30px 20px;
+   border-radius: 10px;
+   margin: 20px 0px;
+ }
+
+ #livebalanced h1.hero-title {
+   margin-bottom: 2rem;
+ }
+
+ #livebalanced .mobile-pillars-grid {
+   padding: 20px 0px;
+ }
+
+ #livebalanced .mobile-pillar-item {
+   text-align: center;
+   padding: 25px 15px;
+   margin-bottom: 20px;
+   border-bottom: 2px solid rgba(204, 143, 17, 0.3);
+ }
+
+ #livebalanced .mobile-pillar-item:last-child {
+   border-bottom: none;
+   margin-bottom: 0px;
+ }
+
+ #livebalanced .mobile-pillar-title {
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: white;
+   margin-bottom: 10px;
+   font-family: Jomolhari, Georgia, serif;
+   letter-spacing: 0.5px;
+ }
+
+ #livebalanced .mobile-pillar-description {
+   font-size: 1rem;
+   color: rgb(224, 224, 224);
+   margin: 0px;
+   line-height: 1.4;
+   font-family: "BR Segma", Arial, sans-serif;
+   font-style: italic;
+ }
+
+
+
+
+ #mentalwellness .blog .entry {
+   padding-bottom: 0px;
+   margin-bottom: 0px;
+ }
+
+ #mentalwellness .legacy-box {
+   padding: 60px 30px;
+   margin: 20px 0;
+   background: url(assets/img/wellness/legacybox.png) no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 210px;
+ }
+
+ #mentalwellness .equity-box {
+   padding: 60px 30px;
+   margin: 20px 0;
+   background: url(assets/img/wellness/equitybox.png) no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 210px;
+ }
+
+ #mentalwellness .financial-box {
+   padding: 60px 30px;
+   margin: 20px 0;
+   background: url(assets/img/wellness/financialbox.png) no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 241px;
+ }
+
+ #mentalwellness .reinsurance-box {
+   padding: 60px 30px;
+   margin: 20px 0;
+   background: url(assets/img/wellness/reinsurancebox.png) no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 240px;
+ }
+
+ #mentalwellness .legacy-box h4,
+ #mentalwellness .equity-box h4,
+ #mentalwellness .financial-box h4,
+ #mentalwellness .reinsurance-box h4,
+ #mentalwellness #blog h4 {
+   color: #FFF;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ #mentalwellness .legacy-box p,
+ #mentalwellness .equity-box p,
+ #mentalwellness .financial-box p,
+ #mentalwellness .reinsurance-box p {
+   color: #FFF;
+ }
+
+ #mentalwellness .financial-h2 {
+   color: #C28A17;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 50px;
+
+ }
+
+ #mentalwellness #blog h3 {
+   color: #C28A17;
+   font-family: 'Times New Roman', Times, serif;
+ }
+
+ #mentalwellness .value {
+   margin: 20px;
+   color: #FFF;
+   font-size: 60px;
+   text-align: center;
+ }
+
+ #mentalwellness .impact-text {
+   color: #FFF;
+   font-size: 16px;
+   text-align: center;
+   margin: 20px
+ }
+
+ #mentalwellness .box {
+   border: 3px solid #E0D2B7;
+   margin: 25px 0;
+   padding: 20px;
+ }
+
+ #mentalwellness .box p {
+   color: #FFF;
+ }
+
+ #mentalwellness .box h4 {
+   font-family: Arial, Helvetica, sans-serif
+ }
+
+ #mentalwellness ul li {
+   color: #FFF;
+ }
+
+
+ #physicalwellness h1 {
+   color: #C28A17;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 50px;
+
+ }
+
+ #physicalwellness #blog h3 {
+   color: #C28A17;
+   font-family: 'Times New Roman', Times, serif;
+ }
+
+ #physicalwellness .box {
+   width: 100%;
+   height: 100%;
+   background-color: #F8E3BA;
+   padding: 20px;
+ }
+
+ #physicalwellness h4 {
+   font-weight: bold;
+   color: #000;
+ }
+ #physicalwellness p {
+   line-height: 2em;
+ }
+
+
+
+ #socialwellness .blog .entry {
+   padding-bottom: 0px;
+   margin-bottom: 0px;
+ }
+
+ #socialwellness.financial-h2 {
+   color: #C28A17;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 50px;
+
+ }
+
+ #socialwellness.legacy-box {
+   padding: 60px 30px;
+   margin: 20px 0;
+   background: url(assets/img/wellness/legacybox.png) no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 210px;
+ }
+
+ #socialwellness .equity-box {
+   padding: 60px 30px;
+   margin: 20px 0;
+   background: url(assets/img/wellness/equitybox.png) no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 210px;
+ }
+
+ #socialwellness .financial-box {
+   padding: 60px 30px;
+   margin: 20px 0;
+   background: url(assets/img/wellness/financialbox.png) no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 241px;
+ }
+
+ #socialwellness .reinsurance-box {
+   padding: 60px 30px;
+   margin: 20px 0;
+   background: url(assets/img/wellness/reinsurancebox.png) no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 240px;
+ }
+
+ #socialwellness .legacy-box h4,
+ #socialwellness .equity-box h4,
+ #socialwellness .financial-box h4,
+ #socialwellness .reinsurance-box h4,
+ #socialwellness #blog h4 {
+   color: #FFF;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ #socialwellness .legacy-box p,
+ #socialwellness .equity-box p,
+ #socialwellness .financial-box p,
+ #socialwellness .reinsurance-box p {
+   color: #FFF;
+ }
+
+ #socialwellness .financial-h2 {
+   color: #C28A17;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 50px;
+
+ }
+
+ #socialwellness #blog h3 {
+   color: #C28A17;
+   font-family: 'Times New Roman', Times, serif;
+ }
+
+ #socialwellness .value {
+   margin: 20px;
+   color: #FFF;
+   font-size: 60px;
+   text-align: center;
+ }
+
+ #socialwellness .impact-text {
+   color: #FFF;
+   font-size: 16px;
+   text-align: center;
+   margin: 20px
+ }
+
+ #socialwellness .box {
+   border: 3px solid #E0D2B7;
+   margin: 25px 0;
+   padding: 20px;
+ }
+
+ #socialwellness .box p {
+   color: #FFF;
+ }
+
+ #socialwellness .box h4 {
+   font-family: Arial, Helvetica, sans-serif
+ }
+
+ #socialwellness ul li {
+   color: #FFF;
+   /* margin-left: 30px; */
+ }
+
+ #socialwellness .blog p {
+   color: #FFF
+ }
+
+ #socialwellness .top-left:hover {
+   box-shadow: 0 0 15px rgba(194, 138, 23, 0.7);
+   border-radius: 50% 50% 0% 50%;
+ }
+
+ #socialwellness .top-right:hover {
+   box-shadow: 0 0 15px rgba(194, 138, 23, 0.7);
+   border-radius: 50% 50% 50% 0%;
+ }
+
+ #socialwellness .bottom-left:hover {
+   box-shadow: 0 0 15px rgba(194, 138, 23, 0.7);
+   border-radius: 50% 0% 50% 50%;
+ }
+
+ #socialwellness .bottom-right:hover {
+   box-shadow: 0 0 15px rgba(194, 138, 23, 0.7);
+   border-radius: 0% 50% 50% 50%;
+ }
