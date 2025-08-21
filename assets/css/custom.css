@@ -1,3 +1,6 @@
+ .hero .btn-get-started {
+  padding:15px
+ }
  .video-container {
    position: relative;
    width: 100%;
@@ -128,11 +131,49 @@
  }
 
 
+#livebalanced .tl {
+   background: url(../img/livebalanced/topleft-financial.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+#livebalanced .tr {
+   background: url(../img/livebalanced/topright-physical.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+#livebalanced .bl {
+   background: url(../img/livebalanced/bottomleft-social.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+#livebalanced .br {
+   background: url(../img/livebalanced/bottomright-mental.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
 
-
- #livebalanced #livebalanced-hero {
-   background: url("../img/livebalanced page imgs/LB_heroimage.webp") center center / cover no-repeat;
-   min-height: 100vh;
+ #livebalanced .tl:hover {
+   background: url(../img/livebalanced/topleft-financial-hl.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+ #livebalanced .tr:hover {
+   background: url(../img/livebalanced/topright-physical-hl.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+ #livebalanced .bl:hover {
+   background: url(../img/livebalanced/bottomleft-social-hl.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+ #livebalanced .br:hover {
+   background: url(../img/livebalanced/bottomright-mental-hl.png) no-repeat center center;
+   width:58%;
+   height:200px;
+ }
+ #livebalanced .livebalanced-panel{
+  margin-left:200px;
  }
 
  #livebalanced .hero-title-main,
@@ -936,13 +977,17 @@
 
  #physicalwellness .box {
    width: 100%;
-   height: 175px;
+   height: 100%;
    background-color: #F8E3BA;
    padding: 20px;
  }
 
  #physicalwellness h4 {
    font-weight: bold;
+   color: #000;
+ }
+ #physicalwellness p {
+   line-height: 2em;
  }
 
 
